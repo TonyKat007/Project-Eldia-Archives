@@ -1,0 +1,21 @@
+{
+  "Tier 1: Garrison (Easy)": [
+    {
+      "q": "What are the names of the three walls from outermost to innermost?",
+      "options": ["Maria, Rose, Sina", "Rose, Maria, Sina", "Sina, Rose, Maria", "Maria, Sina, Rose"],
+      "ans": "Maria, Rose, Sina"
+    },
+    {
+      "q": "Which district is at the southern edge of Wall Maria where Eren grew up?",
+      "options": ["Trost", "Shiganshina", "Stohess", "Karanes"],
+      "ans": "Shiganshina"
+    }
+  ],
+  "Tier 2: Survey Corps (Medium)": [
+    {
+      "q": "What was the exact rank of Eren's father, Grisha Yeager, within the Eldian Restorationists?",
+      "options": ["The Owl", "Leader of the Mosley Faction", "Key ideological figure", "Marleyan Captain"],
+      "ans": "Key ideological figure"
+    }
+  ]
+}
