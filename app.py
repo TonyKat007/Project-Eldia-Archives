@@ -59,7 +59,9 @@ with st.sidebar:
     st.divider()
     st.subheader("🔑 Free AI Engine Setup")
     st.markdown("To use Roleplay & Lore Generation for **$0**, grab a free API key from [Groq Console](https://console.groq.com) or [Google AI Studio](https://aistudio.google.com).")
-    api_key = st.text_input("Enter Free Groq / Gemini API Key:", type="password")
+    # Safely fetches your key, defaulting to empty if not found
+    default_key = st.secrets.get("GROQ_API_KEY", "")
+    api_key = st.text_input("Enter Free Groq API Key:", value=default_key, type="password")
     
     st.divider()
     st.markdown("**Regiment Status:** `ACTIVE`")
