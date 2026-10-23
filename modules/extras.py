@@ -382,8 +382,129 @@ def render_physics_lab_tab():
 
 
 def render_public_info_tab():
-    st.header("⚡ Titan Shifter Forge")
-    st.info("Awaiting structural integration...")
+    st.header("☢️ Colossal Detonation Simulator")
+    st.markdown("Analyze the thermonuclear-equivalent yield, blast radius, and projected casualties of a God of Destruction transformation.")
+    
+    # --- CANONICAL SCENARIOS ---
+    scenarios = {
+        "Liberio Port (Armin Arlert, 854)": {
+            "yield": 35.0, "alt": 0.0, "density": 18500, 
+            "desc": "Ground-level harbor detonation. Maximum kinetic displacement and fleet vaporization."
+        },
+        "Shiganshina Retrieval (Bertholdt Hoover, 850)": {
+            "yield": 20.0, "alt": 60.0, "density": 400, 
+            "desc": "Mid-air airburst transformation over ruined Shiganshina. Focused thermal damage, maximized blast wave spread."
+        },
+        "Wall Maria Breach (Bertholdt Hoover, 845)": {
+            "yield": 2.5, "alt": 0.0, "density": 6000, 
+            "desc": "Suppressed transformation. Minimal explosive yield, energy directed into a focused kinetic kick."
+        },
+        "Custom Tactical Detonation": {
+            "yield": 15.0, "alt": 20.0, "density": 5000, 
+            "desc": "Manual parameter override authorized for theoretical combat modeling."
+        }
+    }
+
+    col1, col2 = st.columns([1.2, 1.5])
+    
+    with col1:
+        st.subheader("Detonation Parameters")
+        
+        selected_scenario = st.selectbox("Historical / Theoretical Scenario", list(scenarios.keys()))
+        s_data = scenarios[selected_scenario]
+        
+        st.info(s_data["desc"])
+        
+        is_custom = selected_scenario == "Custom Tactical Detonation"
+        
+        energy_yield = st.slider("Explosive Yield (Kiloton Equivalent)", 1.0, 50.0, float(s_data["yield"]), 0.5, disabled=not is_custom)
+        altitude = st.slider("Transformation Altitude (Meters)", 0.0, 100.0, float(s_data["alt"]), 5.0, disabled=not is_custom)
+        pop_density = st.slider("Population Density (People per km²)", 0, 25000, int(s_data["density"]), 100, disabled=not is_custom)
+        
+        # --- DESTRUCTION CALCULATIONS ---
+        # Radii in kilometers scaled to yield
+        r_vaporization = 0.15 * (energy_yield ** 0.4)
+        r_thermal = 0.6 * (energy_yield ** 0.38)
+        r_blast = 1.1 * (energy_yield ** 0.33)
+        
+        # Altitude modifiers (Airbursts increase blast range but reduce point-blank vaporization)
+        if altitude > 20:
+            r_blast *= 1.2
+            r_vaporization *= 0.7
+            
+        # Area calculations (km²)
+        area_vaporized = np.pi * (r_vaporization ** 2)
+        area_thermal = np.pi * (r_thermal ** 2) - area_vaporized
+        area_blast = np.pi * (r_blast ** 2) - area_thermal - area_vaporized
+        
+        # Lethality Distribution
+        fatality_vap = area_vaporized * pop_density * 1.0     # 100% lethality
+        fatality_therm = area_thermal * pop_density * 0.85    # 85% lethality
+        fatality_blast = area_blast * pop_density * 0.4       # 40% lethality
+        
+        total_casualties = int(fatality_vap + fatality_therm + fatality_blast)
+        
+        st.divider()
+        st.markdown("### Casualty Assessment")
+        st.metric("Estimated Immediate Fatalities", f"{total_casualties:,}", delta=f"{int(fatality_vap):,} instantly vaporized", delta_color="inverse")
+        
+        c1, c2, c3 = st.columns(3)
+        c1.metric("Vaporization", f"{r_vaporization*1000:.0f} m")
+        c2.metric("Thermal Range", f"{r_thermal*1000:.0f} m")
+        c3.metric("Shockwave", f"{r_blast*1000:.0f} m")
+
+    with col2:
+        st.subheader("Blast Radius Topography")
+        
+        fig = go.Figure()
+        
+        # Base Grid / Debris Scatter (Simulating city structures)
+        debris_x = np.random.uniform(-r_blast*1.2, r_blast*1.2, 300)
+        debris_y = np.random.uniform(-r_blast*1.2, r_blast*1.2, 300)
+        fig.add_trace(go.Scatter(
+            x=debris_x, y=debris_y, mode='markers',
+            marker=dict(size=2, color='rgba(216, 195, 165, 0.3)'),
+            name="Urban Infrastructure", hoverinfo="skip"
+        ))
+        
+        # Concentric Blast Zones
+        # 3. Outer Blast Wave (Overpressure)
+        fig.add_shape(type="circle", x0=-r_blast, y0=-r_blast, x1=r_blast, y1=r_blast,
+                      fillcolor="rgba(139, 0, 0, 0.2)", line_color="#8b0000", line_width=2)
+        fig.add_trace(go.Scatter(x=[0], y=[r_blast], mode="text", text=["20 PSI Overpressure"], textposition="top center", textfont=dict(color="#8b0000")))
+        
+        # 2. Thermal Radiation Zone
+        fig.add_shape(type="circle", x0=-r_thermal, y0=-r_thermal, x1=r_thermal, y1=r_thermal,
+                      fillcolor="rgba(255, 75, 75, 0.3)", line_color="#ff4b4b", line_width=2)
+        fig.add_trace(go.Scatter(x=[0], y=[r_thermal], mode="text", text=["3rd Degree Burns"], textposition="top center", textfont=dict(color="#ff4b4b")))
+        
+        # 1. Vaporization Zone (Ground Zero)
+        fig.add_shape(type="circle", x0=-r_vaporization, y0=-r_vaporization, x1=r_vaporization, y1=r_vaporization,
+                      fillcolor="rgba(255, 255, 255, 0.6)", line_color="#ffffff", line_width=3)
+        fig.add_trace(go.Scatter(x=[0], y=[r_vaporization], mode="text", text=["Absolute Vaporization"], textposition="top center", textfont=dict(color="#ffffff")))
+        
+        # Epicenter Marker
+        fig.add_trace(go.Scatter(
+            x=[0], y=[0], mode='markers',
+            marker=dict(size=12, color='#ffffff', symbol='star'),
+            name="Epicenter (Transformation)"
+        ))
+
+        max_range = r_blast * 1.3
+        fig.update_layout(
+            paper_bgcolor='rgba(0,0,0,0)',
+            plot_bgcolor='rgba(10, 10, 10, 0.8)',
+            xaxis=dict(range=[-max_range, max_range], showgrid=True, gridcolor='#3a2e24', zeroline=False, title="Distance (km)"),
+            yaxis=dict(range=[-max_range, max_range], showgrid=True, gridcolor='#3a2e24', zeroline=False, title="Distance (km)"),
+            margin=dict(l=0, r=0, t=10, b=0),
+            height=500,
+            showlegend=False
+        )
+        
+        st.plotly_chart(fig, use_container_width=True)
+
+
+
 
 def render_titan_forge_tab():
     st.header("⚡ Titan Shifter Forge")
