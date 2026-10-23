@@ -31,6 +31,7 @@ st.markdown("""
     }
 
     /* Broken Stone Title Effect */
+    /* Metallic Stone Title Effect */
     .stone-title {
         font-family: 'Cinzel', serif;
         font-size: 4.5rem;
@@ -40,15 +41,12 @@ st.markdown("""
         line-height: 1.1;
         margin-bottom: 0px;
         padding-bottom: 10px;
-        /* The texture URL below maps a rocky concrete surface onto the text */
-        background: url('https://images.unsplash.com/photo-1518939634591-63f53cb48cb0?q=80&w=1000&auto=format&fit=crop');
-        background-size: cover;
-        background-position: center;
+        /* Replaced external image with a reliable linear gradient */
+        background: linear-gradient(to bottom, #f0e6d2, #8b6f47, #3a2e24);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        filter: drop-shadow(3px 5px 5px rgba(0,0,0,0.8));
-    }
-    
+        filter: drop-shadow(3px 5px 5px rgba(0,0,0,0.9));
+    }    
     .subtitle {
         text-align: center;
         color: #8b6f47;
