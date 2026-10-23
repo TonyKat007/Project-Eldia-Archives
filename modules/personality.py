@@ -35,23 +35,39 @@ def render_personality_tab():
     categories = ['Drive for Freedom', 'Cold Calculation', 'Order & Loyalty', 'Scientific Curiosity', 'Empathy/Guilt', 'Frontline Aggression']
 
     # Wrap the 40 questions in a form so it doesn't refresh on every click
+    # Wrap the 40 questions in a form so it doesn't refresh on every click
     with st.form("personality_quiz_form"):
-        st.subheader("Section 1: Tactical & Moral Scenarios")
-        
-        # Split into 2 columns to make 40 questions scrollable and clean
-        col1, col2 = st.columns(2)
-        
         user_selections = []
-        for idx, item in enumerate(quiz_data):
-            target_col = col1 if idx % 2 == 0 else col2
-            with target_col:
-                options = list(item["opts"].keys())
-                choice = st.radio(f"**{idx+1}. {item['q']}**", options, index=None, key=f"psyche_q_{idx}")
-                user_selections.append({"q_idx": idx, "choice": choice})
-                st.write("") # spacing
+        
+        # Define our thematic sections and their question ranges
+        sections = [
+            {"title": "Section 1: Tactical & Combat Reflexes", "start": 0, "end": 14},
+            {"title": "Section 2: Moral Philosophy & Empathy", "start": 14, "end": 28},
+            {"title": "Section 3: Leadership & Ideological Drive", "start": 28, "end": 40}
+        ]
+        
+        for sec in sections:
+            st.subheader(sec["title"])
+            col1, col2 = st.columns(2)
+            
+            # Loop only through the questions for this specific section
+            for idx in range(sec["start"], sec["end"]):
+                item = quiz_data[idx]
                 
-        submitted = st.form_submit_button("Submit Evaluation to the Coordinate", use_container_width=True)
+                # Alternate between left and right columns
+                target_col = col1 if (idx - sec["start"]) % 2 == 0 else col2
+                
+                with target_col:
+                    options = list(item["opts"].keys())
+                    choice = st.radio(f"**{idx+1}. {item['q']}**", options, index=None, key=f"psyche_q_{idx}")
+                    user_selections.append({"q_idx": idx, "choice": choice})
+                    st.write("") # Spacing
+            
+            # Add a visual divider between sections (except after the last one)
+            if sec["title"] != sections[-1]["title"]:
+                st.divider()
 
+        submitted = st.form_submit_button("Submit Evaluation to the Coordinate", use_container_width=True)
     if submitted:
         # Validate that all questions were answered
         if any(sel["choice"] is None for sel in user_selections):
