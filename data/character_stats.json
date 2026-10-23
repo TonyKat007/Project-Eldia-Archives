@@ -1,0 +1,82 @@
+{
+  "Eren Yeager": {
+    "vec": [10, 8, 1, 3, 4, 10],
+    "quote": "If someone tries to take my freedom away... I won't hesitate to take theirs.",
+    "role": "The Usurper / Attack Titan"
+  },
+  "Mikasa Ackerman": {
+    "vec": [5, 4, 10, 1, 6, 9],
+    "quote": "This world is cruel, and it's also very beautiful.",
+    "role": "Humanity's Second Strongest"
+  },
+  "Armin Arlert": {
+    "vec": [8, 8, 7, 9, 10, 3],
+    "quote": "Someone who cannot abandon everything cannot achieve anything.",
+    "role": "15th Commander / Strategist"
+  },
+  "Levi Ackerman": {
+    "vec": [6, 8, 9, 4, 8, 10],
+    "quote": "Make a choice you won't regret.",
+    "role": "Humanity's Strongest Soldier"
+  },
+  "Erwin Smith": {
+    "vec": [8, 10, 8, 9, 5, 7],
+    "quote": "My soldiers, rage! My soldiers, scream! My soldiers, fight!",
+    "role": "13th Commander of the Survey Corps"
+  },
+  "Hange Zoë": {
+    "vec": [7, 7, 7, 10, 9, 6],
+    "quote": "Titans are truly marvelous, aren't they?!",
+    "role": "14th Commander / Chief Researcher"
+  },
+  "Jean Kirstein": {
+    "vec": [6, 7, 8, 4, 8, 6],
+    "quote": "I just don't want the charred ashes of the dead to be disappointed in me.",
+    "role": "Survey Corps Commanding Officer"
+  },
+  "Sasha Braus": {
+    "vec": [7, 2, 8, 3, 7, 7],
+    "quote": "Are you saying no to meat?",
+    "role": "Elite Sniper / Vanguard"
+  },
+  "Connie Springer": {
+    "vec": [6, 3, 9, 2, 7, 6],
+    "quote": "We're going to save the world.",
+    "role": "Survey Corps Veteran"
+  },
+  "Historia Reiss": {
+    "vec": [9, 6, 5, 5, 8, 4],
+    "quote": "I am Historia Reiss, the true ruler of these walls.",
+    "role": "Queen of the Walls"
+  },
+  "Floch Forster": {
+    "vec": [9, 9, 10, 2, 1, 8],
+    "quote": "What we need is a devil!",
+    "role": "Leader of the Yeagerists"
+  },
+  "Reiner Braun": {
+    "vec": [3, 5, 9, 3, 9, 8],
+    "quote": "We were just kids... we didn't know anything.",
+    "role": "The Armored Titan"
+  },
+  "Bertholdt Hoover": {
+    "vec": [2, 6, 10, 4, 8, 5],
+    "quote": "Who would ever want to kill people by their own choice?",
+    "role": "The Colossal Titan"
+  },
+  "Annie Leonhart": {
+    "vec": [4, 8, 6, 2, 5, 9],
+    "quote": "I just want the weak who do get swept along with the flow to be considered human too.",
+    "role": "The Female Titan"
+  },
+  "Zeke Yeager": {
+    "vec": [5, 10, 6, 8, 3, 5],
+    "quote": "It is a tragedy to be born into this world.",
+    "role": "The Beast Titan / War Chief"
+  },
+  "Pieck Finger": {
+    "vec": [4, 9, 9, 7, 6, 4],
+    "quote": "I don't trust Marley. But I do trust the comrades I've fought alongside.",
+    "role": "The Cart Titan"
+  }
+}
