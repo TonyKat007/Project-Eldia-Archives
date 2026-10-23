@@ -5,6 +5,7 @@ import pandas as pd
 import random
 from modules.quiz import render_quiz_tab
 from modules.personality import render_personality_tab
+from modules.roleplay import render_roleplay_tab
 
 # --- PAGE CONFIG ---
 st.set_page_config(
@@ -113,52 +114,8 @@ with tabs[1]:
 # TAB 3: IMMERSIVE AI ROLEPLAY ARENA
 # ==========================================
 with tabs[2]:
-    st.header("🎭 The Coordinate Roleplay Simulation")
-    rp_col1, rp_col2 = st.columns([1, 2.5])
-    
-    with rp_col1:
-        rp_char = st.selectbox("Select Character:", [
-            "Levi Ackerman",
-            "Eren Yeager (Season 4 / Marley Arc)",
-            "Erwin Smith",
-            "Hange Zoë",
-            "Zeke Yeager"
-        ])
-        rp_arc = st.selectbox("Select Timeline / Setting:", [
-            "Year 850: Trost District Recovery",
-            "Year 850: 57th Exterior Expedition (Forest of Giant Trees)",
-            "Year 850: Return to Shiganshina",
-            "Year 854: Raid on Liberio",
-            "The Paths (Timeless Dimension)"
-        ])
-        if st.button("Reset Conversation"):
-            st.session_state.rp_messages = []
-
-    with rp_col2:
-        if "rp_messages" not in st.session_state:
-            st.session_state.rp_messages = [
-                {"role": "assistant", "content": f"*[Setting: {rp_arc}]*\n\n**{rp_char}** turns to look at you as the sound of ODM cables echoes in the distance. What do you say?"}
-            ]
-
-        for msg in st.session_state.rp_messages:
-            with st.chat_message(msg["role"]):
-                st.markdown(msg["content"])
-
-        user_input = st.chat_input(f"Speak or perform an action with {rp_char}...")
-        if user_input:
-            st.session_state.rp_messages.append({"role": "user", "content": user_input})
-            with st.chat_message("user"):
-                st.markdown(user_input)
-
-            sys_prompt = f"""You are roleplaying strictly as {rp_char} from Attack on Titan during {rp_arc}. 
-            Stay 100% in character. Use their exact speech patterns, worldview, trauma, and knowledge limit for that specific timeline. 
-            Include brief atmospheric action descriptions in italics. Keep responses engaging and around 1-2 paragraphs."""
-            
-            with st.chat_message("assistant"):
-                response = query_ai(sys_prompt, user_input, api_key)
-                st.markdown(response)
-                st.session_state.rp_messages.append({"role": "assistant", "content": response})
-
+    # 2. Call the function and pass the API key from the sidebar
+    render_roleplay_tab(api_key)
 # ==========================================
 # TAB 4: ERWIN'S WAR ROOM (TACTICAL SIM)
 # ==========================================
