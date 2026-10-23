@@ -188,7 +188,7 @@ tabs = st.tabs([
     "Roleplay Arena",
     "Erwin's War Room",
     "Physics Lab",
-    "Public Info",
+    "Detonation",
     "Titan Forge"
 ])
 # ==========================================
