@@ -9,99 +9,170 @@ from modules.roleplay import render_roleplay_tab
 
 # --- PAGE CONFIG ---
 st.set_page_config(
-    page_title="The Coordinate | AoT Interactive Hub",
+    page_title="The Coordinate | AoT Hub",
     page_icon="⚔️",
     layout="wide",
     initial_sidebar_state="expanded"
 )
 
-# --- CUSTOM AOT MILITARY THEME CSS ---
+# --- PREMIUM AOT MILITARY THEME CSS ---
 st.markdown("""
 <style>
+    /* Import Cinematic Fonts */
+    @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700;900&family=Lora:ital,wght@0,400;0,700;1,400&display=swap');
+
+    /* Global Gritty Background */
     .stApp {
-        background-color: #0e1012;
-        color: #e2dcd5;
+        background-color: #0a0a0a;
+        background-image: linear-gradient(rgba(10, 10, 10, 0.85), rgba(10, 10, 10, 0.95)), 
+                          url('https://www.transparenttextures.com/patterns/cracked-earth.png');
+        color: #d8c3a5;
+        font-family: 'Lora', serif;
     }
-    h1, h2, h3 {
-        color: #c9a063 !important;
-        font-family: 'Georgia', serif;
+
+    /* Broken Stone Title Effect */
+    .stone-title {
+        font-family: 'Cinzel', serif;
+        font-size: 4.5rem;
+        font-weight: 900;
+        text-align: center;
+        letter-spacing: 4px;
+        line-height: 1.1;
+        margin-bottom: 0px;
+        padding-bottom: 10px;
+        /* The texture URL below maps a rocky concrete surface onto the text */
+        background: url('https://images.unsplash.com/photo-1518939634591-63f53cb48cb0?q=80&w=1000&auto=format&fit=crop');
+        background-size: cover;
+        background-position: center;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        filter: drop-shadow(3px 5px 5px rgba(0,0,0,0.8));
+    }
+    
+    .subtitle {
+        text-align: center;
+        color: #8b6f47;
+        font-size: 1.2rem;
+        font-style: italic;
+        margin-bottom: 30px;
         letter-spacing: 1px;
     }
-    .lore-card {
-        background-color: #1c1a17;
-        border: 2px solid #8b6f47;
-        padding: 25px;
-        border-radius: 4px;
-        text-align: center;
-        font-family: 'Georgia', serif;
-        box-shadow: 0 0 15px rgba(0,0,0,0.8);
+
+    /* Military Brass Headers */
+    h1, h2, h3 {
+        font-family: 'Cinzel', serif !important;
+        color: #c9a063 !important;
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+        text-shadow: 1px 1px 3px rgba(0,0,0,0.9);
     }
+
+    /* Lore Cards & Containers */
+    .lore-card {
+        background: linear-gradient(135deg, #1c1a17, #11100e);
+        border: 2px solid #5c4033;
+        border-radius: 2px;
+        padding: 30px;
+        text-align: center;
+        box-shadow: inset 0 0 20px rgba(0,0,0,0.8), 0 5px 15px rgba(0,0,0,0.6);
+        position: relative;
+    }
+    .lore-card::before {
+        content: '';
+        position: absolute;
+        top: 2px; left: 2px; right: 2px; bottom: 2px;
+        border: 1px solid rgba(201, 160, 99, 0.2);
+        pointer-events: none;
+    }
+
+    /* Heavy Duty Tabs */
     .stTabs [data-baseweb="tab-list"] {
-        gap: 8px;
+        gap: 4px;
+        background-color: transparent;
     }
     .stTabs [data-baseweb="tab"] {
-        background-color: #1b1e23;
-        border-radius: 4px 4px 0px 0px;
-        padding: 10px 16px;
-        color: #c9a063;
+        background-color: #141311;
+        border: 1px solid #3a2e24;
+        border-bottom: none;
+        border-radius: 4px 4px 0 0;
+        padding: 12px 20px;
+        color: #8b6f47;
+        font-family: 'Cinzel', serif;
+        font-weight: 700;
+        transition: all 0.3s ease;
     }
     .stTabs [aria-selected="true"] {
-        background-color: #5c1818 !important;
-        color: #ffffff !important;
+        background: linear-gradient(to bottom, #5c1818, #3a0f0f) !important;
+        border-color: #8b6f47 !important;
+        color: #e2dcd5 !important;
+        box-shadow: 0 -3px 10px rgba(92, 24, 24, 0.6);
+    }
+    .stTabs [data-baseweb="tab"]:hover {
+        background-color: #241c16;
+        color: #c9a063;
+    }
+
+    /* Scout Regiment Buttons */
+    .stButton > button {
+        background: linear-gradient(to right, #4a1515, #7a2222);
+        color: #e2dcd5;
+        border: 1px solid #8b6f47;
+        border-radius: 2px;
+        font-family: 'Cinzel', serif;
+        font-weight: 700;
+        letter-spacing: 1px;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.5);
+        transition: all 0.2s ease-in-out;
+    }
+    .stButton > button:hover {
+        background: linear-gradient(to right, #7a2222, #9a2b2b);
+        border-color: #c9a063;
+        transform: translateY(-2px);
+        box-shadow: 0 6px 12px rgba(92, 24, 24, 0.5);
+        color: white;
+    }
+
+    /* Chat Messages Restyling */
+    .stChatMessage {
+        background-color: rgba(20, 19, 17, 0.8) !important;
+        border-left: 3px solid #5c1818;
+        border-radius: 2px;
+        padding: 15px;
+        margin-bottom: 10px;
     }
 </style>
 """, unsafe_allow_html=True)
 
-# --- SIDEBAR: FREE LLM SETUP ---
+# --- SIDEBAR ---
 with st.sidebar:
-    st.title("Scout Regiment")
+    st.markdown("<h2 style='text-align: center;'>Scout Regiment</h2>", unsafe_allow_html=True)
     st.caption("Dedicated to those who gave their hearts.")
     st.divider()
-    st.subheader("🔑 Free AI Engine Setup")
-    st.markdown("To use Roleplay & Lore Generation for **$0**, grab a free API key from [Groq Console](https://console.groq.com) or [Google AI Studio](https://aistudio.google.com).")
-    # Safely fetches your key, defaulting to empty if not found
+    
+    st.markdown("### 🔑 Command Override")
     default_key = st.secrets.get("GROQ_API_KEY", "")
-    api_key = st.text_input("Enter Free Groq API Key:", value=default_key, type="password")
+    api_key = st.text_input("Groq Clearance Code:", value=default_key, type="password")
     
     st.divider()
-    st.markdown("**Regiment Status:** `ACTIVE`")
-    st.markdown("**Wall Integrity:** `WALL MARIA BREACHED`")
-
-# --- HELPER FOR FREE AI CALLS ---
-def query_ai(system_prompt, user_prompt, api_key):
-    if not api_key:
-        return "⚠️ *[System Note: Please enter a free Groq API Key in the sidebar to awaken the Coordinate AI! Showing simulated offline response below...]*\n\n**Simulated Response:** 'Tch. You want answers without putting in the credentials? Dedicate your heart first, brat.'"
-    try:
-        from groq import Groq
-        client = Groq(api_key=api_key)
-        completion = client.chat.completions.create(
-            model="llama-3.3-70b-versatile",
-            messages=[
-                {"role": "system", "content": system_prompt},
-                {"role": "user", "content": user_prompt}
-            ],
-            temperature=0.75,
-            max_tokens=600
-        )
-        return completion.choices[0].message.content
-    except Exception as e:
-        return f"⚠️ API Error: {str(e)}"
+    st.markdown("**Regiment Status:** `<span style='color:#00ffcc;'>ACTIVE</span>`", unsafe_allow_html=True)
+    st.markdown("**Wall Integrity:** `<span style='color:#ff4b4b;'>WALL MARIA BREACHED</span>`", unsafe_allow_html=True)
 
 # --- MAIN HEADER ---
-st.title("THE COORDINATE: ARCHIVES OF ELDIA")
-st.markdown("*An interactive multi-module simulation hub for Attack on Titan.*")
+st.markdown("<div class='stone-title'>THE COORDINATE</div>", unsafe_allow_html=True)
+st.markdown("<div class='subtitle'>Archives of Eldia • Restricted Access Server</div>", unsafe_allow_html=True)
+st.write("")
+st.write("")
 
 # --- 7 TABS ---
 tabs = st.tabs([
-    "1. Lore Quiz",
-    "2. Psyche Matrix",
-    "3. Roleplay Arena",
-    "4. Erwin's War Room",
-    "5. ODM Physics Lab",
-    "6. Public Info Card",
-    "7. Shifter Forge"
+    "Lore Quiz",
+    "Psyche Matrix",
+    "Roleplay Arena",
+    "Erwin's War Room",
+    "Physics Lab",
+    "Public Info",
+    "Titan Forge"
 ])
-
 # ==========================================
 # TAB 1: MULTI-TIER POP QUIZ
 # ==========================================
