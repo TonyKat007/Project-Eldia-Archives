@@ -211,7 +211,7 @@ def render_war_room_tab():
             if occurred_anomalies:
                 for anomaly in occurred_anomalies:
                     event = anomaly["data"]
-                    st.warning(f"**[Tick {anomaly['tick']}] {event['name']}**: {event['desc']} *(Impact: -{event['lethality']}% Viability)*")
+                    st.warning(f"**[Anomaly Code {anomaly['tick']}] {event['name']}**: {event['desc']} *(Impact: -{event['lethality']}% Viability)*")
             else:
                 st.info("No critical anomalies were encountered during this expedition.")
             
