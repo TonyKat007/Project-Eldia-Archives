@@ -263,7 +263,6 @@ def render_physics_lab_tab():
     col1, col2 = st.columns([1, 1.5])
     
     with col1:
-        st.markdown("<div class='lore-card'>", unsafe_allow_html=True)
         st.subheader("Maneuver Variables")
         
         scout_mass = st.slider("Scout Mass + Gear Weight (kg)", 50.0, 120.0, 75.0, 1.0)
@@ -318,8 +317,9 @@ def render_physics_lab_tab():
             g_status = "NOMINAL (Combat Effective)"
             
         st.markdown(f"**Operator G-Force:** <span style='color:{g_color};'>{g_force:.1f} G [{g_status}]</span>", unsafe_allow_html=True)
-        st.markdown("</div>", unsafe_allow_html=True)
 
+
+    
     with col2:
         # --- TRAJECTORY VISUALIZATION ---
         # Generate the arc points based on the drop angle
