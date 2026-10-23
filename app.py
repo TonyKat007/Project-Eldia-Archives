@@ -54,7 +54,7 @@ st.markdown("""
 
 # --- SIDEBAR: FREE LLM SETUP ---
 with st.sidebar:
-    st.title("⚔️ Scout Regiment")
+    st.title("Scout Regiment")
     st.caption("Dedicated to those who gave their hearts.")
     st.divider()
     st.subheader("🔑 Free AI Engine Setup")
@@ -86,18 +86,18 @@ def query_ai(system_prompt, user_prompt, api_key):
         return f"⚠️ API Error: {str(e)}"
 
 # --- MAIN HEADER ---
-st.title("⚔️ THE COORDINATE: ARCHIVES OF ELDIA")
+st.title("THE COORDINATE: ARCHIVES OF ELDIA")
 st.markdown("*An interactive multi-module simulation hub for Attack on Titan.*")
 
 # --- 7 TABS ---
 tabs = st.tabs([
-    "📜 1. Lore Quiz",
-    "🧬 2. Psyche Matrix",
-    "🎭 3. Roleplay Arena",
-    "🗺️ 4. Erwin's War Room",
-    "⚙️ 5. ODM Physics Lab",
-    "📖 6. Public Info Card",
-    "⚡ 7. Shifter Forge"
+    "1. Lore Quiz",
+    "2. Psyche Matrix",
+    "3. Roleplay Arena",
+    "4. Erwin's War Room",
+    "5. ODM Physics Lab",
+    "6. Public Info Card",
+    "7. Shifter Forge"
 ])
 
 # ==========================================
