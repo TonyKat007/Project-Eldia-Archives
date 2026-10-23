@@ -1,21 +1,270 @@
 {
-  "Tier 1: Garrison (Easy)": [
-    {
-      "q": "What are the names of the three walls from outermost to innermost?",
-      "options": ["Maria, Rose, Sina", "Rose, Maria, Sina", "Sina, Rose, Maria", "Maria, Sina, Rose"],
-      "ans": "Maria, Rose, Sina"
-    },
-    {
-      "q": "Which district is at the southern edge of Wall Maria where Eren grew up?",
-      "options": ["Trost", "Shiganshina", "Stohess", "Karanes"],
-      "ans": "Shiganshina"
-    }
-  ],
-  "Tier 2: Survey Corps (Medium)": [
-    {
-      "q": "What was the exact rank of Eren's father, Grisha Yeager, within the Eldian Restorationists?",
-      "options": ["The Owl", "Leader of the Mosley Faction", "Key ideological figure", "Marleyan Captain"],
-      "ans": "Key ideological figure"
-    }
-  ]
+"Tier 1: Garrison (Easy)": [
+{
+"q": "What are the names of the three walls from outermost to innermost?",
+"options": ["Maria, Rose, Sina", "Rose, Maria, Sina", "Sina, Rose, Maria", "Maria, Sina, Rose"],
+"ans": "Maria, Rose, Sina"
+},
+{
+"q": "Which district is located at the southern edge of Wall Maria, where Eren grew up?",
+"options": ["Trost", "Shiganshina", "Stohess", "Karanes"],
+"ans": "Shiganshina"
+},
+{
+"q": "What does 'ODM' gear stand for?",
+"options": ["Omni-Directional Mobility", "Offensive Defense Mechanism", "Over-Drive Motor", "Omni-Dimensional Maneuvering"],
+"ans": "Omni-Directional Mobility"
+},
+{
+"q": "What is the signature color of the scarf Eren gave to Mikasa in the anime?",
+"options": ["Black", "White", "Red", "Brown"],
+"ans": "Red"
+},
+{
+"q": "Who earned the nickname 'Potato Girl' during training?",
+"options": ["Historia Reiss", "Ymir", "Sasha Braus", "Annie Leonhart"],
+"ans": "Sasha Braus"
+},
+{
+"q": "Which military branch is responsible for exploring outside the walls?",
+"options": ["The Garrison Regiment", "The Military Police Brigade", "The Survey Corps", "The Cadet Corps"],
+"ans": "The Survey Corps"
+},
+{
+"q": "Who was initially revealed as the Colossal Titan?",
+"options": ["Reiner Braun", "Bertolt Hoover", "Zeke Yeager", "Armin Arlert"],
+"ans": "Bertolt Hoover"
+},
+{
+"q": "Who is known as 'Humanity's Strongest Soldier'?",
+"options": ["Erwin Smith", "Miche Zacharius", "Levi Ackerman", "Eren Yeager"],
+"ans": "Levi Ackerman"
+},
+{
+"q": "What type of Titan does Eren discover he can transform into?",
+"options": ["The Armored Titan", "The Attack Titan", "The Beast Titan", "The Founding Titan"],
+"ans": "The Attack Titan"
+},
+{
+"q": "Who saved Armin from being eaten by a bearded Titan in Trost District?",
+"options": ["Mikasa Ackerman", "Eren Yeager", "Captain Levi", "Jean Kirstein"],
+"ans": "Eren Yeager"
+},
+{
+"q": "What is the emblem of the Survey Corps?",
+"options": ["A Unicorn", "Two Roses", "The Wings of Freedom", "Crossed Swords"],
+"ans": "The Wings of Freedom"
+},
+{
+"q": "Which of the main trio is known for their exceptional tactical and strategic intellect?",
+"options": ["Eren Yeager", "Mikasa Ackerman", "Armin Arlert", "Jean Kirstein"],
+"ans": "Armin Arlert"
+},
+{
+"q": "Who is the Commander of the Survey Corps at the beginning of the series?",
+"options": ["Hange Zoë", "Erwin Smith", "Keith Shadis", "Dot Pyxis"],
+"ans": "Erwin Smith"
+}
+],
+"Tier 2: Survey Corps (Medium)": [
+{
+"q": "What was the exact rank of Eren's father, Grisha Yeager, within the Eldian Restorationists?",
+"options": ["The Owl", "Leader of the Mosley Faction", "Key ideological figure recruited by the Owl", "Marleyan Honorary Captain"],
+"ans": "Key ideological figure recruited by the Owl"
+},
+{
+"q": "In the long-distance scouting formation, what does a BLACK smoke signal indicate?",
+"options": ["Titan sighted", "Emergency / Retreat", "Abnormal Titan spotted", "Obstacle in terrain"],
+"ans": "Abnormal Titan spotted"
+},
+{
+"q": "In which district was the Female Titan ultimately captured?",
+"options": ["Trost District", "Stohess District", "Karanes District", "Utopia District"],
+"ans": "Stohess District"
+},
+{
+"q": "What alias did Historia Reiss use while hiding her true identity in the 104th Training Corps?",
+"options": ["Frieda Reiss", "Ymir Fritz", "Christa Lenz", "Mina Carolina"],
+"ans": "Christa Lenz"
+},
+{
+"q": "How long is the lifespan of a person after they inherit one of the Nine Titans?",
+"options": ["10 years", "13 years", "20 years", "They become immortal"],
+"ans": "13 years"
+},
+{
+"q": "What were Marco Bodt's tragic last words?",
+"options": ["Help me!", "Why are you doing this?", "We haven't even had a chance to talk this through!", "I'll kill you all!"],
+"ans": "We haven't even had a chance to talk this through!"
+},
+{
+"q": "Who is the eccentric section commander obsessed with researching Titans?",
+"options": ["Hange Zoë", "Moblit Berner", "Miche Zacharius", "Ian Dietrich"],
+"ans": "Hange Zoë"
+},
+{
+"q": "What is the name of the top-ranking officer of the Garrison Regiment in the southern territory?",
+"options": ["Nile Dawk", "Darius Zackly", "Dot Pyxis", "Kitz Woermann"],
+"ans": "Dot Pyxis"
+},
+{
+"q": "What familial relationship does Zeke Yeager have to Eren Yeager?",
+"options": ["Cousin", "Uncle", "Half-Brother", "No blood relation"],
+"ans": "Half-Brother"
+},
+{
+"q": "Who was the previous wielder of the Jaw Titan before Porco Galliard?",
+"options": ["Marcel Galliard", "Ymir", "Falco Grice", "Pieck Finger"],
+"ans": "Ymir"
+},
+{
+"q": "Which wall is the Trost District attached to?",
+"options": ["Wall Sina", "Wall Rose", "Wall Maria", "It is an independent outpost"],
+"ans": "Wall Rose"
+},
+{
+"q": "What object did Erwin Smith keep as a reminder of his father's theories?",
+"options": ["A key", "A history book", "A map of the outside world", "A pendant"],
+"ans": "A history book"
+},
+{
+"q": "Which member of the 104th originally joined the Military Police but later assisted the Survey Corps during the uprising?",
+"options": ["Marlo Freudenberg", "Hitch Dreyse", "Boris Feulner", "Dennis Aiblinger"],
+"ans": "Marlo Freudenberg"
+}
+],
+"Tier 3: Special Ops Squad (Hard)": [
+{
+"q": "Which member of the original Levi Squad bit their tongue while riding a horse?",
+"options": ["Oluo Bozad", "Eld Jinn", "Gunther Schultz", "Petra Rall"],
+"ans": "Oluo Bozad"
+},
+{
+"q": "What was the fake king's name who sat on the throne as a puppet before Historia's coronation?",
+"options": ["Fritz", "Rod Reiss", "Darius Zackly", "Uri Reiss"],
+"ans": "Fritz"
+},
+{
+"q": "Which Titan power does Lara Tybur possess?",
+"options": ["The Cart Titan", "The Female Titan", "The War Hammer Titan", "The Beast Titan"],
+"ans": "The War Hammer Titan"
+},
+{
+"q": "Who passed the Attack Titan down to Grisha Yeager?",
+"options": ["Eren Kruger", "Tom Ksaver", "Karl Fritz", "Willy Tybur"],
+"ans": "Eren Kruger"
+},
+{
+"q": "What is the name of the Marleyan Warrior candidate who idolizes Reiner and shot Sasha?",
+"options": ["Zofia", "Udo", "Falco Grice", "Gabi Braun"],
+"ans": "Gabi Braun"
+},
+{
+"q": "Where did Levi Ackerman spend his childhood?",
+"options": ["Shiganshina District", "The Underground City", "A forest village", "Liberio Internment Zone"],
+"ans": "The Underground City"
+},
+{
+"q": "Who raised and trained Levi after his mother, Kuchel, died?",
+"options": ["Kenny Ackerman", "Erwin Smith", "Keith Shadis", "Uri Reiss"],
+"ans": "Kenny Ackerman"
+},
+{
+"q": "What is the true name of the 'Coordinate' power?",
+"options": ["The Path Connector", "The Founding Titan", "The Royal Bloodline", "The Rumbling"],
+"ans": "The Founding Titan"
+},
+{
+"q": "Which noble family actually held the true power of the king inside the walls?",
+"options": ["The Fritz Family", "The Tybur Family", "The Reiss Family", "The Ackerman Family"],
+"ans": "The Reiss Family"
+},
+{
+"q": "What was the specific name of the military operation to seal the hole in Shiganshina?",
+"options": ["Operation Retake", "The 57th Exterior Expedition", "The Return to Shiganshina Arc", "The Operation to Retake Wall Maria"],
+"ans": "The Operation to Retake Wall Maria"
+},
+{
+"q": "Which character possesses the 'Cart Titan'?",
+"options": ["Pieck Finger", "Marcel Galliard", "Annie Leonhart", "Porco Galliard"],
+"ans": "Pieck Finger"
+},
+{
+"q": "How did the Survey Corps manage to defeat the Armored Titan in Shiganshina?",
+"options": ["By cutting his nape normally", "Using Thunder Spears", "By crushing him with a boulder", "Armin blew him up"],
+"ans": "Using Thunder Spears"
+},
+{
+"q": "What was the name of the village Connie Springer returned to, only to find his mother turned into a Titan?",
+"options": ["Ragako", "Dauper", "Jinae", "Hermiha"],
+"ans": "Ragako"
+}
+],
+"Tier 4: Founder's Memory (Extreme)": [
+{
+"q": "What exact year did Ymir Fritz gain the power of the Titans according to Marleyan historical records?",
+"options": ["1,820 years ago", "2,000 years ago", "1,745 years ago", "1,903 years ago"],
+"ans": "1,820 years ago"
+},
+{
+"q": "What is the name of the metal exclusively mined on Paradis Island used to forge ODM gear blades?",
+"options": ["Iceburst Stone & Ultra-Hard Steel", "Marleyan Titanium", "Glowing Basalt", "Crystallized Titan Marrow"],
+"ans": "Iceburst Stone & Ultra-Hard Steel"
+},
+{
+"q": "What was Jean Kirstein's exact graduation rank in the 104th Training Corps?",
+"options": ["4th", "5th", "6th", "7th"],
+"ans": "6th"
+},
+{
+"q": "What was the name of Grisha Yeager's younger sister who was killed by Marleyan authorities?",
+"options": ["Faye Yeager", "Dina Yeager", "Carla Yeager", "Maria Yeager"],
+"ans": "Faye Yeager"
+},
+{
+"q": "Who was the 12th Commander of the Survey Corps, immediately preceding Erwin Smith?",
+"options": ["Dot Pyxis", "Keith Shadis", "Kitz Woermann", "Nile Dawk"],
+"ans": "Keith Shadis"
+},
+{
+"q": "What was the name of the cruel Marleyan Public Security officer who fed Grisha's sister to his dogs?",
+"options": ["Sergeant Major Gross", "Captain Magath", "Officer Kruger", "General Calvi"],
+"ans": "Sergeant Major Gross"
+},
+{
+"q": "What is the exact title of the first episode of the Attack on Titan anime?",
+"options": ["The Fall of Shiganshina", "To You, in 2000 Years: The Fall of Shiganshina, Part 1", "That Day: The Fall of Shiganshina, Part 2", "A Dim Light Amid Despair"],
+"ans": "To You, in 2000 Years: The Fall of Shiganshina, Part 1"
+},
+{
+"q": "According to Eldian lore, what is the name of the anomaly/creature that attached to Ymir Fritz's spine?",
+"options": ["The Source of All Living Matter", "The Paths Weaver", "The Earth Devil", "The Parasite of Eldia"],
+"ans": "The Source of All Living Matter"
+},
+{
+"q": "What is the name of Sasha Braus's father?",
+"options": ["Kaya Braus", "Artur Braus", "Niccolo Braus", "Ben Braus"],
+"ans": "Artur Braus"
+},
+{
+"q": "What were the names of Levi's two closest companions from the Underground in the 'No Regrets' OVA?",
+"options": ["Furlan Church and Isabel Magnolia", "Eld Jinn and Petra Rall", "Oluo Bozad and Gunther Schultz", "Kenny and Kuchel"],
+"ans": "Furlan Church and Isabel Magnolia"
+},
+{
+"q": "Which ancient Eldian King made the vow renouncing war?",
+"options": ["King Fritz the First", "King Karl Fritz", "King Uri Reiss", "King Rod Reiss"],
+"ans": "King Karl Fritz"
+},
+{
+"q": "What is the name of the Marleyan general who leads the military during the Raid on Liberio?",
+"options": ["Theo Magath", "Calvi", "Koslow", "Muller"],
+"ans": "Calvi"
+},
+{
+"q": "Exactly how tall is the Colossal Titan?",
+"options": ["50 Meters", "60 Meters", "120 Meters", "45 Meters"],
+"ans": "60 Meters"
+}
+]
 }
