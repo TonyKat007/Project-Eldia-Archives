@@ -1,33 +1,37 @@
 import streamlit as st
+import google.generativeai as genai
 
 def query_ai(system_prompt, chat_history, api_key):
-    """Handles the API call to Groq and passes the full conversation history."""
+    """Handles the API call to Gemini using the full conversation history."""
     if not api_key:
-        return "⚠️ *[System Note: Please enter a free Groq API Key in the sidebar to awaken the Coordinate AI!]*"
+        return "⚠️ *[System Note: Please enter your Gemini API Key in the sidebar to awaken the Coordinate AI!]*"
     
     try:
-        from groq import Groq
-        client = Groq(api_key=api_key)
+        genai.configure(api_key=api_key)
         
-        # Build the message payload with the system prompt first
-        messages = [{"role": "system", "content": system_prompt}]
-        
-        # Append the entire chat history so the AI remembers context
-        for msg in chat_history:
-            # Skip the simulated offline message if the user didn't have an API key initially
-            if "System Note" not in msg["content"]:
-                messages.append({"role": msg["role"], "content": msg["content"]})
-
-        completion = client.chat.completions.create(
-            model="llama-3.3-70b-versatile",
-            messages=messages,
-            temperature=0.75,
-            max_tokens=600
+        # Initialize the Pro model and attach the character persona via system_instruction
+        model = genai.GenerativeModel(
+            model_name='gemini-1.5-pro',
+            system_instruction=system_prompt
         )
-        return completion.choices[0].message.content
+        
+        # Convert the Streamlit chat history into Gemini's required format
+        gemini_messages = []
+        for msg in chat_history:
+            if "System Note" not in msg["content"]:
+                # Map standard roles to Gemini's expected roles
+                role = "user" if msg["role"] == "user" else "model"
+                gemini_messages.append({"role": role, "parts": [msg["content"]]})
+
+        # Generate response passing the entire formatted history
+        response = model.generate_content(
+            gemini_messages,
+            generation_config={"temperature": 0.75, "max_output_tokens": 600}
+        )
+        return response.text
+        
     except Exception as e:
         return f"⚠️ API Error: {str(e)}"
-
 
 def render_roleplay_tab(api_key):
     st.header("🎭 The Coordinate Roleplay Simulation")
