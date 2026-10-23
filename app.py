@@ -85,48 +85,51 @@ st.markdown("""
 
     /* Heavy Duty Tabs */
     /* Grand Military Tabs Restyling */
+    /* Grand Military Tabs Restyling - Override */
     .stTabs [data-baseweb="tab-list"] {
         gap: 8px;
-        background-color: transparent;
-        border-bottom: 2px solid #5c4033;
-        padding-bottom: 0;
+        border-bottom: 2px solid #3a2e24;
     }
     
     .stTabs [data-baseweb="tab"] {
-        background: linear-gradient(180deg, #1c1a17 0%, #0a0a0a 100%);
-        border: 1px solid #3a2e24;
-        border-bottom: none;
-        border-radius: 8px 8px 0 0;
-        padding: 12px 24px;
-        color: #8b6f47;
-        font-family: 'Cinzel', serif;
-        font-size: 1.05rem;
-        font-weight: 700;
-        letter-spacing: 1px;
-        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-        box-shadow: inset 0 2px 4px rgba(255, 255, 255, 0.02);
+        background: #141311 !important;
+        border: 1px solid #3a2e24 !important;
+        border-bottom: none !important;
+        border-radius: 12px 12px 0 0 !important;
+        padding: 12px 24px !important;
+        color: #8b6f47 !important;
+        min-width: fit-content !important;
+        transition: all 0.3s ease !important;
     }
     
     .stTabs [data-baseweb="tab"]:hover {
-        background: linear-gradient(180deg, #241c16 0%, #11100e 100%);
-        color: #c9a063;
-        border-color: #8b6f47;
+        background: #241c16 !important;
+        color: #c9a063 !important;
     }
     
     .stTabs [aria-selected="true"] {
-        background: linear-gradient(180deg, #5c1818 0%, #2a0a0a 100%) !important;
+        background: linear-gradient(180deg, #6b1d1d 0%, #2a0a0a 100%) !important;
         border: 2px solid #c9a063 !important;
         border-bottom: none !important;
-        color: #f0e6d2 !important;
-        box-shadow: 0 -5px 20px rgba(201, 160, 99, 0.2), inset 0 2px 5px rgba(255, 255, 255, 0.15) !important;
-        transform: translateY(-2px);
+        box-shadow: 0 -5px 15px rgba(201, 160, 99, 0.25) !important;
     }
     
-    /* Hide Streamlit's default active tab highlight line */
-    .stTabs [data-baseweb="tab-highlight"] {
-        display: none;
+    /* Prevent text overlapping and clipping */
+    .stTabs [data-baseweb="tab"] p {
+        font-family: 'Cinzel', serif !important;
+        font-size: 1.1rem !important;
+        font-weight: 700 !important;
+        color: inherit !important;
+        margin: 0 !important;
     }
-
+    
+    /* Completely obliterate the default Streamlit red underline */
+    .stTabs [data-baseweb="tab-highlight"] {
+        display: none !important;
+        background-color: transparent !important;
+        height: 0 !important;
+        width: 0 !important;
+    }
     /* Scout Regiment Buttons */
     .stButton > button {
         background: linear-gradient(to right, #4a1515, #7a2222);
