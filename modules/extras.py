@@ -140,12 +140,14 @@ def render_war_room_tab():
         current_viability = base_viability
         simulation_ticks = 15
         
+        # Track triggered events for the final report
+        occurred_anomalies = [] 
+        
         # Animation Loop
         for tick in range(simulation_ticks):
             # 1. Spatial Movement
-            sy += np.random.uniform(2, 8, len(sy)) # Scouts push forward
+            sy += np.random.uniform(2, 8, len(sy))
             
-            # Titans move toward center of mass of scouts
             if len(sx) > 0 and len(tx) > 0:
                 mean_sx, mean_sy = np.mean(sx), np.mean(sy)
                 tx += (mean_sx - tx) * np.random.uniform(0.05, 0.2, len(tx))
@@ -155,13 +157,11 @@ def render_war_room_tab():
             surviving_sx, surviving_sy = [], []
             surviving_tx, surviving_ty = [], []
             
-            # Very basic proximity elimination
             for i in range(len(sx)):
                 distances = np.sqrt((tx - sx[i])**2 + (ty - sy[i])**2)
-                if len(distances) > 0 and np.min(distances) < 15: # Close combat range
-                    # Roll based on viability
+                if len(distances) > 0 and np.min(distances) < 15:
                     if random.randint(0, 100) > current_viability:
-                        continue # Scout dies (not added to survivors)
+                        continue 
                 surviving_sx.append(sx[i])
                 surviving_sy.append(sy[i])
                 
@@ -169,7 +169,7 @@ def render_war_room_tab():
                 distances = np.sqrt((np.array(surviving_sx) - tx[i])**2 + (np.array(surviving_sy) - ty[i])**2)
                 if len(distances) > 0 and np.min(distances) < 15:
                     if random.randint(0, 100) < (lethality * 0.8):
-                        continue # Titan dies
+                        continue 
                 surviving_tx.append(tx[i])
                 surviving_ty.append(ty[i])
                 
@@ -177,14 +177,15 @@ def render_war_room_tab():
             tx, ty = np.array(surviving_tx), np.array(surviving_ty)
             
             # 3. Unpredictable Events (15% chance per tick)
-            alert_text = ""
             if random.random() < 0.15:
                 event = random.choice(EXPEDITION_EVENTS)
                 current_viability -= event["lethality"]
                 alert_text = f"⚠️ **CRITICAL ANOMALY:** {event['name']} - {event['desc']} (Regiment Viability -{event['lethality']}%)"
                 alert_box.error(alert_text)
                 
-                # Spawn extra titans for some events
+                # Log the anomaly with its timestamp
+                occurred_anomalies.append({"tick": tick + 1, "data": event})
+                
                 if event["lethality"] >= 20:
                     tx = np.append(tx, np.random.uniform(-50, 50, 5))
                     ty = np.append(ty, np.random.uniform(np.mean(sy), np.mean(sy)+20, 5))
@@ -198,16 +199,25 @@ def render_war_room_tab():
             fig_map = draw_tactical_map(sx, sy, tx, ty, formation)
             map_container.plotly_chart(fig_map, use_container_width=True)
             
-            time.sleep(0.6) # Engine tick delay
+            time.sleep(0.6)
             
         # End of Simulation Summary
-        alert_box.success(f"⚔️ **EXPEDITION CONCLUDED.** {len(sx)} out of {personnel} scouts returned alive. Operation Survival Rate: {(len(sx) / personnel) * 100:.1f}%.")
+        alert_box.empty()
+        st.success(f"⚔️ **EXPEDITION CONCLUDED.** {len(sx)} out of {personnel} scouts returned alive. Operation Survival Rate: {(len(sx) / personnel) * 100:.1f}%.")
+        
+        # Render the final anomaly report
+        st.subheader("📜 Post-Expedition Anomaly Report")
+        if occurred_anomalies:
+            for anomaly in occurred_anomalies:
+                event = anomaly["data"]
+                st.warning(f"**[Tick {anomaly['tick']}] {event['name']}**: {event['desc']} *(Impact: -{event['lethality']}% Viability)*")
+        else:
+            st.info("No critical anomalies were encountered during this expedition.")
+            
     else:
-        # Render static empty map before execution
         status_bar.info("Awaiting Commander's orders. Set parameters and initiate the expedition to begin live tracking.")
         fig_map = draw_tactical_map([], [], [], [], formation)
         map_container.plotly_chart(fig_map, use_container_width=True)
-
 def render_physics_lab_tab():
     st.header("⚙️ ODM Physics Lab")
     st.info("Awaiting structural integration...")
