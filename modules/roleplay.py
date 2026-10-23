@@ -35,6 +35,15 @@ def query_ai(system_prompt, chat_history, api_key):
 
 def render_roleplay_tab(api_key):
     st.header("🎭 The Coordinate Roleplay Simulation")
+    # --- TEMPORARY DEBUG CODE ---
+    if api_key:
+        import google.generativeai as genai
+        genai.configure(api_key=api_key)
+        st.warning("Available Gemini Models for this API Key:")
+        for m in genai.list_models():
+            if 'generateContent' in m.supported_generation_methods:
+                st.code(m.name)
+    # -----------------------------
     st.markdown("Engage in a canonical, timeline-accurate dialogue with the cast.")
     
     rp_col1, rp_col2 = st.columns([1, 2.5])
