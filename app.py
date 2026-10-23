@@ -85,45 +85,42 @@ st.markdown("""
 
     /* Heavy Duty Tabs */
     /* Grand Military Tabs - Blood Splatter Edition */
-    .stTabs [data-baseweb="tab-list"] {
-        gap: 10px !important;
-        background-color: transparent !important;
-        padding-bottom: 10px !important;
-        border-bottom: 2px solid #3a2e24 !important;
+    /* Force Streamlit containers to allow overflowing elements */
+    .stTabs [data-baseweb="tab-list"],
+    .stTabs [data-baseweb="tab-list"] > div {
+        overflow: visible !important;
     }
-    
-    .stTabs [data-baseweb="tab"] {
-        background: rgba(20, 19, 17, 0.9) !important;
-        border: 1px solid #3a2e24 !important;
-        border-radius: 4px !important;
-        padding: 10px 24px !important;
-        color: #8b6f47 !important;
-        font-family: 'Cinzel', serif !important;
-        font-size: 1.1rem !important;
-        white-space: nowrap !important; /* Prevents text overlapping edges */
-        transition: all 0.3s ease !important;
-    }
-    
-    .stTabs [data-baseweb="tab"]:hover {
-        background: rgba(40, 32, 26, 0.9) !important;
-        color: #c9a063 !important;
-    }
-    
+
+    /* Style the active tab text and remove its physical box */
     .stTabs [aria-selected="true"] {
-        background-color: #050505 !important;
-        background-image: url('https://github.com/TonyKat007/Project-Eldia-Archives/blob/main/image_f3b05e.png?raw=true') !important;
-        /* Drastically increase scale so the blood covers the box */
-        background-size: 350% !important; 
-        background-position: center center !important;
-        background-repeat: no-repeat !important;
-        /* Remove the curved outline boundary completely */
-        border: none !important; 
-        border-radius: 4px 4px 0 0 !important;
+        position: relative !important;
+        background-color: transparent !important;
+        border: none !important;
         color: #ffffff !important;
         text-shadow: 2px 2px 5px #000000, 0px 0px 10px #ff0000 !important;
-        box-shadow: none !important; 
+        box-shadow: none !important;
     }
-    
+
+    /* Create the unbound bleeding splatter */
+    .stTabs [aria-selected="true"]::before {
+        content: '';
+        position: absolute;
+        /* Pull the image boundaries far outside the tab */
+        top: -40px;    
+        left: -40px;   
+        right: -40px;  
+        bottom: -20px; 
+        background-image: url('https://github.com/TonyKat007/Project-Eldia-Archives/blob/main/image_f3b05e.png?raw=true');
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        /* Drops the black background of your image, keeping only the red */
+        mix-blend-mode: screen; 
+        z-index: -1;
+        /* Prevents the invisible expanded box from blocking clicks on other tabs */
+        pointer-events: none; 
+    }
+
     /* Aggressively hide the default red bottom highlight */
     .stTabs [data-baseweb="tab-highlight"] {
         display: none !important;
