@@ -75,13 +75,27 @@ def render_war_room_tab():
         gas_reserves = st.slider("Average Gas Reserves (%)", 0, 100, 85, 5)
         blade_sets = st.slider("Ultra-Hard Steel Blades (Per Soldier)", 1, 8, 4)
         
+        # Expanded 16 Formations
         formation = st.selectbox(
             "Primary Tactical Formation",
-            ["Long-Distance Enemy Scouting", "Wedge Vanguard", "Defensive Box", "Center Ambush"]
+            [
+                "Long-Distance Enemy Scouting", "Wedge Vanguard", "Defensive Box", 
+                "Center Ambush", "Flank Guard", "Retreat Phalanx", 
+                "Pincer Maneuver", "Spearhead Assault", "Evasive Dispersal", 
+                "Column March", "Rearguard Delay", "Staggered Line", 
+                "Decoy Vanguard", "Encirclement Ring", "Chokepoint Funnel", 
+                "Night Cover Operations"
+            ]
         )
         
         with st.expander("⚙️ Advanced Logistics & Environment"):
-            terrain = st.selectbox("Terrain Type", ["Open Plains", "Giant Tree Forest", "Ruined City"])
+            # Expanded 11 Terrains
+            terrain = st.selectbox("Terrain Type", [
+                "Open Plains", "Giant Tree Forest", "Ruined City", 
+                "Mountain Pass", "Dense Woodland", "Shiganshina Outskirts", 
+                "Barren Badlands", "Flooded Riverlands", "Utgard Castle Ruins", 
+                "Snowy Tundra", "Coastal Shallows"
+            ])
             veteran_ratio = st.slider("Veteran Soldier Ratio (%)", 0, 100, 20)
             titan_density = st.slider("Expected Titan Density", 1, 100, 35)
             flare_supply = st.slider("Signal Flare Inventory", 10, 200, 50)
@@ -89,12 +103,13 @@ def render_war_room_tab():
             scout_spacing = st.slider("Formation Spacing (Meters)", 10, 150, 80)
             
         base_viability = (personnel * 0.1) + (gas_reserves * 0.6) + ((blade_sets / 8) * 20) + (veteran_ratio * 0.2)
-        if formation == "Long-Distance Enemy Scouting" and terrain == "Open Plains":
+        if formation in ["Long-Distance Enemy Scouting", "Evasive Dispersal"] and terrain in ["Open Plains", "Barren Badlands"]:
             base_viability *= 1.2
             
         st.divider()
         initiate_btn = st.button("⚔️ INITIATE EXPEDITION", use_container_width=True)
 
+    
     with col2:
         mobility = gas_reserves
         lethality = min(100, ((blade_sets / 8) * 60) + (thunder_spears * 0.4) + (veteran_ratio * 0.4))
@@ -121,28 +136,46 @@ def render_war_room_tab():
     st.divider()
     st.subheader("Live Tactical Feeds")
     
-    # Placeholders for the animation loop defined in strict vertical order
     status_bar = st.empty()
     alert_box = st.empty()
     map_container = st.empty()
-    report_container = st.empty() # Dedicated container for the final report
+    report_container = st.empty()
 
     if initiate_btn:
-        # Initialize Simulation Coordinates
         num_scouts = personnel
         num_titans = int(titan_density * 1.5)
         
-        sx = np.random.uniform(-scout_spacing, scout_spacing, num_scouts)
-        sy = np.random.uniform(0, 30, num_scouts)
+        # Map visual geometries to the new formations
+        if formation in ["Long-Distance Enemy Scouting", "Evasive Dispersal", "Staggered Line", "Decoy Vanguard"]:
+            # Wide arc
+            angles = np.linspace(np.pi/4, 3*np.pi/4, num_scouts)
+            sx = np.cos(angles) * scout_spacing
+            sy = np.sin(angles) * (scout_spacing / 2)
+        elif formation in ["Wedge Vanguard", "Spearhead Assault", "Pincer Maneuver"]:
+            # V-Shape
+            sx = np.random.uniform(-scout_spacing/2, scout_spacing/2, num_scouts)
+            sy = 40 - np.abs(sx) * 0.8
+        elif formation in ["Column March", "Rearguard Delay", "Chokepoint Funnel"]:
+            # Narrow vertical line
+            sx = np.random.uniform(-15, 15, num_scouts)
+            sy = np.random.uniform(-20, 60, num_scouts)
+        elif formation in ["Center Ambush", "Encirclement Ring", "Flank Guard"]:
+            # Circular perimeter
+            angles = np.random.uniform(0, 2*np.pi, num_scouts)
+            radii = np.random.uniform(scout_spacing/2, scout_spacing, num_scouts)
+            sx = np.cos(angles) * radii
+            sy = np.sin(angles) * radii + 20
+        else:
+            # Standard Box/Grid
+            sx = np.random.uniform(-scout_spacing/2, scout_spacing/2, num_scouts)
+            sy = np.random.uniform(0, 30, num_scouts)
         
         tx = np.random.uniform(-120, 120, num_titans)
         ty = np.random.uniform(80, 180, num_titans)
         
         current_viability = base_viability
         simulation_ticks = 15
-        
-        # Track triggered events for the final report
-        occurred_anomalies = [] 
+        occurred_anomalies = []
         
         # Animation Loop
         for tick in range(simulation_ticks):
