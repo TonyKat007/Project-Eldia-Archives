@@ -121,10 +121,11 @@ def render_war_room_tab():
     st.divider()
     st.subheader("Live Tactical Feeds")
     
-    # Placeholders for the animation loop
+    # Placeholders for the animation loop defined in strict vertical order
     status_bar = st.empty()
     alert_box = st.empty()
     map_container = st.empty()
+    report_container = st.empty() # Dedicated container for the final report
 
     if initiate_btn:
         # Initialize Simulation Coordinates
@@ -183,7 +184,6 @@ def render_war_room_tab():
                 alert_text = f"⚠️ **CRITICAL ANOMALY:** {event['name']} - {event['desc']} (Regiment Viability -{event['lethality']}%)"
                 alert_box.error(alert_text)
                 
-                # Log the anomaly with its timestamp
                 occurred_anomalies.append({"tick": tick + 1, "data": event})
                 
                 if event["lethality"] >= 20:
@@ -202,22 +202,27 @@ def render_war_room_tab():
             time.sleep(0.6)
             
         # End of Simulation Summary
-        alert_box.empty()
-        st.success(f"⚔️ **EXPEDITION CONCLUDED.** {len(sx)} out of {personnel} scouts returned alive. Operation Survival Rate: {(len(sx) / personnel) * 100:.1f}%.")
+        alert_box.success(f"⚔️ **EXPEDITION CONCLUDED.** {len(sx)} out of {personnel} scouts returned alive. Operation Survival Rate: {(len(sx) / personnel) * 100:.1f}%.")
         
-        # Render the final anomaly report
-        st.subheader("📜 Post-Expedition Anomaly Report")
-        if occurred_anomalies:
-            for anomaly in occurred_anomalies:
-                event = anomaly["data"]
-                st.warning(f"**[Tick {anomaly['tick']}] {event['name']}**: {event['desc']} *(Impact: -{event['lethality']}% Viability)*")
-        else:
-            st.info("No critical anomalies were encountered during this expedition.")
+        # Render the final anomaly report directly into the reserved container
+        with report_container.container():
+            st.divider()
+            st.subheader("📜 Post-Expedition Anomaly Report")
+            if occurred_anomalies:
+                for anomaly in occurred_anomalies:
+                    event = anomaly["data"]
+                    st.warning(f"**[Tick {anomaly['tick']}] {event['name']}**: {event['desc']} *(Impact: -{event['lethality']}% Viability)*")
+            else:
+                st.info("No critical anomalies were encountered during this expedition.")
             
     else:
         status_bar.info("Awaiting Commander's orders. Set parameters and initiate the expedition to begin live tracking.")
         fig_map = draw_tactical_map([], [], [], [], formation)
         map_container.plotly_chart(fig_map, use_container_width=True)
+        
+
+
+
 def render_physics_lab_tab():
     st.header("⚙️ ODM Physics Lab")
     st.info("Awaiting structural integration...")
