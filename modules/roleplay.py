@@ -11,7 +11,7 @@ def query_ai(system_prompt, chat_history, api_key):
         
         # Initialize the Pro model and attach the character persona via system_instruction
         model = genai.GenerativeModel(
-            model_name='gemini-1.5-pro-latest',
+            model_name='gemini-pro',
             system_instruction=system_prompt
         )
         
