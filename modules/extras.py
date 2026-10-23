@@ -507,5 +507,116 @@ def render_public_info_tab():
 
 
 def render_titan_forge_tab():
-    st.header("⚡ Titan Shifter Forge")
-    st.info("Awaiting structural integration...")
+    st.header("⚡ Titan Bio-Engineering Forge")
+    st.markdown("Synthesize a custom Titan Shifter chassis. Allocate physiological attributes and analyze its resulting tactical threat classification and biomechanical limitations.")
+    
+    col1, col2 = st.columns([1.2, 1.5])
+    
+    with col1:
+        st.subheader("Genetic Parameters")
+        
+        chassis = st.selectbox("Base Titan Chassis Template", [
+            "Attack (Balanced/Offensive)", 
+            "Armored (Heavy Defense)", 
+            "Colossal (Massive/Thermal)", 
+            "Female (Agile/Versatile)", 
+            "Jaw (High Speed/Lethality)", 
+            "Beast (Variable/Projectile)", 
+            "Cart (Endurance/Quadruped)", 
+            "War Hammer (Structural Synthesis)"
+        ])
+        
+        st.markdown("**Physiological Allocation**")
+        height = st.slider("Vertical Stature (Meters)", 4.0, 60.0, 15.0, 1.0)
+        muscle_density = st.slider("Muscle Fiber Density (Kinetic Power)", 1, 100, 75)
+        hardening = st.slider("Structural Hardening Capacity (%)", 0, 100, 50)
+        mobility = st.slider("Agility & Neural Reflexes", 1, 100, 80)
+        regeneration = st.slider("Cellular Regeneration Rate", 1, 100, 60)
+        heat_emission = st.slider("Thermal & Steam Output", 0, 100, 20)
+        
+        st.divider()
+        
+        # --- THREAT & BIOMECHANICAL CALCULATIONS ---
+        # Base Threat Formula
+        base_threat = (muscle_density * 0.25) + (hardening * 0.2) + (mobility * 0.25) + (regeneration * 0.15) + (heat_emission * 0.15)
+        
+        # Height vs Agility penalty (The Square-Cube Law equivalent for Titans)
+        if height > 20 and "Colossal" not in chassis:
+            base_threat *= 0.85 
+        if "Colossal" in chassis:
+            base_threat = max(base_threat, 85.0)
+            
+        threat_level = min(100.0, base_threat)
+        
+        # Biomechanics (Pseudo-science based on volume)
+        estimated_mass = (height ** 3) * (muscle_density * 0.1) # Extrapolated weight in kg
+        footprint_area = (height * 0.15) ** 2 # Rough foot surface area
+        ground_pressure = (estimated_mass * 9.81) / (footprint_area * 1000) # kPa
+        
+        if threat_level > 90:
+            classification, color = "S-CLASS (APOCALYPTIC)", "#ff4b4b"
+        elif threat_level > 75:
+            classification, color = "A-CLASS (EXTREME THREAT)", "#ffaa00"
+        elif threat_level > 50:
+            classification, color = "B-CLASS (HIGH THREAT)", "#00ffcc"
+        else:
+            classification, color = "C-CLASS (MANAGEABLE)", "#d8c3a5"
+            
+        st.markdown("### Tactical Assessment")
+        st.markdown(f"**Designation:** <span style='color:{color}; font-weight:bold;'>{classification}</span>", unsafe_allow_html=True)
+        
+        m1, m2 = st.columns(2)
+        m1.metric("Est. Mass", f"{estimated_mass/1000:.1f} Tons")
+        m2.metric("Ground Pressure", f"{ground_pressure:.0f} kPa")
+
+    with col2:
+        st.subheader("Bio-Signature Analysis")
+        
+        # Radar Chart for Stats
+        fig = go.Figure()
+        categories = ['Kinetic Power', 'Structural Armor', 'Mobility', 'Regeneration', 'Thermal Output']
+        fig.add_trace(go.Scatterpolar(
+            r=[muscle_density, hardening, mobility, regeneration, heat_emission],
+            theta=categories,
+            fill='toself',
+            fillcolor=f'rgba(201, 160, 99, 0.4)', # Gold tint
+            line=dict(color='#c9a063', width=2),
+            marker=dict(color='#ffffff', size=6),
+        ))
+        
+        fig.update_layout(
+            polar=dict(
+                radialaxis=dict(visible=True, range=[0, 100], gridcolor='#3a2e24', tickfont=dict(color='#8b6f47')),
+                angularaxis=dict(gridcolor='#3a2e24', tickfont=dict(color='#c9a063', family='Cinzel', size=13)),
+                bgcolor='rgba(0,0,0,0)'
+            ),
+            paper_bgcolor='rgba(0,0,0,0)',
+            plot_bgcolor='rgba(0,0,0,0)',
+            margin=dict(l=40, r=40, t=40, b=40),
+            height=320,
+            showlegend=False
+        )
+        st.plotly_chart(fig, use_container_width=True)
+        
+        # Threat Index Gauge
+        fig_gauge = go.Figure(go.Indicator(
+            mode = "gauge+number",
+            value = threat_level,
+            domain = {'x': [0, 1], 'y': [0, 1]},
+            title = {'text': "Overall Threat Index", 'font': {'color': '#c9a063', 'family': 'Cinzel', 'size': 18}},
+            gauge = {
+                'axis': {'range': [None, 100], 'tickwidth': 2, 'tickcolor': "#3a2e24"},
+                'bar': {'color': color},
+                'bgcolor': "rgba(0,0,0,0)",
+                'borderwidth': 2,
+                'bordercolor': "#3a2e24",
+                'steps': [
+                    {'range': [0, 50], 'color': 'rgba(216, 195, 165, 0.1)'},
+                    {'range': [50, 75], 'color': 'rgba(0, 255, 204, 0.2)'},
+                    {'range': [75, 90], 'color': 'rgba(255, 170, 0, 0.2)'},
+                    {'range': [90, 100], 'color': 'rgba(255, 75, 75, 0.3)'}],
+            },
+            number = {'font': {'color': color}}
+        ))
+        fig_gauge.update_layout(height=250, margin=dict(l=20, r=20, t=10, b=10), paper_bgcolor='rgba(0,0,0,0)')
+        st.plotly_chart(fig_gauge, use_container_width=True)
