@@ -111,9 +111,9 @@ st.markdown("""
         right: -40px;  
         bottom: -20px; 
         background-image: url('https://github.com/TonyKat007/Project-Eldia-Archives/blob/main/image_f3b05e.png?raw=true');
-        background-size: contain;
-        background-position: center;
-        background-repeat: no-repeat;
+        background-size: 350% !important; 
+        background-position: center center !important;
+        background-repeat: no-repeat !important;
         /* Drops the black background of your image, keeping only the red */
         mix-blend-mode: screen; 
         z-index: -1;
