@@ -84,52 +84,52 @@ st.markdown("""
     }
 
     /* Heavy Duty Tabs */
-    /* Grand Military Tabs Restyling */
-    /* Grand Military Tabs Restyling - Override */
+    /* Grand Military Tabs - Blood Splatter Edition */
     .stTabs [data-baseweb="tab-list"] {
-        gap: 8px;
-        border-bottom: 2px solid #3a2e24;
+        gap: 10px !important;
+        background-color: transparent !important;
+        padding-bottom: 10px !important;
+        border-bottom: 2px solid #3a2e24 !important;
     }
     
     .stTabs [data-baseweb="tab"] {
-        background: #141311 !important;
+        background: rgba(20, 19, 17, 0.9) !important;
         border: 1px solid #3a2e24 !important;
-        border-bottom: none !important;
-        border-radius: 12px 12px 0 0 !important;
-        padding: 12px 24px !important;
+        border-radius: 4px !important;
+        padding: 10px 24px !important;
         color: #8b6f47 !important;
-        min-width: fit-content !important;
+        font-family: 'Cinzel', serif !important;
+        font-size: 1.1rem !important;
+        white-space: nowrap !important; /* Prevents text overlapping edges */
         transition: all 0.3s ease !important;
     }
     
     .stTabs [data-baseweb="tab"]:hover {
-        background: #241c16 !important;
+        background: rgba(40, 32, 26, 0.9) !important;
         color: #c9a063 !important;
     }
     
     .stTabs [aria-selected="true"] {
-        background: linear-gradient(180deg, #6b1d1d 0%, #2a0a0a 100%) !important;
-        border: 2px solid #c9a063 !important;
+        /* Blood splatter overlay with deep crimson base */
+        background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Blood_splatter.svg/1024px-Blood_splatter.svg.png') no-repeat center center !important;
+        background-color: #660303 !important;
+        background-size: cover !important;
+        background-blend-mode: multiply !important;
+        border: 1px solid #990000 !important;
         border-bottom: none !important;
-        box-shadow: 0 -5px 15px rgba(201, 160, 99, 0.25) !important;
+        color: #ffffff !important;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.9) !important;
+        box-shadow: inset 0 0 20px rgba(0,0,0,0.8), 0 -4px 15px rgba(102, 3, 3, 0.5) !important;
+        transform: scale(1.02);
     }
     
-    /* Prevent text overlapping and clipping */
-    .stTabs [data-baseweb="tab"] p {
-        font-family: 'Cinzel', serif !important;
-        font-size: 1.1rem !important;
-        font-weight: 700 !important;
-        color: inherit !important;
-        margin: 0 !important;
-    }
-    
-    /* Completely obliterate the default Streamlit red underline */
+    /* Annihilate Streamlit's default red underline */
     .stTabs [data-baseweb="tab-highlight"] {
         display: none !important;
         background-color: transparent !important;
-        height: 0 !important;
-        width: 0 !important;
     }
+    
+    
     /* Scout Regiment Buttons */
     .stButton > button {
         background: linear-gradient(to right, #4a1515, #7a2222);
