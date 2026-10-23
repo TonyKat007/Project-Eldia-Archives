@@ -84,30 +84,47 @@ st.markdown("""
     }
 
     /* Heavy Duty Tabs */
+    /* Grand Military Tabs Restyling */
     .stTabs [data-baseweb="tab-list"] {
-        gap: 4px;
+        gap: 8px;
         background-color: transparent;
+        border-bottom: 2px solid #5c4033;
+        padding-bottom: 0;
     }
+    
     .stTabs [data-baseweb="tab"] {
-        background-color: #141311;
+        background: linear-gradient(180deg, #1c1a17 0%, #0a0a0a 100%);
         border: 1px solid #3a2e24;
         border-bottom: none;
-        border-radius: 4px 4px 0 0;
-        padding: 12px 20px;
+        border-radius: 8px 8px 0 0;
+        padding: 12px 24px;
         color: #8b6f47;
         font-family: 'Cinzel', serif;
+        font-size: 1.05rem;
         font-weight: 700;
-        transition: all 0.3s ease;
+        letter-spacing: 1px;
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        box-shadow: inset 0 2px 4px rgba(255, 255, 255, 0.02);
     }
-    .stTabs [aria-selected="true"] {
-        background: linear-gradient(to bottom, #5c1818, #3a0f0f) !important;
-        border-color: #8b6f47 !important;
-        color: #e2dcd5 !important;
-        box-shadow: 0 -3px 10px rgba(92, 24, 24, 0.6);
-    }
+    
     .stTabs [data-baseweb="tab"]:hover {
-        background-color: #241c16;
+        background: linear-gradient(180deg, #241c16 0%, #11100e 100%);
         color: #c9a063;
+        border-color: #8b6f47;
+    }
+    
+    .stTabs [aria-selected="true"] {
+        background: linear-gradient(180deg, #5c1818 0%, #2a0a0a 100%) !important;
+        border: 2px solid #c9a063 !important;
+        border-bottom: none !important;
+        color: #f0e6d2 !important;
+        box-shadow: 0 -5px 20px rgba(201, 160, 99, 0.2), inset 0 2px 5px rgba(255, 255, 255, 0.15) !important;
+        transform: translateY(-2px);
+    }
+    
+    /* Hide Streamlit's default active tab highlight line */
+    .stTabs [data-baseweb="tab-highlight"] {
+        display: none;
     }
 
     /* Scout Regiment Buttons */
