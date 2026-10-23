@@ -10,7 +10,6 @@ def render_war_room_tab():
     col1, col2 = st.columns([1, 1.5])
     
     with col1:
-        st.markdown("<div class='lore-card'>", unsafe_allow_html=True)
         st.subheader("Expedition Parameters")
         
         personnel = st.slider("Scout Vanguard Deployment", min_value=10, max_value=300, value=100, step=10)
@@ -40,8 +39,6 @@ def render_war_room_tab():
             color = "#ff4b4b"
             
         st.markdown(f"### Projected Survival Rate: <span style='color:{color};'>{final_rate:.1f}%</span>", unsafe_allow_html=True)
-        st.markdown("</div>", unsafe_allow_html=True)
-
     with col2:
         # Calculate matrix attributes
         mobility = gas_reserves
