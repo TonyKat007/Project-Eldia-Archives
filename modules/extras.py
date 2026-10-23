@@ -258,8 +258,118 @@ def render_war_room_tab():
 
 def render_physics_lab_tab():
     st.header("⚙️ ODM Physics Lab")
-    st.info("Awaiting structural integration...")
+    st.markdown("Calculate the kinetic forces, structural tension, and human physiological limits of Omni-Directional Mobility maneuvers.")
+    
+    col1, col2 = st.columns([1, 1.5])
+    
+    with col1:
+        st.markdown("<div class='lore-card'>", unsafe_allow_html=True)
+        st.subheader("Maneuver Variables")
+        
+        scout_mass = st.slider("Scout Mass + Gear Weight (kg)", 50.0, 120.0, 75.0, 1.0)
+        cable_length = st.slider("Anchor Cable Length (m)", 10.0, 100.0, 45.0, 1.0)
+        drop_angle = st.slider("Initial Drop Angle (Degrees from vertical)", 10, 90, 60, 1)
+        gas_thrust = st.slider("Gas Propellant Thrust (N)", 0.0, 3000.0, 1200.0, 50.0)
+        
+        st.divider()
+        
+        # --- KINEMATIC CALCULATIONS ---
+        g = 9.81
+        angle_rad = np.radians(drop_angle)
+        
+        # Vertical drop height
+        h = cable_length * (1 - np.cos(angle_rad))
+        
+        # Work done by gas propellant across the arc length
+        arc_length = cable_length * angle_rad
+        work_thrust = gas_thrust * arc_length
+        
+        # Conservation of Energy: KE_final = PE_initial + Work_Thrust
+        pe_initial = scout_mass * g * h
+        ke_final = pe_initial + work_thrust
+        
+        # Maximum velocity at the lowest point of the swing
+        v_max = np.sqrt((2 * ke_final) / scout_mass)
+        
+        # Tension at lowest point: T = mg + (mv^2 / r)
+        f_gravity = scout_mass * g
+        f_centripetal = (scout_mass * (v_max**2)) / cable_length
+        max_tension = f_gravity + f_centripetal
+        
+        # G-Force experienced by the operator
+        g_force = max_tension / f_gravity
+        
+        st.markdown("### Telemetry Readout")
+        st.markdown(f"**Max Velocity:** {v_max:.1f} m/s *(~{v_max * 3.6:.1f} km/h)*")
+        
+        # Wire snap threshold for ultra-hard steel
+        tension_color = "#ff4b4b" if max_tension > 15000 else "#d8c3a5"
+        st.markdown(f"**Peak Cable Tension:** <span style='color:{tension_color};'>{max_tension:.0f} N</span>", unsafe_allow_html=True)
+        
+        # Physiological limits
+        if g_force > 12:
+            g_color = "#ff4b4b"
+            g_status = "FATAL (Spinal Rupture / Hemorrhage)"
+        elif g_force > 8:
+            g_color = "#ffaa00"
+            g_status = "CRITICAL (Blackout Risk)"
+        else:
+            g_color = "#00ffcc"
+            g_status = "NOMINAL (Combat Effective)"
+            
+        st.markdown(f"**Operator G-Force:** <span style='color:{g_color};'>{g_force:.1f} G [{g_status}]</span>", unsafe_allow_html=True)
+        st.markdown("</div>", unsafe_allow_html=True)
 
+    with col2:
+        # --- TRAJECTORY VISUALIZATION ---
+        # Generate the arc points based on the drop angle
+        theta = np.linspace(np.pi/2 + angle_rad, np.pi/2 - angle_rad, 100)
+        arc_x = cable_length * np.cos(theta)
+        arc_y = -cable_length * np.sin(theta)
+        
+        fig = go.Figure()
+        
+        # Anchor Point (Wall/Tree)
+        fig.add_trace(go.Scatter(
+            x=[0], y=[0], mode='markers', 
+            marker=dict(size=14, color='#c9a063', symbol='hexagram'), 
+            name='Anchor Point'
+        ))
+        
+        # Flight Path Arc
+        fig.add_trace(go.Scatter(
+            x=arc_x, y=arc_y, mode='lines', 
+            line=dict(color='rgba(255, 75, 75, 0.4)', width=2, dash='dash'), 
+            name='Trajectory Arc'
+        ))
+        
+        # Lowest Point (Max G-Force)
+        fig.add_trace(go.Scatter(
+            x=[0], y=[-cable_length], mode='markers', 
+            marker=dict(size=12, color='#00ffcc', symbol='x'), 
+            name='Point of Max Tension'
+        ))
+        
+        # Draw the physical wire connecting the anchor to the lowest point
+        fig.add_trace(go.Scatter(
+            x=[0, 0], y=[0, -cable_length], mode='lines', 
+            line=dict(color='#8b6f47', width=3), 
+            name='Ultra-Hard Steel Wire'
+        ))
+        
+        fig.update_layout(
+            plot_bgcolor='rgba(20, 19, 17, 0.8)',
+            paper_bgcolor='rgba(0,0,0,0)',
+            xaxis=dict(range=[-110, 110], showgrid=False, zeroline=False, visible=False),
+            yaxis=dict(range=[-120, 20], showgrid=False, zeroline=False, visible=False),
+            showlegend=True,
+            legend=dict(orientation="h", yanchor="bottom", y=1.02, xanchor="right", x=1, font=dict(color='#d8c3a5')),
+            height=480,
+            margin=dict(l=0, r=0, t=10, b=0)
+        )
+        
+        st.plotly_chart(fig, use_container_width=True)
+        st.caption("⚠️ **Warning:** Ultra-hard steel wires are rated for a maximum structural tension of 15,000 N. Exceeding this limit will result in catastrophic mid-air snapping.")
 def render_public_info_tab():
     st.header("📖 Public Info Generator")
     st.info("Awaiting structural integration...")
