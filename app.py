@@ -3,6 +3,7 @@ import plotly.graph_objects as go
 import numpy as np
 import pandas as pd
 import random
+from modules.quiz import render_quiz_tab
 
 # --- PAGE CONFIG ---
 st.set_page_config(
@@ -101,53 +102,7 @@ tabs = st.tabs([
 # TAB 1: MULTI-TIER POP QUIZ
 # ==========================================
 with tabs[0]:
-    st.header("📜 The Cadet Corps Knowledge Assessment")
-    col1, col2 = st.columns([1, 3])
-    
-    with col1:
-        tier = st.radio("Select Difficulty Tier:", [
-            "Tier 1: Garrison (Easy)",
-            "Tier 2: Survey Corps (Medium)",
-            "Tier 3: Special Ops Squad (Hard)",
-            "Tier 4: Founder's Memory (Extreme)"
-        ])
-    
-    quiz_data = {
-        "Tier 1: Garrison (Easy)": [
-            {"q": "What are the names of the three walls from outermost to innermost?", "options": ["Maria, Rose, Sina", "Rose, Maria, Sina", "Sina, Rose, Maria", "Maria, Sina, Rose"], "ans": "Maria, Rose, Sina"},
-            {"q": "Which district is at the southern edge of Wall Maria where Eren grew up?", "options": ["Trost", "Shiganshina", "Stohess", "Karanes"], "ans": "Shiganshina"}
-        ],
-        "Tier 2: Survey Corps (Medium)": [
-            {"q": "What was the exact rank of Eren's father, Grisha Yeager, within the Eldian Restorationists?", "options": ["The Owl", "Leader of the Mosley Faction", "Key ideological figure recruited by the Owl", "Marleyan Honorary Captain"], "ans": "Key ideological figure recruited by the Owl"},
-            {"q": "In the long-distance scouting formation, what does a BLACK smoke signal indicate?", "options": ["Titan sighted", "Emergency / Retreat", "Abnormal Titan spotted", "Obstacle in terrain"], "ans": "Abnormal Titan spotted"}
-        ],
-        "Tier 3: Special Ops Squad (Hard)": [
-            {"q": "Which member of the original Levi Squad bit their tongue while riding a horse?", "options": ["Oluo Bozad", "Eld Jinn", "Gunther Schultz", "Petra Rall"], "ans": "Oluo Bozad"},
-            {"q": "What was the fake king's name who sat on the throne before Historia's coronation?", "options": ["Fritz", "Rod Reiss", "Darius Zackly", "Uri Reiss"], "ans": "Fritz"}
-        ],
-        "Tier 4: Founder's Memory (Extreme)": [
-            {"q": "What exact year did Ymir Fritz gain the power of the Titans according to Marleyan historical records (roughly how many years before the Fall of Shiganshina in 845)?", "options": ["1,820 years ago", "2,000 years ago", "1,745 years ago", "1,903 years ago"], "ans": "1,820 years ago"},
-            {"q": "What is the name of the metal exclusively mined on Paradis Island used to forge ODM gear blades and canisters?", "options": ["Iceburst Stone & Ultra-Hard Steel", "Marleyan Titanium", "Glowing Basalt", "Crystallized Titan Marrow"], "ans": "Iceburst Stone & Ultra-Hard Steel"}
-        ]
-    }
-    
-    with col2:
-        st.subheader(f"Active Assessment: {tier}")
-        score = 0
-        questions = quiz_data[tier]
-        for idx, item in enumerate(questions):
-            choice = st.radio(f"**Q{idx+1}: {item['q']}**", item['options'], key=f"{tier}_{idx}")
-            if choice == item['ans']:
-                score += 1
-        
-        if st.button("Submit Assessment"):
-            st.success(f"Final Score: {score} / {len(questions)}")
-            if score == len(questions):
-                st.balloons()
-                st.markdown("🎖️ **Verdict:** *You are ready to lead the vanguard beyond the walls!*")
-            else:
-                st.warning("⚔️ **Verdict:** *Back to the 104th Training Corps drills!*")
-
+    render_quiz_tab()
 # ==========================================
 # TAB 2: PERSONALITY & RADAR MATRIX
 # ==========================================
