@@ -110,17 +110,17 @@ st.markdown("""
     }
     
     .stTabs [aria-selected="true"] {
-        /* Blood splatter overlay with deep crimson base */
-        background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Blood_splatter.svg/1024px-Blood_splatter.svg.png') no-repeat center center !important;
-        background-color: #660303 !important;
+        background-color: #000000 !important;
+        background-image: url('https://github.com/TonyKat007/Project-Eldia-Archives/blob/main/image_f3b05e.png?raw=true') !important;
         background-size: cover !important;
-        background-blend-mode: multiply !important;
-        border: 1px solid #990000 !important;
+        background-position: center !important;
+        border: 2px solid #8b0000 !important;
         border-bottom: none !important;
+        border-radius: 24px 24px 0 0 !important;
         color: #ffffff !important;
-        text-shadow: 2px 2px 4px rgba(0,0,0,0.9) !important;
-        box-shadow: inset 0 0 20px rgba(0,0,0,0.8), 0 -4px 15px rgba(102, 3, 3, 0.5) !important;
-        transform: scale(1.02);
+        text-shadow: 2px 2px 5px #000000, 0px 0px 10px #ff0000 !important;
+        box-shadow: 0 -5px 25px rgba(139, 0, 0, 0.5) !important;
+        transform: translateY(-2px);
     }
     
     /* Annihilate Streamlit's default red underline */
