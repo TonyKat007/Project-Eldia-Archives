@@ -377,6 +377,14 @@ def render_physics_lab_tab():
             legend=dict(font=dict(color='#d8c3a5'))
         )
         st.plotly_chart(fig_line, use_container_width=True)
+
+
+
+
+def render_public_info_tab():
+    st.header("⚡ Titan Shifter Forge")
+    st.info("Awaiting structural integration...")
+
 def render_titan_forge_tab():
     st.header("⚡ Titan Shifter Forge")
     st.info("Awaiting structural integration...")
