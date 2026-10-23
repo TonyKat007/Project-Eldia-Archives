@@ -257,123 +257,126 @@ def render_war_room_tab():
 
 
 def render_physics_lab_tab():
-    st.header("⚙️ ODM Physics Lab")
-    st.markdown("Calculate the kinetic forces, structural tension, and human physiological limits of Omni-Directional Mobility maneuvers.")
+    st.header("⚙️ ODM Physics & Aerodynamics Lab")
+    st.markdown("Simulate 3D spatial maneuvers. Calculate kinetic forces, dual-anchor structural tension, aerodynamic drag, and human physiological limits during a Titan nape-strike slingshot.")
     
-    col1, col2 = st.columns([1, 1.5])
+    # --- UI LAYOUT ---
+    col1, col2 = st.columns([1.2, 2])
     
     with col1:
-        st.subheader("Maneuver Variables")
+        st.subheader("Maneuver Telemetry")
         
-        scout_mass = st.slider("Scout Mass + Gear Weight (kg)", 50.0, 120.0, 75.0, 1.0)
-        cable_length = st.slider("Anchor Cable Length (m)", 10.0, 100.0, 45.0, 1.0)
-        drop_angle = st.slider("Initial Drop Angle (Degrees from vertical)", 10, 90, 60, 1)
-        gas_thrust = st.slider("Gas Propellant Thrust (N)", 0.0, 3000.0, 1200.0, 50.0)
+        scout_mass = st.slider("Operator + Gear Mass (kg)", 50.0, 120.0, 75.0, 1.0)
+        gas_thrust = st.slider("Continuous Propellant Thrust (N)", 0.0, 5000.0, 2500.0, 100.0)
+        cable_length = st.slider("Primary Anchor Cable Length (m)", 10.0, 100.0, 50.0, 1.0)
+        
+        with st.expander("🌪️ Aerodynamics & Environment"):
+            cd_area = st.slider("Drag Area (Cd * A)", 0.1, 1.5, 0.6, 0.1, help="Accounts for cape flutter and body posture.")
+            air_density = st.number_input("Air Density (kg/m³)", value=1.225)
+            entry_velocity = st.slider("Initial Velocity (m/s)", 0.0, 50.0, 15.0, 1.0)
+
+        # --- PHYSICS ENGINE ---
+        g = 9.81
+        time_steps = np.linspace(0, 3, 100) # 3-second maneuver
+        
+        # 3D Parametric Trajectory (Slingshot around a target)
+        x = cable_length * np.sin(time_steps * 1.5)
+        y = cable_length * np.cos(time_steps * 1.5) - cable_length
+        z = 15 * np.sin(time_steps * np.pi) # Vertical evasion curve
+        
+        # Velocity Profile (Simplified Integration of Thrust vs Drag)
+        velocities = []
+        v_current = entry_velocity
+        for _ in time_steps:
+            drag = 0.5 * air_density * (v_current**2) * cd_area
+            net_force = gas_thrust - drag + (scout_mass * g * 0.5) # Assisted by gravity
+            accel = net_force / scout_mass
+            v_current += accel * (3.0 / 100)
+            velocities.append(v_current)
+            
+        velocities = np.array(velocities)
+        max_v = np.max(velocities)
+        
+        # Centripetal Tension & G-Force
+        radius_of_curvature = cable_length * 0.8
+        centripetal_forces = (scout_mass * (velocities**2)) / radius_of_curvature
+        tensions = centripetal_forces + (scout_mass * g)
+        g_forces = tensions / (scout_mass * g)
+        max_g = np.max(g_forces)
+        max_t = np.max(tensions)
         
         st.divider()
+        st.markdown("### Peak Forces Readout")
         
-        # --- KINEMATIC CALCULATIONS ---
-        g = 9.81
-        angle_rad = np.radians(drop_angle)
+        m1, m2 = st.columns(2)
+        m1.metric("Max Velocity", f"{max_v:.1f} m/s", f"{max_v * 3.6:.0f} km/h")
         
-        # Vertical drop height
-        h = cable_length * (1 - np.cos(angle_rad))
+        g_color = "normal" if max_g <= 9 else "inverse"
+        m2.metric("Peak G-Load", f"{max_g:.1f} G", delta="FATAL RISK" if max_g > 10 else "NOMINAL", delta_color=g_color)
         
-        # Work done by gas propellant across the arc length
-        arc_length = cable_length * angle_rad
-        work_thrust = gas_thrust * arc_length
-        
-        # Conservation of Energy: KE_final = PE_initial + Work_Thrust
-        pe_initial = scout_mass * g * h
-        ke_final = pe_initial + work_thrust
-        
-        # Maximum velocity at the lowest point of the swing
-        v_max = np.sqrt((2 * ke_final) / scout_mass)
-        
-        # Tension at lowest point: T = mg + (mv^2 / r)
-        f_gravity = scout_mass * g
-        f_centripetal = (scout_mass * (v_max**2)) / cable_length
-        max_tension = f_gravity + f_centripetal
-        
-        # G-Force experienced by the operator
-        g_force = max_tension / f_gravity
-        
-        st.markdown("### Telemetry Readout")
-        st.markdown(f"**Max Velocity:** {v_max:.1f} m/s *(~{v_max * 3.6:.1f} km/h)*")
-        
-        # Wire snap threshold for ultra-hard steel
-        tension_color = "#ff4b4b" if max_tension > 15000 else "#d8c3a5"
-        st.markdown(f"**Peak Cable Tension:** <span style='color:{tension_color};'>{max_tension:.0f} N</span>", unsafe_allow_html=True)
-        
-        # Physiological limits
-        if g_force > 12:
-            g_color = "#ff4b4b"
-            g_status = "FATAL (Spinal Rupture / Hemorrhage)"
-        elif g_force > 8:
-            g_color = "#ffaa00"
-            g_status = "CRITICAL (Blackout Risk)"
-        else:
-            g_color = "#00ffcc"
-            g_status = "NOMINAL (Combat Effective)"
-            
-        st.markdown(f"**Operator G-Force:** <span style='color:{g_color};'>{g_force:.1f} G [{g_status}]</span>", unsafe_allow_html=True)
+        st.metric("Max Cable Tension", f"{max_t:.0f} N", "Wire Snap Threshold: 15000 N" if max_t > 15000 else "Structural Integrity Holding", delta_color="inverse" if max_t > 15000 else "normal")
 
-
-    
     with col2:
-        # --- TRAJECTORY VISUALIZATION ---
-        # Generate the arc points based on the drop angle
-        theta = np.linspace(np.pi/2 + angle_rad, np.pi/2 - angle_rad, 100)
-        arc_x = cable_length * np.cos(theta)
-        arc_y = -cable_length * np.sin(theta)
+        # --- 3D SPATIAL VISUALIZATION ---
+        st.subheader("Spatial Trajectory Map")
+        fig3d = go.Figure()
         
-        fig = go.Figure()
-        
-        # Anchor Point (Wall/Tree)
-        fig.add_trace(go.Scatter(
-            x=[0], y=[0], mode='markers', 
-            marker=dict(size=14, color='#c9a063', symbol='hexagram'), 
-            name='Anchor Point'
+        # Flight Path
+        fig3d.add_trace(go.Scatter3d(
+            x=x, y=y, z=z,
+            mode='lines',
+            line=dict(color=velocities, colorscale='Reds', width=6, colorbar=dict(title="Velocity (m/s)", x=-0.1)),
+            name='Scout Trajectory'
         ))
         
-        # Flight Path Arc
-        fig.add_trace(go.Scatter(
-            x=arc_x, y=arc_y, mode='lines', 
-            line=dict(color='rgba(255, 75, 75, 0.4)', width=2, dash='dash'), 
-            name='Trajectory Arc'
+        # Target Titan Nape
+        fig3d.add_trace(go.Scatter3d(
+            x=[0], y=[0], z=[10],
+            mode='markers',
+            marker=dict(size=10, color='#00ffcc', symbol='cross'),
+            name='Titan Nape Target'
         ))
         
-        # Lowest Point (Max G-Force)
-        fig.add_trace(go.Scatter(
-            x=[0], y=[-cable_length], mode='markers', 
-            marker=dict(size=12, color='#00ffcc', symbol='x'), 
-            name='Point of Max Tension'
+        # Anchor Points
+        fig3d.add_trace(go.Scatter3d(
+            x=[-cable_length*0.5, cable_length*0.5], y=[-cable_length*0.8, -cable_length*0.8], z=[15, 15],
+            mode='markers',
+            marker=dict(size=6, color='#c9a063'),
+            name='Grapple Anchors'
         ))
-        
-        # Draw the physical wire connecting the anchor to the lowest point
-        fig.add_trace(go.Scatter(
-            x=[0, 0], y=[0, -cable_length], mode='lines', 
-            line=dict(color='#8b6f47', width=3), 
-            name='Ultra-Hard Steel Wire'
-        ))
-        
-        fig.update_layout(
-            plot_bgcolor='rgba(20, 19, 17, 0.8)',
-            paper_bgcolor='rgba(0,0,0,0)',
-            xaxis=dict(range=[-110, 110], showgrid=False, zeroline=False, visible=False),
-            yaxis=dict(range=[-120, 20], showgrid=False, zeroline=False, visible=False),
-            showlegend=True,
-            legend=dict(orientation="h", yanchor="bottom", y=1.02, xanchor="right", x=1, font=dict(color='#d8c3a5')),
-            height=480,
-            margin=dict(l=0, r=0, t=10, b=0)
-        )
-        
-        st.plotly_chart(fig, use_container_width=True)
-        st.caption("⚠️ **Warning:** Ultra-hard steel wires are rated for a maximum structural tension of 15,000 N. Exceeding this limit will result in catastrophic mid-air snapping.")
-def render_public_info_tab():
-    st.header("📖 Public Info Generator")
-    st.info("Awaiting structural integration...")
 
+        fig3d.update_layout(
+            paper_bgcolor='rgba(0,0,0,0)',
+            plot_bgcolor='rgba(0,0,0,0)',
+            scene=dict(
+                xaxis=dict(showbackground=False, gridcolor='#3a2e24', title='X (m)', tickfont=dict(color='#8b6f47')),
+                yaxis=dict(showbackground=False, gridcolor='#3a2e24', title='Y (m)', tickfont=dict(color='#8b6f47')),
+                zaxis=dict(showbackground=False, gridcolor='#3a2e24', title='Altitude (m)', tickfont=dict(color='#8b6f47')),
+                bgcolor='rgba(20, 19, 17, 0.8)'
+            ),
+            margin=dict(l=0, r=0, t=0, b=0),
+            height=450,
+            showlegend=True,
+            legend=dict(orientation="h", yanchor="bottom", y=1.02, xanchor="right", x=1, font=dict(color='#d8c3a5'))
+        )
+        st.plotly_chart(fig3d, use_container_width=True)
+        
+        # --- TIME SERIES TELEMETRY ---
+        fig_line = go.Figure()
+        fig_line.add_trace(go.Scatter(x=time_steps, y=g_forces, mode='lines', line=dict(color='#ffaa00', width=2), name='G-Force'))
+        fig_line.add_trace(go.Scatter(x=time_steps, y=velocities/10, mode='lines', line=dict(color='#00ffcc', width=2), name='Velocity (scaled)'))
+        
+        # Lethal G-Limit Line
+        fig_line.add_hline(y=10, line_dash="dash", line_color="#ff4b4b", annotation_text="Lethal G-Limit (10G)", annotation_font_color="#ff4b4b")
+        
+        fig_line.update_layout(
+            paper_bgcolor='rgba(0,0,0,0)', plot_bgcolor='rgba(20, 19, 17, 0.8)',
+            xaxis=dict(title='Time (s)', gridcolor='#3a2e24', tickfont=dict(color='#8b6f47')),
+            yaxis=dict(title='Magnitude', gridcolor='#3a2e24', tickfont=dict(color='#8b6f47')),
+            margin=dict(l=0, r=0, t=10, b=0), height=200,
+            legend=dict(font=dict(color='#d8c3a5'))
+        )
+        st.plotly_chart(fig_line, use_container_width=True)
 def render_titan_forge_tab():
     st.header("⚡ Titan Shifter Forge")
     st.info("Awaiting structural integration...")
