@@ -110,20 +110,21 @@ st.markdown("""
     }
     
     .stTabs [aria-selected="true"] {
-        background-color: #000000 !important;
+        background-color: #050505 !important;
         background-image: url('https://github.com/TonyKat007/Project-Eldia-Archives/blob/main/image_f3b05e.png?raw=true') !important;
-        background-size: cover !important;
-        background-position: center !important;
-        border: 2px solid #8b0000 !important;
-        border-bottom: none !important;
-        border-radius: 24px 24px 0 0 !important;
+        /* Drastically increase scale so the blood covers the box */
+        background-size: 350% !important; 
+        background-position: center center !important;
+        background-repeat: no-repeat !important;
+        /* Remove the curved outline boundary completely */
+        border: none !important; 
+        border-radius: 4px 4px 0 0 !important;
         color: #ffffff !important;
         text-shadow: 2px 2px 5px #000000, 0px 0px 10px #ff0000 !important;
-        box-shadow: 0 -5px 25px rgba(139, 0, 0, 0.5) !important;
-        transform: translateY(-2px);
+        box-shadow: none !important; 
     }
     
-    /* Annihilate Streamlit's default red underline */
+    /* Aggressively hide the default red bottom highlight */
     .stTabs [data-baseweb="tab-highlight"] {
         display: none !important;
         background-color: transparent !important;
