@@ -691,3 +691,119 @@ def render_titan_forge_tab():
         ))
         fig_gauge.update_layout(height=250, margin=dict(l=20, r=20, t=10, b=10), paper_bgcolor='rgba(0,0,0,0)')
         st.plotly_chart(fig_gauge, use_container_width=True)
+        
+        st.divider()
+        if st.button("💾 LOCK CHASSIS & DEPLOY TO APEX ARENA", use_container_width=True):
+            st.session_state['titan_deployment'] = {
+                'threat_level': threat_level,
+                'classification': classification,
+                'power_desc': power_desc,
+                'mass': estimated_mass,
+                'color': color,
+                'name': f"Custom {chassis.split()[0] if origin == 'The Nine Titans (Canon)' else selected_genre} Titan"
+            }
+            st.success("Titan registered to global session network. Proceed to the Apex Arena tab.")
+
+
+def render_apex_arena_tab():
+    st.header("🏟️ The Apex Arena")
+    
+    if 'titan_deployment' not in st.session_state:
+        st.warning("⚠️ No Titan detected in orbit. Return to the **Titan Forge**, engineer a chassis, and lock its deployment state.")
+        return
+        
+    titan = st.session_state['titan_deployment']
+    
+    st.markdown(f"**Deployed Asset:** {titan['name']} | **Classification:** <span style='color:{titan['color']}'>{titan['classification']}</span> | **Mass:** {titan['mass']/1000:.1f} Tons", unsafe_allow_html=True)
+    
+    try:
+        with open("opponents.json", "r") as f:
+            opponents = json.load(f)
+    except Exception:
+        st.error("opponents.json not found. Run the generation script.")
+        return
+
+    col1, col2 = st.columns([1, 1.5])
+    
+    with col1:
+        st.markdown("<div class='lore-card'>", unsafe_allow_html=True)
+        st.subheader("Target Selection")
+        
+        opponent_names = [o["name"] for o in opponents]
+        selected_opp = st.selectbox("Select Target Entity", opponent_names)
+        
+        enemy = next(o for o in opponents if o["name"] == selected_opp)
+        
+        st.markdown(f"**Origin:** {enemy['origin']}")
+        st.info(f"**Profile:** {enemy['desc']}")
+        
+        environment = st.selectbox("Battleground", ["Shattered Earth (Tokyo Ruins)", "Dying Sun Orbit", "The Null Void", "Pre-Historic Pangea"])
+        
+        st.divider()
+        initiate = st.button("🔥 INITIATE DEATHMATCH", use_container_width=True)
+        st.markdown("</div>", unsafe_allow_html=True)
+
+    with col2:
+        log_box = st.empty()
+        gauge_box = st.empty()
+        
+    if initiate:
+        t_power = titan['threat_level']
+        e_power = enemy['power']
+        
+        # Calculate win probability based on power gap and a massive random chaos factor
+        power_diff = t_power - e_power
+        chaos_roll = random.uniform(-40, 40)
+        final_clash = power_diff + chaos_roll
+        
+        logs = [
+            f"INITIALIZING MANIFESTATION... Transmitting {titan['name']} to {environment}.",
+            f"TARGET ACQUIRED: {enemy['name']} has entered the airspace.",
+            "ATMOSPHERIC IGNITION: The sheer presence of both entities is warping gravity.",
+            f"The Titan lunges, utilizing: {titan['power_desc']}",
+            f"COLLISION: {enemy['name']} retaliates! Shockwaves shatter the tectonic plates below!"
+        ]
+        
+        if final_clash > 0:
+            logs.append(f"CRITICAL STRIKE: The Titan overpowers {enemy['name']}, tearing through their conceptual defenses!")
+            logs.append(f"VICTORY: {enemy['name']} is obliterated. The Titan stands alone amidst the ash.")
+            earth_damage = min(100, 30 + (t_power * 0.4))
+            result_color = "#00ffcc"
+            winner = "TITAN"
+        else:
+            logs.append(f"CATASTROPHIC FAILURE: {enemy['name']} unleashes an apex counter-attack, ignoring the Titan's armor!")
+            logs.append(f"DEFEAT: The Titan is completely atomized. {enemy['name']} remains untouched.")
+            earth_damage = min(100, 50 + (e_power * 0.4))
+            result_color = "#ff4b4b"
+            winner = enemy['name'].upper()
+
+        # Render Dramatic Animation
+        log_text = ""
+        for line in logs:
+            log_text += f"\n\n> {line}"
+            log_box.markdown(log_text)
+            time.sleep(1.2)
+            
+        # Post-Fight Environmental Damage Report
+        gauge_box.divider()
+        gauge_box.subheader("🌍 Planetary Integrity Report")
+        
+        fig = go.Figure(go.Indicator(
+            mode = "gauge+number",
+            value = earth_damage,
+            domain = {'x': [0, 1], 'y': [0, 1]},
+            title = {'text': "Biosphere Destruction (%)", 'font': {'color': '#c9a063'}},
+            gauge = {
+                'axis': {'range': [None, 100], 'tickcolor': "#3a2e24"},
+                'bar': {'color': result_color},
+                'bgcolor': "rgba(0,0,0,0)",
+                'steps': [
+                    {'range': [0, 40], 'color': 'rgba(216, 195, 165, 0.1)'},
+                    {'range': [40, 70], 'color': 'rgba(255, 170, 0, 0.2)'},
+                    {'range': [70, 100], 'color': 'rgba(255, 75, 75, 0.3)'}],
+            }
+        ))
+        fig.update_layout(height=250, margin=dict(l=20, r=20, t=30, b=10), paper_bgcolor='rgba(0,0,0,0)')
+        
+        gauge_box.plotly_chart(fig, use_container_width=True)
+        gauge_box.error(f"**MATCH CONCLUDED.** The victor is **{winner}**. Estimated energy release: {earth_damage * 4.2:.1f} Petajoules.")
