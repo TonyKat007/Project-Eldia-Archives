@@ -1,0 +1,602 @@
+[
+    {
+        "name": "Son Goku (Mastered Ultra Instinct)",
+        "origin": "Dragon Ball",
+        "power": 195,
+        "desc": "Possesses autonomous divine reflexes and universe-shattering striking power."
+    },
+    {
+        "name": "Saitama",
+        "origin": "One Punch Man",
+        "power": 200,
+        "desc": "Removed his physical limiter. Boundless kinetic output and absolute invulnerability."
+    },
+    {
+        "name": "Giorno Giovanna (Gold Experience Requiem)",
+        "origin": "JoJo's Bizarre Adventure",
+        "power": 190,
+        "desc": "Reverts all hostile actions and willpower back to the state of 'zero'."
+    },
+    {
+        "name": "Rimuru Tempest",
+        "origin": "That Time I Got Reincarnated as a Slime",
+        "power": 185,
+        "desc": "A True Dragon-level Demon Lord with multiversal conceptual manipulation."
+    },
+    {
+        "name": "Anos Voldigoad",
+        "origin": "The Misfit of Demon King Academy",
+        "power": 199,
+        "desc": "The Demon King of Tyranny. His source outright rejects logical destruction."
+    },
+    {
+        "name": "Klein Moretti (The Fool)",
+        "origin": "Lord of the Mysteries",
+        "power": 188,
+        "desc": "Embodiment of the Seer pathway. Manipulates history, time, and conceptual miracles."
+    },
+    {
+        "name": "Sunless (Lost from Light)",
+        "origin": "Shadow Slave",
+        "power": 165,
+        "desc": "A Divine Shadow manipulator capable of manifesting an army of nightmare echoes."
+    },
+    {
+        "name": "Satoru Gojo",
+        "origin": "Jujutsu Kaisen",
+        "power": 150,
+        "desc": "Controls the concept of infinity. Untouchable space exists between him and reality."
+    },
+    {
+        "name": "Ryomen Sukuna",
+        "origin": "Jujutsu Kaisen",
+        "power": 155,
+        "desc": "The King of Curses. His spatial cleaves bisect the world itself."
+    },
+    {
+        "name": "Monkey D. Luffy (Gear 5)",
+        "origin": "One Piece",
+        "power": 145,
+        "desc": "The Sun God Nika. Fights with absolute freedom, bending reality like rubber."
+    },
+    {
+        "name": "Naruto Uzumaki (Baryon Mode)",
+        "origin": "Naruto",
+        "power": 155,
+        "desc": "Fuses chakra on a sub-atomic level to burn through the opponent's lifespan."
+    },
+    {
+        "name": "Ichigo Kurosaki (True Bankai)",
+        "origin": "Bleach",
+        "power": 160,
+        "desc": "A perfect hybrid of Soul Reaper, Hollow, and Quincy. Swings can shatter dimensions."
+    },
+    {
+        "name": "Sosuke Aizen",
+        "origin": "Bleach",
+        "power": 175,
+        "desc": "Immortal entity fused with the Hogyoku. Exercises absolute sensory hypnosis."
+    },
+    {
+        "name": "Superman (Prime One Million)",
+        "origin": "DC Comics",
+        "power": 198,
+        "desc": "Sun-dipped for 15,000 years. A living extension of the source wall."
+    },
+    {
+        "name": "Thor (Rune King)",
+        "origin": "Marvel Comics",
+        "power": 190,
+        "desc": "Omniscient god of thunder who erased the cycle of Ragnarok using ancient magic."
+    },
+    {
+        "name": "Kratos",
+        "origin": "God of War",
+        "power": 160,
+        "desc": "The Ghost of Sparta. Possesses infinite strength scaling to match his adversaries."
+    },
+    {
+        "name": "Doom Slayer",
+        "origin": "DOOM",
+        "power": 155,
+        "desc": "An incorruptible force fueled by pure rage. His armor absorbs argent energy from the fallen."
+    },
+    {
+        "name": "Asura",
+        "origin": "Asura's Wrath",
+        "power": 180,
+        "desc": "A demigod whose physical wrath is capable of obliterating stars and creator gods."
+    },
+    {
+        "name": "Gilgamesh",
+        "origin": "Fate Series",
+        "power": 165,
+        "desc": "The King of Heroes. Wields Ea, a sword that cleaves the conceptual fabric of the world."
+    },
+    {
+        "name": "Madara Uchiha (Ten-Tails Jinchuriki)",
+        "origin": "Naruto",
+        "power": 150,
+        "desc": "Immortal sage possessing the Rinnegan and Truth-Seeking Orbs."
+    },
+    {
+        "name": "The Abyssal Monarch (Subject 21)",
+        "origin": "The Deep Dark",
+        "power": 110,
+        "desc": "An anomalous the abyssal monarch originating from The Deep Dark. Highly unpredictable."
+    },
+    {
+        "name": "The Celestial Monarch (Subject 22)",
+        "origin": "Multiverse Sector 7",
+        "power": 111,
+        "desc": "An anomalous the celestial monarch originating from Multiverse Sector 7. Highly unpredictable."
+    },
+    {
+        "name": "The Dimensional Monarch (Subject 23)",
+        "origin": "The Astral Plane",
+        "power": 112,
+        "desc": "An anomalous the dimensional monarch originating from The Astral Plane. Highly unpredictable."
+    },
+    {
+        "name": "The Paradox Monarch (Subject 24)",
+        "origin": "Fallen Earth",
+        "power": 113,
+        "desc": "An anomalous the paradox monarch originating from Fallen Earth. Highly unpredictable."
+    },
+    {
+        "name": "The Quantum Monarch (Subject 25)",
+        "origin": "The Outer Rim",
+        "power": 114,
+        "desc": "An anomalous the quantum monarch originating from The Outer Rim. Highly unpredictable."
+    },
+    {
+        "name": "The Infernal Monarch (Subject 26)",
+        "origin": "The Deep Dark",
+        "power": 115,
+        "desc": "An anomalous the infernal monarch originating from The Deep Dark. Highly unpredictable."
+    },
+    {
+        "name": "The Aetheric Monarch (Subject 27)",
+        "origin": "Multiverse Sector 7",
+        "power": 116,
+        "desc": "An anomalous the aetheric monarch originating from Multiverse Sector 7. Highly unpredictable."
+    },
+    {
+        "name": "The Null Monarch (Subject 28)",
+        "origin": "The Astral Plane",
+        "power": 117,
+        "desc": "An anomalous the null monarch originating from The Astral Plane. Highly unpredictable."
+    },
+    {
+        "name": "The Abyssal Entity (Subject 29)",
+        "origin": "Fallen Earth",
+        "power": 118,
+        "desc": "An anomalous the abyssal entity originating from Fallen Earth. Highly unpredictable."
+    },
+    {
+        "name": "The Celestial Entity (Subject 30)",
+        "origin": "The Outer Rim",
+        "power": 119,
+        "desc": "An anomalous the celestial entity originating from The Outer Rim. Highly unpredictable."
+    },
+    {
+        "name": "The Dimensional Entity (Subject 31)",
+        "origin": "The Deep Dark",
+        "power": 120,
+        "desc": "An anomalous the dimensional entity originating from The Deep Dark. Highly unpredictable."
+    },
+    {
+        "name": "The Paradox Entity (Subject 32)",
+        "origin": "Multiverse Sector 7",
+        "power": 121,
+        "desc": "An anomalous the paradox entity originating from Multiverse Sector 7. Highly unpredictable."
+    },
+    {
+        "name": "The Quantum Entity (Subject 33)",
+        "origin": "The Astral Plane",
+        "power": 122,
+        "desc": "An anomalous the quantum entity originating from The Astral Plane. Highly unpredictable."
+    },
+    {
+        "name": "The Infernal Entity (Subject 34)",
+        "origin": "Fallen Earth",
+        "power": 123,
+        "desc": "An anomalous the infernal entity originating from Fallen Earth. Highly unpredictable."
+    },
+    {
+        "name": "The Aetheric Entity (Subject 35)",
+        "origin": "The Outer Rim",
+        "power": 124,
+        "desc": "An anomalous the aetheric entity originating from The Outer Rim. Highly unpredictable."
+    },
+    {
+        "name": "The Null Entity (Subject 36)",
+        "origin": "The Deep Dark",
+        "power": 125,
+        "desc": "An anomalous the null entity originating from The Deep Dark. Highly unpredictable."
+    },
+    {
+        "name": "The Abyssal Vanguard (Subject 37)",
+        "origin": "Multiverse Sector 7",
+        "power": 126,
+        "desc": "An anomalous the abyssal vanguard originating from Multiverse Sector 7. Highly unpredictable."
+    },
+    {
+        "name": "The Celestial Vanguard (Subject 38)",
+        "origin": "The Astral Plane",
+        "power": 127,
+        "desc": "An anomalous the celestial vanguard originating from The Astral Plane. Highly unpredictable."
+    },
+    {
+        "name": "The Dimensional Vanguard (Subject 39)",
+        "origin": "Fallen Earth",
+        "power": 128,
+        "desc": "An anomalous the dimensional vanguard originating from Fallen Earth. Highly unpredictable."
+    },
+    {
+        "name": "The Paradox Vanguard (Subject 40)",
+        "origin": "The Outer Rim",
+        "power": 129,
+        "desc": "An anomalous the paradox vanguard originating from The Outer Rim. Highly unpredictable."
+    },
+    {
+        "name": "The Quantum Vanguard (Subject 41)",
+        "origin": "The Deep Dark",
+        "power": 130,
+        "desc": "An anomalous the quantum vanguard originating from The Deep Dark. Highly unpredictable."
+    },
+    {
+        "name": "The Infernal Vanguard (Subject 42)",
+        "origin": "Multiverse Sector 7",
+        "power": 131,
+        "desc": "An anomalous the infernal vanguard originating from Multiverse Sector 7. Highly unpredictable."
+    },
+    {
+        "name": "The Aetheric Vanguard (Subject 43)",
+        "origin": "The Astral Plane",
+        "power": 132,
+        "desc": "An anomalous the aetheric vanguard originating from The Astral Plane. Highly unpredictable."
+    },
+    {
+        "name": "The Null Vanguard (Subject 44)",
+        "origin": "Fallen Earth",
+        "power": 133,
+        "desc": "An anomalous the null vanguard originating from Fallen Earth. Highly unpredictable."
+    },
+    {
+        "name": "The Abyssal Harbinger (Subject 45)",
+        "origin": "The Outer Rim",
+        "power": 134,
+        "desc": "An anomalous the abyssal harbinger originating from The Outer Rim. Highly unpredictable."
+    },
+    {
+        "name": "The Celestial Harbinger (Subject 46)",
+        "origin": "The Deep Dark",
+        "power": 135,
+        "desc": "An anomalous the celestial harbinger originating from The Deep Dark. Highly unpredictable."
+    },
+    {
+        "name": "The Dimensional Harbinger (Subject 47)",
+        "origin": "Multiverse Sector 7",
+        "power": 136,
+        "desc": "An anomalous the dimensional harbinger originating from Multiverse Sector 7. Highly unpredictable."
+    },
+    {
+        "name": "The Paradox Harbinger (Subject 48)",
+        "origin": "The Astral Plane",
+        "power": 137,
+        "desc": "An anomalous the paradox harbinger originating from The Astral Plane. Highly unpredictable."
+    },
+    {
+        "name": "The Quantum Harbinger (Subject 49)",
+        "origin": "Fallen Earth",
+        "power": 138,
+        "desc": "An anomalous the quantum harbinger originating from Fallen Earth. Highly unpredictable."
+    },
+    {
+        "name": "The Infernal Harbinger (Subject 50)",
+        "origin": "The Outer Rim",
+        "power": 139,
+        "desc": "An anomalous the infernal harbinger originating from The Outer Rim. Highly unpredictable."
+    },
+    {
+        "name": "The Aetheric Harbinger (Subject 51)",
+        "origin": "The Deep Dark",
+        "power": 140,
+        "desc": "An anomalous the aetheric harbinger originating from The Deep Dark. Highly unpredictable."
+    },
+    {
+        "name": "The Null Harbinger (Subject 52)",
+        "origin": "Multiverse Sector 7",
+        "power": 141,
+        "desc": "An anomalous the null harbinger originating from Multiverse Sector 7. Highly unpredictable."
+    },
+    {
+        "name": "The Abyssal Annihilator (Subject 53)",
+        "origin": "The Astral Plane",
+        "power": 142,
+        "desc": "An anomalous the abyssal annihilator originating from The Astral Plane. Highly unpredictable."
+    },
+    {
+        "name": "The Celestial Annihilator (Subject 54)",
+        "origin": "Fallen Earth",
+        "power": 143,
+        "desc": "An anomalous the celestial annihilator originating from Fallen Earth. Highly unpredictable."
+    },
+    {
+        "name": "The Dimensional Annihilator (Subject 55)",
+        "origin": "The Outer Rim",
+        "power": 144,
+        "desc": "An anomalous the dimensional annihilator originating from The Outer Rim. Highly unpredictable."
+    },
+    {
+        "name": "The Paradox Annihilator (Subject 56)",
+        "origin": "The Deep Dark",
+        "power": 145,
+        "desc": "An anomalous the paradox annihilator originating from The Deep Dark. Highly unpredictable."
+    },
+    {
+        "name": "The Quantum Annihilator (Subject 57)",
+        "origin": "Multiverse Sector 7",
+        "power": 146,
+        "desc": "An anomalous the quantum annihilator originating from Multiverse Sector 7. Highly unpredictable."
+    },
+    {
+        "name": "The Infernal Annihilator (Subject 58)",
+        "origin": "The Astral Plane",
+        "power": 147,
+        "desc": "An anomalous the infernal annihilator originating from The Astral Plane. Highly unpredictable."
+    },
+    {
+        "name": "The Aetheric Annihilator (Subject 59)",
+        "origin": "Fallen Earth",
+        "power": 148,
+        "desc": "An anomalous the aetheric annihilator originating from Fallen Earth. Highly unpredictable."
+    },
+    {
+        "name": "The Null Annihilator (Subject 60)",
+        "origin": "The Outer Rim",
+        "power": 149,
+        "desc": "An anomalous the null annihilator originating from The Outer Rim. Highly unpredictable."
+    },
+    {
+        "name": "The Abyssal Weaver (Subject 61)",
+        "origin": "The Deep Dark",
+        "power": 150,
+        "desc": "An anomalous the abyssal weaver originating from The Deep Dark. Highly unpredictable."
+    },
+    {
+        "name": "The Celestial Weaver (Subject 62)",
+        "origin": "Multiverse Sector 7",
+        "power": 151,
+        "desc": "An anomalous the celestial weaver originating from Multiverse Sector 7. Highly unpredictable."
+    },
+    {
+        "name": "The Dimensional Weaver (Subject 63)",
+        "origin": "The Astral Plane",
+        "power": 152,
+        "desc": "An anomalous the dimensional weaver originating from The Astral Plane. Highly unpredictable."
+    },
+    {
+        "name": "The Paradox Weaver (Subject 64)",
+        "origin": "Fallen Earth",
+        "power": 153,
+        "desc": "An anomalous the paradox weaver originating from Fallen Earth. Highly unpredictable."
+    },
+    {
+        "name": "The Quantum Weaver (Subject 65)",
+        "origin": "The Outer Rim",
+        "power": 154,
+        "desc": "An anomalous the quantum weaver originating from The Outer Rim. Highly unpredictable."
+    },
+    {
+        "name": "The Infernal Weaver (Subject 66)",
+        "origin": "The Deep Dark",
+        "power": 155,
+        "desc": "An anomalous the infernal weaver originating from The Deep Dark. Highly unpredictable."
+    },
+    {
+        "name": "The Aetheric Weaver (Subject 67)",
+        "origin": "Multiverse Sector 7",
+        "power": 156,
+        "desc": "An anomalous the aetheric weaver originating from Multiverse Sector 7. Highly unpredictable."
+    },
+    {
+        "name": "The Null Weaver (Subject 68)",
+        "origin": "The Astral Plane",
+        "power": 157,
+        "desc": "An anomalous the null weaver originating from The Astral Plane. Highly unpredictable."
+    },
+    {
+        "name": "The Abyssal Specter (Subject 69)",
+        "origin": "Fallen Earth",
+        "power": 158,
+        "desc": "An anomalous the abyssal specter originating from Fallen Earth. Highly unpredictable."
+    },
+    {
+        "name": "The Celestial Specter (Subject 70)",
+        "origin": "The Outer Rim",
+        "power": 159,
+        "desc": "An anomalous the celestial specter originating from The Outer Rim. Highly unpredictable."
+    },
+    {
+        "name": "The Dimensional Specter (Subject 71)",
+        "origin": "The Deep Dark",
+        "power": 160,
+        "desc": "An anomalous the dimensional specter originating from The Deep Dark. Highly unpredictable."
+    },
+    {
+        "name": "The Paradox Specter (Subject 72)",
+        "origin": "Multiverse Sector 7",
+        "power": 161,
+        "desc": "An anomalous the paradox specter originating from Multiverse Sector 7. Highly unpredictable."
+    },
+    {
+        "name": "The Quantum Specter (Subject 73)",
+        "origin": "The Astral Plane",
+        "power": 162,
+        "desc": "An anomalous the quantum specter originating from The Astral Plane. Highly unpredictable."
+    },
+    {
+        "name": "The Infernal Specter (Subject 74)",
+        "origin": "Fallen Earth",
+        "power": 163,
+        "desc": "An anomalous the infernal specter originating from Fallen Earth. Highly unpredictable."
+    },
+    {
+        "name": "The Aetheric Specter (Subject 75)",
+        "origin": "The Outer Rim",
+        "power": 164,
+        "desc": "An anomalous the aetheric specter originating from The Outer Rim. Highly unpredictable."
+    },
+    {
+        "name": "The Null Specter (Subject 76)",
+        "origin": "The Deep Dark",
+        "power": 165,
+        "desc": "An anomalous the null specter originating from The Deep Dark. Highly unpredictable."
+    },
+    {
+        "name": "The Abyssal Leviathan (Subject 77)",
+        "origin": "Multiverse Sector 7",
+        "power": 166,
+        "desc": "An anomalous the abyssal leviathan originating from Multiverse Sector 7. Highly unpredictable."
+    },
+    {
+        "name": "The Celestial Leviathan (Subject 78)",
+        "origin": "The Astral Plane",
+        "power": 167,
+        "desc": "An anomalous the celestial leviathan originating from The Astral Plane. Highly unpredictable."
+    },
+    {
+        "name": "The Dimensional Leviathan (Subject 79)",
+        "origin": "Fallen Earth",
+        "power": 168,
+        "desc": "An anomalous the dimensional leviathan originating from Fallen Earth. Highly unpredictable."
+    },
+    {
+        "name": "The Paradox Leviathan (Subject 80)",
+        "origin": "The Outer Rim",
+        "power": 169,
+        "desc": "An anomalous the paradox leviathan originating from The Outer Rim. Highly unpredictable."
+    },
+    {
+        "name": "The Quantum Leviathan (Subject 81)",
+        "origin": "The Deep Dark",
+        "power": 110,
+        "desc": "An anomalous the quantum leviathan originating from The Deep Dark. Highly unpredictable."
+    },
+    {
+        "name": "The Infernal Leviathan (Subject 82)",
+        "origin": "Multiverse Sector 7",
+        "power": 111,
+        "desc": "An anomalous the infernal leviathan originating from Multiverse Sector 7. Highly unpredictable."
+    },
+    {
+        "name": "The Aetheric Leviathan (Subject 83)",
+        "origin": "The Astral Plane",
+        "power": 112,
+        "desc": "An anomalous the aetheric leviathan originating from The Astral Plane. Highly unpredictable."
+    },
+    {
+        "name": "The Null Leviathan (Subject 84)",
+        "origin": "Fallen Earth",
+        "power": 113,
+        "desc": "An anomalous the null leviathan originating from Fallen Earth. Highly unpredictable."
+    },
+    {
+        "name": "The Abyssal Monarch (Subject 85)",
+        "origin": "The Outer Rim",
+        "power": 114,
+        "desc": "An anomalous the abyssal monarch originating from The Outer Rim. Highly unpredictable."
+    },
+    {
+        "name": "The Celestial Monarch (Subject 86)",
+        "origin": "The Deep Dark",
+        "power": 115,
+        "desc": "An anomalous the celestial monarch originating from The Deep Dark. Highly unpredictable."
+    },
+    {
+        "name": "The Dimensional Monarch (Subject 87)",
+        "origin": "Multiverse Sector 7",
+        "power": 116,
+        "desc": "An anomalous the dimensional monarch originating from Multiverse Sector 7. Highly unpredictable."
+    },
+    {
+        "name": "The Paradox Monarch (Subject 88)",
+        "origin": "The Astral Plane",
+        "power": 117,
+        "desc": "An anomalous the paradox monarch originating from The Astral Plane. Highly unpredictable."
+    },
+    {
+        "name": "The Quantum Monarch (Subject 89)",
+        "origin": "Fallen Earth",
+        "power": 118,
+        "desc": "An anomalous the quantum monarch originating from Fallen Earth. Highly unpredictable."
+    },
+    {
+        "name": "The Infernal Monarch (Subject 90)",
+        "origin": "The Outer Rim",
+        "power": 119,
+        "desc": "An anomalous the infernal monarch originating from The Outer Rim. Highly unpredictable."
+    },
+    {
+        "name": "The Aetheric Monarch (Subject 91)",
+        "origin": "The Deep Dark",
+        "power": 120,
+        "desc": "An anomalous the aetheric monarch originating from The Deep Dark. Highly unpredictable."
+    },
+    {
+        "name": "The Null Monarch (Subject 92)",
+        "origin": "Multiverse Sector 7",
+        "power": 121,
+        "desc": "An anomalous the null monarch originating from Multiverse Sector 7. Highly unpredictable."
+    },
+    {
+        "name": "The Abyssal Entity (Subject 93)",
+        "origin": "The Astral Plane",
+        "power": 122,
+        "desc": "An anomalous the abyssal entity originating from The Astral Plane. Highly unpredictable."
+    },
+    {
+        "name": "The Celestial Entity (Subject 94)",
+        "origin": "Fallen Earth",
+        "power": 123,
+        "desc": "An anomalous the celestial entity originating from Fallen Earth. Highly unpredictable."
+    },
+    {
+        "name": "The Dimensional Entity (Subject 95)",
+        "origin": "The Outer Rim",
+        "power": 124,
+        "desc": "An anomalous the dimensional entity originating from The Outer Rim. Highly unpredictable."
+    },
+    {
+        "name": "The Paradox Entity (Subject 96)",
+        "origin": "The Deep Dark",
+        "power": 125,
+        "desc": "An anomalous the paradox entity originating from The Deep Dark. Highly unpredictable."
+    },
+    {
+        "name": "The Quantum Entity (Subject 97)",
+        "origin": "Multiverse Sector 7",
+        "power": 126,
+        "desc": "An anomalous the quantum entity originating from Multiverse Sector 7. Highly unpredictable."
+    },
+    {
+        "name": "The Infernal Entity (Subject 98)",
+        "origin": "The Astral Plane",
+        "power": 127,
+        "desc": "An anomalous the infernal entity originating from The Astral Plane. Highly unpredictable."
+    },
+    {
+        "name": "The Aetheric Entity (Subject 99)",
+        "origin": "Fallen Earth",
+        "power": 128,
+        "desc": "An anomalous the aetheric entity originating from Fallen Earth. Highly unpredictable."
+    },
+    {
+        "name": "The Null Entity (Subject 100)",
+        "origin": "The Outer Rim",
+        "power": 129,
+        "desc": "An anomalous the null entity originating from The Outer Rim. Highly unpredictable."
+    }
+]
