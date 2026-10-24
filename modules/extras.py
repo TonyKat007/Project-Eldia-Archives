@@ -506,64 +506,123 @@ def render_public_info_tab():
 
 
 
+import json
+import os
+import streamlit as st
+import plotly.graph_objects as go
+
 def render_titan_forge_tab():
     st.header("⚡ Titan Bio-Engineering Forge")
-    st.markdown("Synthesize a custom Titan Shifter chassis. Allocate physiological attributes and analyze its resulting tactical threat classification and biomechanical limitations.")
+    st.markdown("Synthesize a custom Titan Shifter chassis. Select canonical bloodlines or engineer an anomalous progenitor using cross-dimensional conceptual powers.")
     
+    # --- LOAD POWER DATABASE ---
+    try:
+        with open("titan_powers.json", "r") as f:
+            powers_db = json.load(f)
+    except Exception:
+        powers_db = [{"name": "Data Corruption", "desc": "Database missing.", "genre": "Eldritch", "grade": "S"}]
+        st.error("Missing titan_powers.json file. Generating fallback capabilities.")
+
+    # Hidden Grade Multipliers for Threat Engine
+    grade_scale = {
+        "F": 10, "E": 20, "D": 30, "C": 40, "B": 50, "A": 65, 
+        "S": 80, "R": 90, "SR": 100, "SS": 115, "SSR": 135, "SSRX": 160
+    }
+
     col1, col2 = st.columns([1.2, 1.5])
     
     with col1:
-        st.subheader("Genetic Parameters")
+        st.subheader("Genetic Architecture")
         
-        chassis = st.selectbox("Base Titan Chassis Template", [
-            "Attack (Balanced/Offensive)", 
-            "Armored (Heavy Defense)", 
-            "Colossal (Massive/Thermal)", 
-            "Female (Agile/Versatile)", 
-            "Jaw (High Speed/Lethality)", 
-            "Beast (Variable/Projectile)", 
-            "Cart (Endurance/Quadruped)", 
-            "War Hammer (Structural Synthesis)"
-        ])
-        
-        st.markdown("**Physiological Allocation**")
-        height = st.slider("Vertical Stature (Meters)", 4.0, 60.0, 15.0, 1.0)
-        muscle_density = st.slider("Muscle Fiber Density (Kinetic Power)", 1, 100, 75)
-        hardening = st.slider("Structural Hardening Capacity (%)", 0, 100, 50)
-        mobility = st.slider("Agility & Neural Reflexes", 1, 100, 80)
-        regeneration = st.slider("Cellular Regeneration Rate", 1, 100, 60)
-        heat_emission = st.slider("Thermal & Steam Output", 0, 100, 20)
+        origin = st.radio("Chassis Origin", ["The Nine Titans (Canon)", "Custom Progenitor (Anomalous)"], horizontal=True)
         
         st.divider()
         
-        # --- THREAT & BIOMECHANICAL CALCULATIONS ---
-        # Base Threat Formula
-        base_threat = (muscle_density * 0.25) + (hardening * 0.2) + (mobility * 0.25) + (regeneration * 0.15) + (heat_emission * 0.15)
-        
-        # Height vs Agility penalty (The Square-Cube Law equivalent for Titans)
-        if height > 20 and "Colossal" not in chassis:
-            base_threat *= 0.85 
-        if "Colossal" in chassis:
-            base_threat = max(base_threat, 85.0)
+        if origin == "The Nine Titans (Canon)":
+            chassis = st.selectbox("Base Titan Chassis Template", [
+                "Attack (Balanced/Offensive)", "Armored (Heavy Defense)", 
+                "Colossal (Massive/Thermal)", "Female (Agile/Versatile)", 
+                "Jaw (High Speed/Lethality)", "Beast (Variable/Projectile)", 
+                "Cart (Endurance/Quadruped)", "War Hammer (Structural Synthesis)"
+            ])
             
-        threat_level = min(100.0, base_threat)
-        
-        # Biomechanics (Pseudo-science based on volume)
-        estimated_mass = (height ** 3) * (muscle_density * 0.1) # Extrapolated weight in kg
-        footprint_area = (height * 0.15) ** 2 # Rough foot surface area
-        ground_pressure = (estimated_mass * 9.81) / (footprint_area * 1000) # kPa
-        
-        if threat_level > 90:
-            classification, color = "S-CLASS (APOCALYPTIC)", "#ff4b4b"
-        elif threat_level > 75:
-            classification, color = "A-CLASS (EXTREME THREAT)", "#ffaa00"
-        elif threat_level > 50:
-            classification, color = "B-CLASS (HIGH THREAT)", "#00ffcc"
+            with st.expander("🧬 Physiological Allocation", expanded=True):
+                height = st.slider("Vertical Stature (Meters)", 4.0, 60.0, 15.0, 1.0)
+                muscle = st.slider("Muscle Fiber Density (Kinetic Power)", 1, 100, 75)
+                hardening = st.slider("Structural Hardening Capacity (%)", 0, 100, 50)
+                mobility = st.slider("Agility & Neural Reflexes", 1, 100, 80)
+                regen = st.slider("Cellular Regeneration Rate", 1, 100, 60)
+                anomaly_output = st.slider("Thermal & Steam Output", 0, 100, 20)
+                
+            # Canon Threat Calculation
+            base_threat = (muscle * 0.25) + (hardening * 0.2) + (mobility * 0.25) + (regen * 0.15) + (anomaly_output * 0.15)
+            if height > 20 and "Colossal" not in chassis:
+                base_threat *= 0.85 
+            if "Colossal" in chassis:
+                base_threat = max(base_threat, 85.0)
+            threat_level = min(100.0, base_threat)
+            power_desc = f"Standard Eldian physiology bound to the {chassis.split()[0]} Titan lineage."
+            
         else:
-            classification, color = "C-CLASS (MANAGEABLE)", "#d8c3a5"
+            # Custom Progenitor Engine
+            c1, c2 = st.columns(2)
+            chassis_gender = c1.selectbox("Base Morphology", ["Androgynous", "Masculine", "Feminine", "Beast-like", "Skeletal"])
+            chassis_trait = c2.selectbox("Cosmetic Anomaly", ["Eyeless", "Exposed Ribcage", "Elongated Limbs", "Bioluminescent", "Crown of Horns"])
+            
+            # Extract unique genres from JSON
+            unique_genres = sorted(list(set([p.get("genre", "Unknown") for p in powers_db])))
+            selected_genre = st.selectbox("Conceptual Domain (Genre)", unique_genres)
+            
+            # Filter powers by genre
+            filtered_powers = [p for p in powers_db if p.get("genre") == selected_genre]
+            power_names = [p["name"] for p in filtered_powers]
+            selected_power_name = st.selectbox("Manifested Ability", power_names)
+            
+            # Retrieve active power data
+            active_power = next((p for p in filtered_powers if p["name"] == selected_power_name), filtered_powers[0])
+            hidden_grade = active_power.get("grade", "C")
+            power_desc = active_power.get("desc", "Unknown capability.")
+            
+            st.info(f"**Ability Signature:** {power_desc}")
+            
+            with st.expander("🧬 Physiological Allocation", expanded=False):
+                height = st.slider("Vertical Stature (Meters)", 3.0, 120.0, 15.0, 1.0)
+                muscle = st.slider("Muscle Fiber Density (Kinetic Power)", 1, 100, 60)
+                hardening = st.slider("Structural Hardening Capacity (%)", 0, 100, 40)
+                mobility = st.slider("Agility & Neural Reflexes", 1, 100, 70)
+                regen = st.slider("Cellular Regeneration Rate", 1, 100, 80)
+            
+            # Anomalous Threat Calculation
+            anomaly_output = grade_scale.get(hidden_grade, 40)
+            base_threat = (muscle * 0.15) + (hardening * 0.15) + (mobility * 0.15) + (regen * 0.15) + (anomaly_output * 0.5)
+            # Penalize absurd heights lacking anomalous structural support unless they have high-tier powers
+            if height > 30 and anomaly_output < 80:
+                base_threat *= 0.7 
+            
+            threat_level = base_threat # Can exceed 100 for god-tier
+            
+        st.divider()
+        
+        # --- BIOMECHANICAL PHYSICS ---
+        estimated_mass = (height ** 3) * (muscle * 0.1)
+        footprint_area = (height * 0.15) ** 2
+        ground_pressure = (estimated_mass * 9.81) / (footprint_area * 1000) if footprint_area > 0 else 0
+        
+        if threat_level > 140:
+            classification, color = "EX-CLASS (GOD THREAT)", "#9400D3" # Deep Purple
+        elif threat_level > 110:
+            classification, color = "SS-CLASS (WORLD ENDER)", "#ff00ff" # Neon Magenta
+        elif threat_level > 90:
+            classification, color = "S-CLASS (APOCALYPTIC)", "#ff4b4b" # Crimson
+        elif threat_level > 70:
+            classification, color = "A-CLASS (EXTREME THREAT)", "#ffaa00" # Orange
+        elif threat_level > 40:
+            classification, color = "B-CLASS (HIGH THREAT)", "#00ffcc" # Cyan
+        else:
+            classification, color = "C-CLASS (MANAGEABLE)", "#d8c3a5" # Bone
             
         st.markdown("### Tactical Assessment")
-        st.markdown(f"**Designation:** <span style='color:{color}; font-weight:bold;'>{classification}</span>", unsafe_allow_html=True)
+        st.markdown(f"**Designation:** <span style='color:{color}; font-weight:900; font-size: 1.2rem; letter-spacing: 1px;'>{classification}</span>", unsafe_allow_html=True)
         
         m1, m2 = st.columns(2)
         m1.metric("Est. Mass", f"{estimated_mass/1000:.1f} Tons")
@@ -572,15 +631,21 @@ def render_titan_forge_tab():
     with col2:
         st.subheader("Bio-Signature Analysis")
         
-        # Radar Chart for Stats
+        # Max out radar chart values at 100 for clean visualization, even if anomalous output is 160
+        r_kinetic = min(100, muscle)
+        r_armor = min(100, hardening)
+        r_mobility = min(100, mobility)
+        r_regen = min(100, regen)
+        r_anomaly = min(100, anomaly_output)
+        
         fig = go.Figure()
-        categories = ['Kinetic Power', 'Structural Armor', 'Mobility', 'Regeneration', 'Thermal Output']
+        categories = ['Kinetic Power', 'Structural Armor', 'Mobility', 'Regeneration', 'Anomalous Output']
         fig.add_trace(go.Scatterpolar(
-            r=[muscle_density, hardening, mobility, regeneration, heat_emission],
+            r=[r_kinetic, r_armor, r_mobility, r_regen, r_anomaly],
             theta=categories,
             fill='toself',
-            fillcolor=f'rgba(201, 160, 99, 0.4)', # Gold tint
-            line=dict(color='#c9a063', width=2),
+            fillcolor='rgba(201, 160, 99, 0.3)',
+            line=dict(color=color, width=2),
             marker=dict(color='#ffffff', size=6),
         ))
         
@@ -598,23 +663,27 @@ def render_titan_forge_tab():
         )
         st.plotly_chart(fig, use_container_width=True)
         
-        # Threat Index Gauge
+        # Dynamic Gauge Max Range
+        gauge_max = 160 if threat_level > 100 else 100
+        
         fig_gauge = go.Figure(go.Indicator(
             mode = "gauge+number",
             value = threat_level,
             domain = {'x': [0, 1], 'y': [0, 1]},
             title = {'text': "Overall Threat Index", 'font': {'color': '#c9a063', 'family': 'Cinzel', 'size': 18}},
             gauge = {
-                'axis': {'range': [None, 100], 'tickwidth': 2, 'tickcolor': "#3a2e24"},
+                'axis': {'range': [None, gauge_max], 'tickwidth': 2, 'tickcolor': "#3a2e24"},
                 'bar': {'color': color},
                 'bgcolor': "rgba(0,0,0,0)",
                 'borderwidth': 2,
                 'bordercolor': "#3a2e24",
                 'steps': [
-                    {'range': [0, 50], 'color': 'rgba(216, 195, 165, 0.1)'},
-                    {'range': [50, 75], 'color': 'rgba(0, 255, 204, 0.2)'},
-                    {'range': [75, 90], 'color': 'rgba(255, 170, 0, 0.2)'},
-                    {'range': [90, 100], 'color': 'rgba(255, 75, 75, 0.3)'}],
+                    {'range': [0, 40], 'color': 'rgba(216, 195, 165, 0.1)'},
+                    {'range': [40, 70], 'color': 'rgba(0, 255, 204, 0.2)'},
+                    {'range': [70, 90], 'color': 'rgba(255, 170, 0, 0.2)'},
+                    {'range': [90, 110], 'color': 'rgba(255, 75, 75, 0.3)'},
+                    {'range': [110, gauge_max], 'color': 'rgba(148, 0, 211, 0.4)'}
+                ],
             },
             number = {'font': {'color': color}}
         ))
