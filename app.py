@@ -219,3 +219,5 @@ with tabs[5]:
     render_public_info_tab()
 with tabs[6]:
     render_titan_forge_tab()
+with tabs[7]:
+    render_apex_arena_tab()
