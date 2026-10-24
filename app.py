@@ -6,7 +6,7 @@ import random
 from modules.quiz import render_quiz_tab
 from modules.personality import render_personality_tab
 from modules.roleplay import render_roleplay_tab
-from modules.extras import render_war_room_tab, render_physics_lab_tab, render_public_info_tab, render_titan_forge_tab
+from modules.extras import render_war_room_tab, render_physics_lab_tab, render_public_info_tab, render_titan_forge_tab, render_apex_arena_tab
 
 
 # --- PAGE CONFIG ---
