@@ -189,7 +189,8 @@ tabs = st.tabs([
     "Erwin's War Room",
     "Physics Lab",
     "Detonation",
-    "Titan Forge"
+    "Titan Forge",
+    "Apex Arena"
 ])
 # ==========================================
 # TAB 1: MULTI-TIER POP QUIZ
