@@ -1,0 +1,3956 @@
+[
+    {
+        "name": "Historical Void Projection",
+        "desc": "Summon phantoms of entities or objects from past epochs.",
+        "genre": "Eldritch",
+        "grade": "SSRX"
+    },
+    {
+        "name": "Error Theft",
+        "desc": "Steal physical concepts, time, or thoughts from the target.",
+        "genre": "Eldritch",
+        "grade": "SSR"
+    },
+    {
+        "name": "Spirit Body Threads",
+        "desc": "Control enemies like marionettes by pulling their spiritual tethers.",
+        "genre": "Eldritch",
+        "grade": "SS"
+    },
+    {
+        "name": "Madness Inducement",
+        "desc": "Viewing the Titan's true form causes immediate psychological collapse.",
+        "genre": "Eldritch",
+        "grade": "S"
+    },
+    {
+        "name": "Shadow Manifestation",
+        "desc": "Solidify shadows into autonomous beasts or lethal weaponry.",
+        "genre": "Dark Fantasy",
+        "grade": "SSR"
+    },
+    {
+        "name": "True Name Command",
+        "desc": "Absolute authority over any being whose true name is spoken.",
+        "genre": "Dark Fantasy",
+        "grade": "SS"
+    },
+    {
+        "name": "Flaw Exploitation",
+        "desc": "Instantly perceive and strike the conceptual weak point of anything.",
+        "genre": "Dark Fantasy",
+        "grade": "SSRX"
+    },
+    {
+        "name": "Blood Crystallization",
+        "desc": "Weaponize spilled blood by freezing it into ultra-hard spikes.",
+        "genre": "Dark Fantasy",
+        "grade": "A"
+    },
+    {
+        "name": "Vector Manipulation",
+        "desc": "Control the magnitude and direction of any kinetic force.",
+        "genre": "Sci-Fi",
+        "grade": "SSRX"
+    },
+    {
+        "name": "Infinite Convergence",
+        "desc": "Divide space infinitely so attacks never actually reach the user.",
+        "genre": "Sci-Fi",
+        "grade": "SSRX"
+    },
+    {
+        "name": "Path Transcendence",
+        "desc": "Perceive the past, present, and future across a genetic lineage.",
+        "genre": "Reality",
+        "grade": "SSR"
+    },
+    {
+        "name": "Causality Reversal",
+        "desc": "Strike first, then let reality rewrite the cause of the wound.",
+        "genre": "Reality",
+        "grade": "SSRX"
+    },
+    {
+        "name": "Reactive Adaptation",
+        "desc": "Develop immunity to any attack type after surviving it once.",
+        "genre": "Biological",
+        "grade": "SSR"
+    },
+    {
+        "name": "Biomass Assimilation",
+        "desc": "Absorb organic matter to rapidly heal or grow new appendages.",
+        "genre": "Biological",
+        "grade": "A"
+    },
+    {
+        "name": "Chitinous Carapace",
+        "desc": "Layered armor that disperses blunt force and thermal shock.",
+        "genre": "Biological",
+        "grade": "B"
+    },
+    {
+        "name": "Pheromone Override",
+        "desc": "Emit gas that completely pacifies pure Titans in a 5km radius.",
+        "genre": "Biological",
+        "grade": "S"
+    },
+    {
+        "name": "Bone Protrusion",
+        "desc": "Can snap own bones to use as crude blades. Highly painful.",
+        "genre": "Biological",
+        "grade": "D"
+    },
+    {
+        "name": "Minor Friction Reduction",
+        "desc": "Slightly slide across solid ground.",
+        "genre": "Physics",
+        "grade": "E"
+    },
+    {
+        "name": "Elevated Core Temp",
+        "desc": "User is constantly feverish. Melts standard ice.",
+        "genre": "Elemental",
+        "grade": "F"
+    },
+    {
+        "name": "Absolute Flame Burst",
+        "desc": "Utilizes flame properties to execute burst techniques.",
+        "genre": "Elemental",
+        "grade": "S"
+    },
+    {
+        "name": "Absolute Flame Weaving",
+        "desc": "Utilizes flame properties to execute weaving techniques.",
+        "genre": "Elemental",
+        "grade": "S"
+    },
+    {
+        "name": "Absolute Flame Aura",
+        "desc": "Utilizes flame properties to execute aura techniques.",
+        "genre": "Elemental",
+        "grade": "S"
+    },
+    {
+        "name": "Absolute Flame Constructs",
+        "desc": "Utilizes flame properties to execute constructs techniques.",
+        "genre": "Elemental",
+        "grade": "S"
+    },
+    {
+        "name": "Absolute Flame Nullification",
+        "desc": "Utilizes flame properties to execute nullification techniques.",
+        "genre": "Elemental",
+        "grade": "SR"
+    },
+    {
+        "name": "Absolute Flame Pulse",
+        "desc": "Utilizes flame properties to execute pulse techniques.",
+        "genre": "Elemental",
+        "grade": "S"
+    },
+    {
+        "name": "Absolute Flame Resonance",
+        "desc": "Utilizes flame properties to execute resonance techniques.",
+        "genre": "Elemental",
+        "grade": "S"
+    },
+    {
+        "name": "Absolute Flame Mimicry",
+        "desc": "Utilizes flame properties to execute mimicry techniques.",
+        "genre": "Elemental",
+        "grade": "S"
+    },
+    {
+        "name": "Absolute Frost Burst",
+        "desc": "Utilizes frost properties to execute burst techniques.",
+        "genre": "Elemental",
+        "grade": "S"
+    },
+    {
+        "name": "Absolute Frost Weaving",
+        "desc": "Utilizes frost properties to execute weaving techniques.",
+        "genre": "Elemental",
+        "grade": "S"
+    },
+    {
+        "name": "Absolute Frost Aura",
+        "desc": "Utilizes frost properties to execute aura techniques.",
+        "genre": "Elemental",
+        "grade": "S"
+    },
+    {
+        "name": "Absolute Frost Constructs",
+        "desc": "Utilizes frost properties to execute constructs techniques.",
+        "genre": "Elemental",
+        "grade": "S"
+    },
+    {
+        "name": "Absolute Frost Nullification",
+        "desc": "Utilizes frost properties to execute nullification techniques.",
+        "genre": "Elemental",
+        "grade": "SR"
+    },
+    {
+        "name": "Absolute Frost Pulse",
+        "desc": "Utilizes frost properties to execute pulse techniques.",
+        "genre": "Elemental",
+        "grade": "S"
+    },
+    {
+        "name": "Absolute Frost Resonance",
+        "desc": "Utilizes frost properties to execute resonance techniques.",
+        "genre": "Elemental",
+        "grade": "S"
+    },
+    {
+        "name": "Absolute Frost Mimicry",
+        "desc": "Utilizes frost properties to execute mimicry techniques.",
+        "genre": "Elemental",
+        "grade": "S"
+    },
+    {
+        "name": "Absolute Lightning Burst",
+        "desc": "Utilizes lightning properties to execute burst techniques.",
+        "genre": "Elemental",
+        "grade": "S"
+    },
+    {
+        "name": "Absolute Lightning Weaving",
+        "desc": "Utilizes lightning properties to execute weaving techniques.",
+        "genre": "Elemental",
+        "grade": "S"
+    },
+    {
+        "name": "Absolute Lightning Aura",
+        "desc": "Utilizes lightning properties to execute aura techniques.",
+        "genre": "Elemental",
+        "grade": "S"
+    },
+    {
+        "name": "Absolute Lightning Constructs",
+        "desc": "Utilizes lightning properties to execute constructs techniques.",
+        "genre": "Elemental",
+        "grade": "S"
+    },
+    {
+        "name": "Absolute Lightning Nullification",
+        "desc": "Utilizes lightning properties to execute nullification techniques.",
+        "genre": "Elemental",
+        "grade": "SR"
+    },
+    {
+        "name": "Absolute Lightning Pulse",
+        "desc": "Utilizes lightning properties to execute pulse techniques.",
+        "genre": "Elemental",
+        "grade": "S"
+    },
+    {
+        "name": "Absolute Lightning Resonance",
+        "desc": "Utilizes lightning properties to execute resonance techniques.",
+        "genre": "Elemental",
+        "grade": "S"
+    },
+    {
+        "name": "Absolute Lightning Mimicry",
+        "desc": "Utilizes lightning properties to execute mimicry techniques.",
+        "genre": "Elemental",
+        "grade": "S"
+    },
+    {
+        "name": "Absolute Gravity Burst",
+        "desc": "Utilizes gravity properties to execute burst techniques.",
+        "genre": "Mystic",
+        "grade": "SR"
+    },
+    {
+        "name": "Absolute Gravity Weaving",
+        "desc": "Utilizes gravity properties to execute weaving techniques.",
+        "genre": "Mystic",
+        "grade": "SR"
+    },
+    {
+        "name": "Absolute Gravity Aura",
+        "desc": "Utilizes gravity properties to execute aura techniques.",
+        "genre": "Mystic",
+        "grade": "SR"
+    },
+    {
+        "name": "Absolute Gravity Constructs",
+        "desc": "Utilizes gravity properties to execute constructs techniques.",
+        "genre": "Mystic",
+        "grade": "SR"
+    },
+    {
+        "name": "Absolute Gravity Nullification",
+        "desc": "Utilizes gravity properties to execute nullification techniques.",
+        "genre": "Mystic",
+        "grade": "SSR"
+    },
+    {
+        "name": "Absolute Gravity Pulse",
+        "desc": "Utilizes gravity properties to execute pulse techniques.",
+        "genre": "Mystic",
+        "grade": "SR"
+    },
+    {
+        "name": "Absolute Gravity Resonance",
+        "desc": "Utilizes gravity properties to execute resonance techniques.",
+        "genre": "Mystic",
+        "grade": "SR"
+    },
+    {
+        "name": "Absolute Gravity Mimicry",
+        "desc": "Utilizes gravity properties to execute mimicry techniques.",
+        "genre": "Mystic",
+        "grade": "SR"
+    },
+    {
+        "name": "Absolute Kinetic Burst",
+        "desc": "Utilizes kinetic properties to execute burst techniques.",
+        "genre": "Mystic",
+        "grade": "S"
+    },
+    {
+        "name": "Absolute Kinetic Weaving",
+        "desc": "Utilizes kinetic properties to execute weaving techniques.",
+        "genre": "Mystic",
+        "grade": "S"
+    },
+    {
+        "name": "Absolute Kinetic Aura",
+        "desc": "Utilizes kinetic properties to execute aura techniques.",
+        "genre": "Mystic",
+        "grade": "S"
+    },
+    {
+        "name": "Absolute Kinetic Constructs",
+        "desc": "Utilizes kinetic properties to execute constructs techniques.",
+        "genre": "Mystic",
+        "grade": "S"
+    },
+    {
+        "name": "Absolute Kinetic Nullification",
+        "desc": "Utilizes kinetic properties to execute nullification techniques.",
+        "genre": "Mystic",
+        "grade": "SR"
+    },
+    {
+        "name": "Absolute Kinetic Pulse",
+        "desc": "Utilizes kinetic properties to execute pulse techniques.",
+        "genre": "Mystic",
+        "grade": "S"
+    },
+    {
+        "name": "Absolute Kinetic Resonance",
+        "desc": "Utilizes kinetic properties to execute resonance techniques.",
+        "genre": "Mystic",
+        "grade": "S"
+    },
+    {
+        "name": "Absolute Kinetic Mimicry",
+        "desc": "Utilizes kinetic properties to execute mimicry techniques.",
+        "genre": "Mystic",
+        "grade": "S"
+    },
+    {
+        "name": "Absolute Soul Burst",
+        "desc": "Utilizes soul properties to execute burst techniques.",
+        "genre": "Mystic",
+        "grade": "SR"
+    },
+    {
+        "name": "Absolute Soul Weaving",
+        "desc": "Utilizes soul properties to execute weaving techniques.",
+        "genre": "Mystic",
+        "grade": "SR"
+    },
+    {
+        "name": "Absolute Soul Aura",
+        "desc": "Utilizes soul properties to execute aura techniques.",
+        "genre": "Mystic",
+        "grade": "SR"
+    },
+    {
+        "name": "Absolute Soul Constructs",
+        "desc": "Utilizes soul properties to execute constructs techniques.",
+        "genre": "Mystic",
+        "grade": "SR"
+    },
+    {
+        "name": "Absolute Soul Nullification",
+        "desc": "Utilizes soul properties to execute nullification techniques.",
+        "genre": "Mystic",
+        "grade": "SSR"
+    },
+    {
+        "name": "Absolute Soul Pulse",
+        "desc": "Utilizes soul properties to execute pulse techniques.",
+        "genre": "Mystic",
+        "grade": "SR"
+    },
+    {
+        "name": "Absolute Soul Resonance",
+        "desc": "Utilizes soul properties to execute resonance techniques.",
+        "genre": "Mystic",
+        "grade": "SR"
+    },
+    {
+        "name": "Absolute Soul Mimicry",
+        "desc": "Utilizes soul properties to execute mimicry techniques.",
+        "genre": "Mystic",
+        "grade": "SR"
+    },
+    {
+        "name": "Absolute Void Burst",
+        "desc": "Utilizes void properties to execute burst techniques.",
+        "genre": "Mystic",
+        "grade": "SR"
+    },
+    {
+        "name": "Absolute Void Weaving",
+        "desc": "Utilizes void properties to execute weaving techniques.",
+        "genre": "Mystic",
+        "grade": "SR"
+    },
+    {
+        "name": "Absolute Void Aura",
+        "desc": "Utilizes void properties to execute aura techniques.",
+        "genre": "Mystic",
+        "grade": "SR"
+    },
+    {
+        "name": "Absolute Void Constructs",
+        "desc": "Utilizes void properties to execute constructs techniques.",
+        "genre": "Mystic",
+        "grade": "SR"
+    },
+    {
+        "name": "Absolute Void Nullification",
+        "desc": "Utilizes void properties to execute nullification techniques.",
+        "genre": "Mystic",
+        "grade": "SSR"
+    },
+    {
+        "name": "Absolute Void Pulse",
+        "desc": "Utilizes void properties to execute pulse techniques.",
+        "genre": "Mystic",
+        "grade": "SR"
+    },
+    {
+        "name": "Absolute Void Resonance",
+        "desc": "Utilizes void properties to execute resonance techniques.",
+        "genre": "Mystic",
+        "grade": "SR"
+    },
+    {
+        "name": "Absolute Void Mimicry",
+        "desc": "Utilizes void properties to execute mimicry techniques.",
+        "genre": "Mystic",
+        "grade": "SR"
+    },
+    {
+        "name": "Absolute Flesh Burst",
+        "desc": "Utilizes flesh properties to execute burst techniques.",
+        "genre": "Mystic",
+        "grade": "S"
+    },
+    {
+        "name": "Absolute Flesh Weaving",
+        "desc": "Utilizes flesh properties to execute weaving techniques.",
+        "genre": "Mystic",
+        "grade": "S"
+    },
+    {
+        "name": "Absolute Flesh Aura",
+        "desc": "Utilizes flesh properties to execute aura techniques.",
+        "genre": "Mystic",
+        "grade": "S"
+    },
+    {
+        "name": "Absolute Flesh Constructs",
+        "desc": "Utilizes flesh properties to execute constructs techniques.",
+        "genre": "Mystic",
+        "grade": "S"
+    },
+    {
+        "name": "Absolute Flesh Nullification",
+        "desc": "Utilizes flesh properties to execute nullification techniques.",
+        "genre": "Mystic",
+        "grade": "SR"
+    },
+    {
+        "name": "Absolute Flesh Pulse",
+        "desc": "Utilizes flesh properties to execute pulse techniques.",
+        "genre": "Mystic",
+        "grade": "S"
+    },
+    {
+        "name": "Absolute Flesh Resonance",
+        "desc": "Utilizes flesh properties to execute resonance techniques.",
+        "genre": "Mystic",
+        "grade": "S"
+    },
+    {
+        "name": "Absolute Flesh Mimicry",
+        "desc": "Utilizes flesh properties to execute mimicry techniques.",
+        "genre": "Mystic",
+        "grade": "S"
+    },
+    {
+        "name": "Absolute Steel Burst",
+        "desc": "Utilizes steel properties to execute burst techniques.",
+        "genre": "Mystic",
+        "grade": "S"
+    },
+    {
+        "name": "Absolute Steel Weaving",
+        "desc": "Utilizes steel properties to execute weaving techniques.",
+        "genre": "Mystic",
+        "grade": "S"
+    },
+    {
+        "name": "Absolute Steel Aura",
+        "desc": "Utilizes steel properties to execute aura techniques.",
+        "genre": "Mystic",
+        "grade": "S"
+    },
+    {
+        "name": "Absolute Steel Constructs",
+        "desc": "Utilizes steel properties to execute constructs techniques.",
+        "genre": "Mystic",
+        "grade": "S"
+    },
+    {
+        "name": "Absolute Steel Nullification",
+        "desc": "Utilizes steel properties to execute nullification techniques.",
+        "genre": "Mystic",
+        "grade": "SR"
+    },
+    {
+        "name": "Absolute Steel Pulse",
+        "desc": "Utilizes steel properties to execute pulse techniques.",
+        "genre": "Mystic",
+        "grade": "S"
+    },
+    {
+        "name": "Absolute Steel Resonance",
+        "desc": "Utilizes steel properties to execute resonance techniques.",
+        "genre": "Mystic",
+        "grade": "S"
+    },
+    {
+        "name": "Absolute Steel Mimicry",
+        "desc": "Utilizes steel properties to execute mimicry techniques.",
+        "genre": "Mystic",
+        "grade": "S"
+    },
+    {
+        "name": "Absolute Venom Burst",
+        "desc": "Utilizes venom properties to execute burst techniques.",
+        "genre": "Mystic",
+        "grade": "S"
+    },
+    {
+        "name": "Absolute Venom Weaving",
+        "desc": "Utilizes venom properties to execute weaving techniques.",
+        "genre": "Mystic",
+        "grade": "S"
+    },
+    {
+        "name": "Absolute Venom Aura",
+        "desc": "Utilizes venom properties to execute aura techniques.",
+        "genre": "Mystic",
+        "grade": "S"
+    },
+    {
+        "name": "Absolute Venom Constructs",
+        "desc": "Utilizes venom properties to execute constructs techniques.",
+        "genre": "Mystic",
+        "grade": "S"
+    },
+    {
+        "name": "Absolute Venom Nullification",
+        "desc": "Utilizes venom properties to execute nullification techniques.",
+        "genre": "Mystic",
+        "grade": "SR"
+    },
+    {
+        "name": "Absolute Venom Pulse",
+        "desc": "Utilizes venom properties to execute pulse techniques.",
+        "genre": "Mystic",
+        "grade": "S"
+    },
+    {
+        "name": "Absolute Venom Resonance",
+        "desc": "Utilizes venom properties to execute resonance techniques.",
+        "genre": "Mystic",
+        "grade": "S"
+    },
+    {
+        "name": "Absolute Venom Mimicry",
+        "desc": "Utilizes venom properties to execute mimicry techniques.",
+        "genre": "Mystic",
+        "grade": "S"
+    },
+    {
+        "name": "Lesser Flame Burst",
+        "desc": "Utilizes flame properties to execute burst techniques.",
+        "genre": "Elemental",
+        "grade": "D"
+    },
+    {
+        "name": "Lesser Flame Weaving",
+        "desc": "Utilizes flame properties to execute weaving techniques.",
+        "genre": "Elemental",
+        "grade": "D"
+    },
+    {
+        "name": "Lesser Flame Aura",
+        "desc": "Utilizes flame properties to execute aura techniques.",
+        "genre": "Elemental",
+        "grade": "D"
+    },
+    {
+        "name": "Lesser Flame Constructs",
+        "desc": "Utilizes flame properties to execute constructs techniques.",
+        "genre": "Elemental",
+        "grade": "D"
+    },
+    {
+        "name": "Lesser Flame Nullification",
+        "desc": "Utilizes flame properties to execute nullification techniques.",
+        "genre": "Elemental",
+        "grade": "B"
+    },
+    {
+        "name": "Lesser Flame Pulse",
+        "desc": "Utilizes flame properties to execute pulse techniques.",
+        "genre": "Elemental",
+        "grade": "D"
+    },
+    {
+        "name": "Lesser Flame Resonance",
+        "desc": "Utilizes flame properties to execute resonance techniques.",
+        "genre": "Elemental",
+        "grade": "D"
+    },
+    {
+        "name": "Lesser Flame Mimicry",
+        "desc": "Utilizes flame properties to execute mimicry techniques.",
+        "genre": "Elemental",
+        "grade": "D"
+    },
+    {
+        "name": "Lesser Frost Burst",
+        "desc": "Utilizes frost properties to execute burst techniques.",
+        "genre": "Elemental",
+        "grade": "D"
+    },
+    {
+        "name": "Lesser Frost Weaving",
+        "desc": "Utilizes frost properties to execute weaving techniques.",
+        "genre": "Elemental",
+        "grade": "D"
+    },
+    {
+        "name": "Lesser Frost Aura",
+        "desc": "Utilizes frost properties to execute aura techniques.",
+        "genre": "Elemental",
+        "grade": "D"
+    },
+    {
+        "name": "Lesser Frost Constructs",
+        "desc": "Utilizes frost properties to execute constructs techniques.",
+        "genre": "Elemental",
+        "grade": "D"
+    },
+    {
+        "name": "Lesser Frost Nullification",
+        "desc": "Utilizes frost properties to execute nullification techniques.",
+        "genre": "Elemental",
+        "grade": "B"
+    },
+    {
+        "name": "Lesser Frost Pulse",
+        "desc": "Utilizes frost properties to execute pulse techniques.",
+        "genre": "Elemental",
+        "grade": "D"
+    },
+    {
+        "name": "Lesser Frost Resonance",
+        "desc": "Utilizes frost properties to execute resonance techniques.",
+        "genre": "Elemental",
+        "grade": "D"
+    },
+    {
+        "name": "Lesser Frost Mimicry",
+        "desc": "Utilizes frost properties to execute mimicry techniques.",
+        "genre": "Elemental",
+        "grade": "D"
+    },
+    {
+        "name": "Lesser Lightning Burst",
+        "desc": "Utilizes lightning properties to execute burst techniques.",
+        "genre": "Elemental",
+        "grade": "D"
+    },
+    {
+        "name": "Lesser Lightning Weaving",
+        "desc": "Utilizes lightning properties to execute weaving techniques.",
+        "genre": "Elemental",
+        "grade": "D"
+    },
+    {
+        "name": "Lesser Lightning Aura",
+        "desc": "Utilizes lightning properties to execute aura techniques.",
+        "genre": "Elemental",
+        "grade": "D"
+    },
+    {
+        "name": "Lesser Lightning Constructs",
+        "desc": "Utilizes lightning properties to execute constructs techniques.",
+        "genre": "Elemental",
+        "grade": "D"
+    },
+    {
+        "name": "Lesser Lightning Nullification",
+        "desc": "Utilizes lightning properties to execute nullification techniques.",
+        "genre": "Elemental",
+        "grade": "B"
+    },
+    {
+        "name": "Lesser Lightning Pulse",
+        "desc": "Utilizes lightning properties to execute pulse techniques.",
+        "genre": "Elemental",
+        "grade": "D"
+    },
+    {
+        "name": "Lesser Lightning Resonance",
+        "desc": "Utilizes lightning properties to execute resonance techniques.",
+        "genre": "Elemental",
+        "grade": "D"
+    },
+    {
+        "name": "Lesser Lightning Mimicry",
+        "desc": "Utilizes lightning properties to execute mimicry techniques.",
+        "genre": "Elemental",
+        "grade": "D"
+    },
+    {
+        "name": "Lesser Gravity Burst",
+        "desc": "Utilizes gravity properties to execute burst techniques.",
+        "genre": "Mystic",
+        "grade": "B"
+    },
+    {
+        "name": "Lesser Gravity Weaving",
+        "desc": "Utilizes gravity properties to execute weaving techniques.",
+        "genre": "Mystic",
+        "grade": "B"
+    },
+    {
+        "name": "Lesser Gravity Aura",
+        "desc": "Utilizes gravity properties to execute aura techniques.",
+        "genre": "Mystic",
+        "grade": "B"
+    },
+    {
+        "name": "Lesser Gravity Constructs",
+        "desc": "Utilizes gravity properties to execute constructs techniques.",
+        "genre": "Mystic",
+        "grade": "B"
+    },
+    {
+        "name": "Lesser Gravity Nullification",
+        "desc": "Utilizes gravity properties to execute nullification techniques.",
+        "genre": "Mystic",
+        "grade": "S"
+    },
+    {
+        "name": "Lesser Gravity Pulse",
+        "desc": "Utilizes gravity properties to execute pulse techniques.",
+        "genre": "Mystic",
+        "grade": "B"
+    },
+    {
+        "name": "Lesser Gravity Resonance",
+        "desc": "Utilizes gravity properties to execute resonance techniques.",
+        "genre": "Mystic",
+        "grade": "B"
+    },
+    {
+        "name": "Lesser Gravity Mimicry",
+        "desc": "Utilizes gravity properties to execute mimicry techniques.",
+        "genre": "Mystic",
+        "grade": "B"
+    },
+    {
+        "name": "Lesser Kinetic Burst",
+        "desc": "Utilizes kinetic properties to execute burst techniques.",
+        "genre": "Mystic",
+        "grade": "D"
+    },
+    {
+        "name": "Lesser Kinetic Weaving",
+        "desc": "Utilizes kinetic properties to execute weaving techniques.",
+        "genre": "Mystic",
+        "grade": "D"
+    },
+    {
+        "name": "Lesser Kinetic Aura",
+        "desc": "Utilizes kinetic properties to execute aura techniques.",
+        "genre": "Mystic",
+        "grade": "D"
+    },
+    {
+        "name": "Lesser Kinetic Constructs",
+        "desc": "Utilizes kinetic properties to execute constructs techniques.",
+        "genre": "Mystic",
+        "grade": "D"
+    },
+    {
+        "name": "Lesser Kinetic Nullification",
+        "desc": "Utilizes kinetic properties to execute nullification techniques.",
+        "genre": "Mystic",
+        "grade": "B"
+    },
+    {
+        "name": "Lesser Kinetic Pulse",
+        "desc": "Utilizes kinetic properties to execute pulse techniques.",
+        "genre": "Mystic",
+        "grade": "D"
+    },
+    {
+        "name": "Lesser Kinetic Resonance",
+        "desc": "Utilizes kinetic properties to execute resonance techniques.",
+        "genre": "Mystic",
+        "grade": "D"
+    },
+    {
+        "name": "Lesser Kinetic Mimicry",
+        "desc": "Utilizes kinetic properties to execute mimicry techniques.",
+        "genre": "Mystic",
+        "grade": "D"
+    },
+    {
+        "name": "Lesser Soul Burst",
+        "desc": "Utilizes soul properties to execute burst techniques.",
+        "genre": "Mystic",
+        "grade": "B"
+    },
+    {
+        "name": "Lesser Soul Weaving",
+        "desc": "Utilizes soul properties to execute weaving techniques.",
+        "genre": "Mystic",
+        "grade": "B"
+    },
+    {
+        "name": "Lesser Soul Aura",
+        "desc": "Utilizes soul properties to execute aura techniques.",
+        "genre": "Mystic",
+        "grade": "B"
+    },
+    {
+        "name": "Lesser Soul Constructs",
+        "desc": "Utilizes soul properties to execute constructs techniques.",
+        "genre": "Mystic",
+        "grade": "B"
+    },
+    {
+        "name": "Lesser Soul Nullification",
+        "desc": "Utilizes soul properties to execute nullification techniques.",
+        "genre": "Mystic",
+        "grade": "S"
+    },
+    {
+        "name": "Lesser Soul Pulse",
+        "desc": "Utilizes soul properties to execute pulse techniques.",
+        "genre": "Mystic",
+        "grade": "B"
+    },
+    {
+        "name": "Lesser Soul Resonance",
+        "desc": "Utilizes soul properties to execute resonance techniques.",
+        "genre": "Mystic",
+        "grade": "B"
+    },
+    {
+        "name": "Lesser Soul Mimicry",
+        "desc": "Utilizes soul properties to execute mimicry techniques.",
+        "genre": "Mystic",
+        "grade": "B"
+    },
+    {
+        "name": "Lesser Void Burst",
+        "desc": "Utilizes void properties to execute burst techniques.",
+        "genre": "Mystic",
+        "grade": "B"
+    },
+    {
+        "name": "Lesser Void Weaving",
+        "desc": "Utilizes void properties to execute weaving techniques.",
+        "genre": "Mystic",
+        "grade": "B"
+    },
+    {
+        "name": "Lesser Void Aura",
+        "desc": "Utilizes void properties to execute aura techniques.",
+        "genre": "Mystic",
+        "grade": "B"
+    },
+    {
+        "name": "Lesser Void Constructs",
+        "desc": "Utilizes void properties to execute constructs techniques.",
+        "genre": "Mystic",
+        "grade": "B"
+    },
+    {
+        "name": "Lesser Void Nullification",
+        "desc": "Utilizes void properties to execute nullification techniques.",
+        "genre": "Mystic",
+        "grade": "S"
+    },
+    {
+        "name": "Lesser Void Pulse",
+        "desc": "Utilizes void properties to execute pulse techniques.",
+        "genre": "Mystic",
+        "grade": "B"
+    },
+    {
+        "name": "Lesser Void Resonance",
+        "desc": "Utilizes void properties to execute resonance techniques.",
+        "genre": "Mystic",
+        "grade": "B"
+    },
+    {
+        "name": "Lesser Void Mimicry",
+        "desc": "Utilizes void properties to execute mimicry techniques.",
+        "genre": "Mystic",
+        "grade": "B"
+    },
+    {
+        "name": "Lesser Flesh Burst",
+        "desc": "Utilizes flesh properties to execute burst techniques.",
+        "genre": "Mystic",
+        "grade": "D"
+    },
+    {
+        "name": "Lesser Flesh Weaving",
+        "desc": "Utilizes flesh properties to execute weaving techniques.",
+        "genre": "Mystic",
+        "grade": "D"
+    },
+    {
+        "name": "Lesser Flesh Aura",
+        "desc": "Utilizes flesh properties to execute aura techniques.",
+        "genre": "Mystic",
+        "grade": "D"
+    },
+    {
+        "name": "Lesser Flesh Constructs",
+        "desc": "Utilizes flesh properties to execute constructs techniques.",
+        "genre": "Mystic",
+        "grade": "D"
+    },
+    {
+        "name": "Lesser Flesh Nullification",
+        "desc": "Utilizes flesh properties to execute nullification techniques.",
+        "genre": "Mystic",
+        "grade": "B"
+    },
+    {
+        "name": "Lesser Flesh Pulse",
+        "desc": "Utilizes flesh properties to execute pulse techniques.",
+        "genre": "Mystic",
+        "grade": "D"
+    },
+    {
+        "name": "Lesser Flesh Resonance",
+        "desc": "Utilizes flesh properties to execute resonance techniques.",
+        "genre": "Mystic",
+        "grade": "D"
+    },
+    {
+        "name": "Lesser Flesh Mimicry",
+        "desc": "Utilizes flesh properties to execute mimicry techniques.",
+        "genre": "Mystic",
+        "grade": "D"
+    },
+    {
+        "name": "Lesser Steel Burst",
+        "desc": "Utilizes steel properties to execute burst techniques.",
+        "genre": "Mystic",
+        "grade": "D"
+    },
+    {
+        "name": "Lesser Steel Weaving",
+        "desc": "Utilizes steel properties to execute weaving techniques.",
+        "genre": "Mystic",
+        "grade": "D"
+    },
+    {
+        "name": "Lesser Steel Aura",
+        "desc": "Utilizes steel properties to execute aura techniques.",
+        "genre": "Mystic",
+        "grade": "D"
+    },
+    {
+        "name": "Lesser Steel Constructs",
+        "desc": "Utilizes steel properties to execute constructs techniques.",
+        "genre": "Mystic",
+        "grade": "D"
+    },
+    {
+        "name": "Lesser Steel Nullification",
+        "desc": "Utilizes steel properties to execute nullification techniques.",
+        "genre": "Mystic",
+        "grade": "B"
+    },
+    {
+        "name": "Lesser Steel Pulse",
+        "desc": "Utilizes steel properties to execute pulse techniques.",
+        "genre": "Mystic",
+        "grade": "D"
+    },
+    {
+        "name": "Lesser Steel Resonance",
+        "desc": "Utilizes steel properties to execute resonance techniques.",
+        "genre": "Mystic",
+        "grade": "D"
+    },
+    {
+        "name": "Lesser Steel Mimicry",
+        "desc": "Utilizes steel properties to execute mimicry techniques.",
+        "genre": "Mystic",
+        "grade": "D"
+    },
+    {
+        "name": "Lesser Venom Burst",
+        "desc": "Utilizes venom properties to execute burst techniques.",
+        "genre": "Mystic",
+        "grade": "D"
+    },
+    {
+        "name": "Lesser Venom Weaving",
+        "desc": "Utilizes venom properties to execute weaving techniques.",
+        "genre": "Mystic",
+        "grade": "D"
+    },
+    {
+        "name": "Lesser Venom Aura",
+        "desc": "Utilizes venom properties to execute aura techniques.",
+        "genre": "Mystic",
+        "grade": "D"
+    },
+    {
+        "name": "Lesser Venom Constructs",
+        "desc": "Utilizes venom properties to execute constructs techniques.",
+        "genre": "Mystic",
+        "grade": "D"
+    },
+    {
+        "name": "Lesser Venom Nullification",
+        "desc": "Utilizes venom properties to execute nullification techniques.",
+        "genre": "Mystic",
+        "grade": "B"
+    },
+    {
+        "name": "Lesser Venom Pulse",
+        "desc": "Utilizes venom properties to execute pulse techniques.",
+        "genre": "Mystic",
+        "grade": "D"
+    },
+    {
+        "name": "Lesser Venom Resonance",
+        "desc": "Utilizes venom properties to execute resonance techniques.",
+        "genre": "Mystic",
+        "grade": "D"
+    },
+    {
+        "name": "Lesser Venom Mimicry",
+        "desc": "Utilizes venom properties to execute mimicry techniques.",
+        "genre": "Mystic",
+        "grade": "D"
+    },
+    {
+        "name": "Corrupted Flame Burst",
+        "desc": "Utilizes flame properties to execute burst techniques.",
+        "genre": "Elemental",
+        "grade": "B"
+    },
+    {
+        "name": "Corrupted Flame Weaving",
+        "desc": "Utilizes flame properties to execute weaving techniques.",
+        "genre": "Elemental",
+        "grade": "B"
+    },
+    {
+        "name": "Corrupted Flame Aura",
+        "desc": "Utilizes flame properties to execute aura techniques.",
+        "genre": "Elemental",
+        "grade": "B"
+    },
+    {
+        "name": "Corrupted Flame Constructs",
+        "desc": "Utilizes flame properties to execute constructs techniques.",
+        "genre": "Elemental",
+        "grade": "B"
+    },
+    {
+        "name": "Corrupted Flame Nullification",
+        "desc": "Utilizes flame properties to execute nullification techniques.",
+        "genre": "Elemental",
+        "grade": "S"
+    },
+    {
+        "name": "Corrupted Flame Pulse",
+        "desc": "Utilizes flame properties to execute pulse techniques.",
+        "genre": "Elemental",
+        "grade": "B"
+    },
+    {
+        "name": "Corrupted Flame Resonance",
+        "desc": "Utilizes flame properties to execute resonance techniques.",
+        "genre": "Elemental",
+        "grade": "B"
+    },
+    {
+        "name": "Corrupted Flame Mimicry",
+        "desc": "Utilizes flame properties to execute mimicry techniques.",
+        "genre": "Elemental",
+        "grade": "B"
+    },
+    {
+        "name": "Corrupted Frost Burst",
+        "desc": "Utilizes frost properties to execute burst techniques.",
+        "genre": "Elemental",
+        "grade": "B"
+    },
+    {
+        "name": "Corrupted Frost Weaving",
+        "desc": "Utilizes frost properties to execute weaving techniques.",
+        "genre": "Elemental",
+        "grade": "B"
+    },
+    {
+        "name": "Corrupted Frost Aura",
+        "desc": "Utilizes frost properties to execute aura techniques.",
+        "genre": "Elemental",
+        "grade": "B"
+    },
+    {
+        "name": "Corrupted Frost Constructs",
+        "desc": "Utilizes frost properties to execute constructs techniques.",
+        "genre": "Elemental",
+        "grade": "B"
+    },
+    {
+        "name": "Corrupted Frost Nullification",
+        "desc": "Utilizes frost properties to execute nullification techniques.",
+        "genre": "Elemental",
+        "grade": "S"
+    },
+    {
+        "name": "Corrupted Frost Pulse",
+        "desc": "Utilizes frost properties to execute pulse techniques.",
+        "genre": "Elemental",
+        "grade": "B"
+    },
+    {
+        "name": "Corrupted Frost Resonance",
+        "desc": "Utilizes frost properties to execute resonance techniques.",
+        "genre": "Elemental",
+        "grade": "B"
+    },
+    {
+        "name": "Corrupted Frost Mimicry",
+        "desc": "Utilizes frost properties to execute mimicry techniques.",
+        "genre": "Elemental",
+        "grade": "B"
+    },
+    {
+        "name": "Corrupted Lightning Burst",
+        "desc": "Utilizes lightning properties to execute burst techniques.",
+        "genre": "Elemental",
+        "grade": "B"
+    },
+    {
+        "name": "Corrupted Lightning Weaving",
+        "desc": "Utilizes lightning properties to execute weaving techniques.",
+        "genre": "Elemental",
+        "grade": "B"
+    },
+    {
+        "name": "Corrupted Lightning Aura",
+        "desc": "Utilizes lightning properties to execute aura techniques.",
+        "genre": "Elemental",
+        "grade": "B"
+    },
+    {
+        "name": "Corrupted Lightning Constructs",
+        "desc": "Utilizes lightning properties to execute constructs techniques.",
+        "genre": "Elemental",
+        "grade": "B"
+    },
+    {
+        "name": "Corrupted Lightning Nullification",
+        "desc": "Utilizes lightning properties to execute nullification techniques.",
+        "genre": "Elemental",
+        "grade": "S"
+    },
+    {
+        "name": "Corrupted Lightning Pulse",
+        "desc": "Utilizes lightning properties to execute pulse techniques.",
+        "genre": "Elemental",
+        "grade": "B"
+    },
+    {
+        "name": "Corrupted Lightning Resonance",
+        "desc": "Utilizes lightning properties to execute resonance techniques.",
+        "genre": "Elemental",
+        "grade": "B"
+    },
+    {
+        "name": "Corrupted Lightning Mimicry",
+        "desc": "Utilizes lightning properties to execute mimicry techniques.",
+        "genre": "Elemental",
+        "grade": "B"
+    },
+    {
+        "name": "Corrupted Gravity Burst",
+        "desc": "Utilizes gravity properties to execute burst techniques.",
+        "genre": "Mystic",
+        "grade": "S"
+    },
+    {
+        "name": "Corrupted Gravity Weaving",
+        "desc": "Utilizes gravity properties to execute weaving techniques.",
+        "genre": "Mystic",
+        "grade": "S"
+    },
+    {
+        "name": "Corrupted Gravity Aura",
+        "desc": "Utilizes gravity properties to execute aura techniques.",
+        "genre": "Mystic",
+        "grade": "S"
+    },
+    {
+        "name": "Corrupted Gravity Constructs",
+        "desc": "Utilizes gravity properties to execute constructs techniques.",
+        "genre": "Mystic",
+        "grade": "S"
+    },
+    {
+        "name": "Corrupted Gravity Nullification",
+        "desc": "Utilizes gravity properties to execute nullification techniques.",
+        "genre": "Mystic",
+        "grade": "SR"
+    },
+    {
+        "name": "Corrupted Gravity Pulse",
+        "desc": "Utilizes gravity properties to execute pulse techniques.",
+        "genre": "Mystic",
+        "grade": "S"
+    },
+    {
+        "name": "Corrupted Gravity Resonance",
+        "desc": "Utilizes gravity properties to execute resonance techniques.",
+        "genre": "Mystic",
+        "grade": "S"
+    },
+    {
+        "name": "Corrupted Gravity Mimicry",
+        "desc": "Utilizes gravity properties to execute mimicry techniques.",
+        "genre": "Mystic",
+        "grade": "S"
+    },
+    {
+        "name": "Corrupted Kinetic Burst",
+        "desc": "Utilizes kinetic properties to execute burst techniques.",
+        "genre": "Mystic",
+        "grade": "B"
+    },
+    {
+        "name": "Corrupted Kinetic Weaving",
+        "desc": "Utilizes kinetic properties to execute weaving techniques.",
+        "genre": "Mystic",
+        "grade": "B"
+    },
+    {
+        "name": "Corrupted Kinetic Aura",
+        "desc": "Utilizes kinetic properties to execute aura techniques.",
+        "genre": "Mystic",
+        "grade": "B"
+    },
+    {
+        "name": "Corrupted Kinetic Constructs",
+        "desc": "Utilizes kinetic properties to execute constructs techniques.",
+        "genre": "Mystic",
+        "grade": "B"
+    },
+    {
+        "name": "Corrupted Kinetic Nullification",
+        "desc": "Utilizes kinetic properties to execute nullification techniques.",
+        "genre": "Mystic",
+        "grade": "S"
+    },
+    {
+        "name": "Corrupted Kinetic Pulse",
+        "desc": "Utilizes kinetic properties to execute pulse techniques.",
+        "genre": "Mystic",
+        "grade": "B"
+    },
+    {
+        "name": "Corrupted Kinetic Resonance",
+        "desc": "Utilizes kinetic properties to execute resonance techniques.",
+        "genre": "Mystic",
+        "grade": "B"
+    },
+    {
+        "name": "Corrupted Kinetic Mimicry",
+        "desc": "Utilizes kinetic properties to execute mimicry techniques.",
+        "genre": "Mystic",
+        "grade": "B"
+    },
+    {
+        "name": "Corrupted Soul Burst",
+        "desc": "Utilizes soul properties to execute burst techniques.",
+        "genre": "Mystic",
+        "grade": "S"
+    },
+    {
+        "name": "Corrupted Soul Weaving",
+        "desc": "Utilizes soul properties to execute weaving techniques.",
+        "genre": "Mystic",
+        "grade": "S"
+    },
+    {
+        "name": "Corrupted Soul Aura",
+        "desc": "Utilizes soul properties to execute aura techniques.",
+        "genre": "Mystic",
+        "grade": "S"
+    },
+    {
+        "name": "Corrupted Soul Constructs",
+        "desc": "Utilizes soul properties to execute constructs techniques.",
+        "genre": "Mystic",
+        "grade": "S"
+    },
+    {
+        "name": "Corrupted Soul Nullification",
+        "desc": "Utilizes soul properties to execute nullification techniques.",
+        "genre": "Mystic",
+        "grade": "SR"
+    },
+    {
+        "name": "Corrupted Soul Pulse",
+        "desc": "Utilizes soul properties to execute pulse techniques.",
+        "genre": "Mystic",
+        "grade": "S"
+    },
+    {
+        "name": "Corrupted Soul Resonance",
+        "desc": "Utilizes soul properties to execute resonance techniques.",
+        "genre": "Mystic",
+        "grade": "S"
+    },
+    {
+        "name": "Corrupted Soul Mimicry",
+        "desc": "Utilizes soul properties to execute mimicry techniques.",
+        "genre": "Mystic",
+        "grade": "S"
+    },
+    {
+        "name": "Corrupted Void Burst",
+        "desc": "Utilizes void properties to execute burst techniques.",
+        "genre": "Mystic",
+        "grade": "S"
+    },
+    {
+        "name": "Corrupted Void Weaving",
+        "desc": "Utilizes void properties to execute weaving techniques.",
+        "genre": "Mystic",
+        "grade": "S"
+    },
+    {
+        "name": "Corrupted Void Aura",
+        "desc": "Utilizes void properties to execute aura techniques.",
+        "genre": "Mystic",
+        "grade": "S"
+    },
+    {
+        "name": "Corrupted Void Constructs",
+        "desc": "Utilizes void properties to execute constructs techniques.",
+        "genre": "Mystic",
+        "grade": "S"
+    },
+    {
+        "name": "Corrupted Void Nullification",
+        "desc": "Utilizes void properties to execute nullification techniques.",
+        "genre": "Mystic",
+        "grade": "SR"
+    },
+    {
+        "name": "Corrupted Void Pulse",
+        "desc": "Utilizes void properties to execute pulse techniques.",
+        "genre": "Mystic",
+        "grade": "S"
+    },
+    {
+        "name": "Corrupted Void Resonance",
+        "desc": "Utilizes void properties to execute resonance techniques.",
+        "genre": "Mystic",
+        "grade": "S"
+    },
+    {
+        "name": "Corrupted Void Mimicry",
+        "desc": "Utilizes void properties to execute mimicry techniques.",
+        "genre": "Mystic",
+        "grade": "S"
+    },
+    {
+        "name": "Corrupted Flesh Burst",
+        "desc": "Utilizes flesh properties to execute burst techniques.",
+        "genre": "Mystic",
+        "grade": "B"
+    },
+    {
+        "name": "Corrupted Flesh Weaving",
+        "desc": "Utilizes flesh properties to execute weaving techniques.",
+        "genre": "Mystic",
+        "grade": "B"
+    },
+    {
+        "name": "Corrupted Flesh Aura",
+        "desc": "Utilizes flesh properties to execute aura techniques.",
+        "genre": "Mystic",
+        "grade": "B"
+    },
+    {
+        "name": "Corrupted Flesh Constructs",
+        "desc": "Utilizes flesh properties to execute constructs techniques.",
+        "genre": "Mystic",
+        "grade": "B"
+    },
+    {
+        "name": "Corrupted Flesh Nullification",
+        "desc": "Utilizes flesh properties to execute nullification techniques.",
+        "genre": "Mystic",
+        "grade": "S"
+    },
+    {
+        "name": "Corrupted Flesh Pulse",
+        "desc": "Utilizes flesh properties to execute pulse techniques.",
+        "genre": "Mystic",
+        "grade": "B"
+    },
+    {
+        "name": "Corrupted Flesh Resonance",
+        "desc": "Utilizes flesh properties to execute resonance techniques.",
+        "genre": "Mystic",
+        "grade": "B"
+    },
+    {
+        "name": "Corrupted Flesh Mimicry",
+        "desc": "Utilizes flesh properties to execute mimicry techniques.",
+        "genre": "Mystic",
+        "grade": "B"
+    },
+    {
+        "name": "Corrupted Steel Burst",
+        "desc": "Utilizes steel properties to execute burst techniques.",
+        "genre": "Mystic",
+        "grade": "B"
+    },
+    {
+        "name": "Corrupted Steel Weaving",
+        "desc": "Utilizes steel properties to execute weaving techniques.",
+        "genre": "Mystic",
+        "grade": "B"
+    },
+    {
+        "name": "Corrupted Steel Aura",
+        "desc": "Utilizes steel properties to execute aura techniques.",
+        "genre": "Mystic",
+        "grade": "B"
+    },
+    {
+        "name": "Corrupted Steel Constructs",
+        "desc": "Utilizes steel properties to execute constructs techniques.",
+        "genre": "Mystic",
+        "grade": "B"
+    },
+    {
+        "name": "Corrupted Steel Nullification",
+        "desc": "Utilizes steel properties to execute nullification techniques.",
+        "genre": "Mystic",
+        "grade": "S"
+    },
+    {
+        "name": "Corrupted Steel Pulse",
+        "desc": "Utilizes steel properties to execute pulse techniques.",
+        "genre": "Mystic",
+        "grade": "B"
+    },
+    {
+        "name": "Corrupted Steel Resonance",
+        "desc": "Utilizes steel properties to execute resonance techniques.",
+        "genre": "Mystic",
+        "grade": "B"
+    },
+    {
+        "name": "Corrupted Steel Mimicry",
+        "desc": "Utilizes steel properties to execute mimicry techniques.",
+        "genre": "Mystic",
+        "grade": "B"
+    },
+    {
+        "name": "Corrupted Venom Burst",
+        "desc": "Utilizes venom properties to execute burst techniques.",
+        "genre": "Mystic",
+        "grade": "B"
+    },
+    {
+        "name": "Corrupted Venom Weaving",
+        "desc": "Utilizes venom properties to execute weaving techniques.",
+        "genre": "Mystic",
+        "grade": "B"
+    },
+    {
+        "name": "Corrupted Venom Aura",
+        "desc": "Utilizes venom properties to execute aura techniques.",
+        "genre": "Mystic",
+        "grade": "B"
+    },
+    {
+        "name": "Corrupted Venom Constructs",
+        "desc": "Utilizes venom properties to execute constructs techniques.",
+        "genre": "Mystic",
+        "grade": "B"
+    },
+    {
+        "name": "Corrupted Venom Nullification",
+        "desc": "Utilizes venom properties to execute nullification techniques.",
+        "genre": "Mystic",
+        "grade": "S"
+    },
+    {
+        "name": "Corrupted Venom Pulse",
+        "desc": "Utilizes venom properties to execute pulse techniques.",
+        "genre": "Mystic",
+        "grade": "B"
+    },
+    {
+        "name": "Corrupted Venom Resonance",
+        "desc": "Utilizes venom properties to execute resonance techniques.",
+        "genre": "Mystic",
+        "grade": "B"
+    },
+    {
+        "name": "Corrupted Venom Mimicry",
+        "desc": "Utilizes venom properties to execute mimicry techniques.",
+        "genre": "Mystic",
+        "grade": "B"
+    },
+    {
+        "name": "Divine Flame Burst",
+        "desc": "Utilizes flame properties to execute burst techniques.",
+        "genre": "Elemental",
+        "grade": "R"
+    },
+    {
+        "name": "Divine Flame Weaving",
+        "desc": "Utilizes flame properties to execute weaving techniques.",
+        "genre": "Elemental",
+        "grade": "R"
+    },
+    {
+        "name": "Divine Flame Aura",
+        "desc": "Utilizes flame properties to execute aura techniques.",
+        "genre": "Elemental",
+        "grade": "R"
+    },
+    {
+        "name": "Divine Flame Constructs",
+        "desc": "Utilizes flame properties to execute constructs techniques.",
+        "genre": "Elemental",
+        "grade": "R"
+    },
+    {
+        "name": "Divine Flame Nullification",
+        "desc": "Utilizes flame properties to execute nullification techniques.",
+        "genre": "Elemental",
+        "grade": "SS"
+    },
+    {
+        "name": "Divine Flame Pulse",
+        "desc": "Utilizes flame properties to execute pulse techniques.",
+        "genre": "Elemental",
+        "grade": "R"
+    },
+    {
+        "name": "Divine Flame Resonance",
+        "desc": "Utilizes flame properties to execute resonance techniques.",
+        "genre": "Elemental",
+        "grade": "R"
+    },
+    {
+        "name": "Divine Flame Mimicry",
+        "desc": "Utilizes flame properties to execute mimicry techniques.",
+        "genre": "Elemental",
+        "grade": "R"
+    },
+    {
+        "name": "Divine Frost Burst",
+        "desc": "Utilizes frost properties to execute burst techniques.",
+        "genre": "Elemental",
+        "grade": "R"
+    },
+    {
+        "name": "Divine Frost Weaving",
+        "desc": "Utilizes frost properties to execute weaving techniques.",
+        "genre": "Elemental",
+        "grade": "R"
+    },
+    {
+        "name": "Divine Frost Aura",
+        "desc": "Utilizes frost properties to execute aura techniques.",
+        "genre": "Elemental",
+        "grade": "R"
+    },
+    {
+        "name": "Divine Frost Constructs",
+        "desc": "Utilizes frost properties to execute constructs techniques.",
+        "genre": "Elemental",
+        "grade": "R"
+    },
+    {
+        "name": "Divine Frost Nullification",
+        "desc": "Utilizes frost properties to execute nullification techniques.",
+        "genre": "Elemental",
+        "grade": "SS"
+    },
+    {
+        "name": "Divine Frost Pulse",
+        "desc": "Utilizes frost properties to execute pulse techniques.",
+        "genre": "Elemental",
+        "grade": "R"
+    },
+    {
+        "name": "Divine Frost Resonance",
+        "desc": "Utilizes frost properties to execute resonance techniques.",
+        "genre": "Elemental",
+        "grade": "R"
+    },
+    {
+        "name": "Divine Frost Mimicry",
+        "desc": "Utilizes frost properties to execute mimicry techniques.",
+        "genre": "Elemental",
+        "grade": "R"
+    },
+    {
+        "name": "Divine Lightning Burst",
+        "desc": "Utilizes lightning properties to execute burst techniques.",
+        "genre": "Elemental",
+        "grade": "R"
+    },
+    {
+        "name": "Divine Lightning Weaving",
+        "desc": "Utilizes lightning properties to execute weaving techniques.",
+        "genre": "Elemental",
+        "grade": "R"
+    },
+    {
+        "name": "Divine Lightning Aura",
+        "desc": "Utilizes lightning properties to execute aura techniques.",
+        "genre": "Elemental",
+        "grade": "R"
+    },
+    {
+        "name": "Divine Lightning Constructs",
+        "desc": "Utilizes lightning properties to execute constructs techniques.",
+        "genre": "Elemental",
+        "grade": "R"
+    },
+    {
+        "name": "Divine Lightning Nullification",
+        "desc": "Utilizes lightning properties to execute nullification techniques.",
+        "genre": "Elemental",
+        "grade": "SS"
+    },
+    {
+        "name": "Divine Lightning Pulse",
+        "desc": "Utilizes lightning properties to execute pulse techniques.",
+        "genre": "Elemental",
+        "grade": "R"
+    },
+    {
+        "name": "Divine Lightning Resonance",
+        "desc": "Utilizes lightning properties to execute resonance techniques.",
+        "genre": "Elemental",
+        "grade": "R"
+    },
+    {
+        "name": "Divine Lightning Mimicry",
+        "desc": "Utilizes lightning properties to execute mimicry techniques.",
+        "genre": "Elemental",
+        "grade": "R"
+    },
+    {
+        "name": "Divine Gravity Burst",
+        "desc": "Utilizes gravity properties to execute burst techniques.",
+        "genre": "Mystic",
+        "grade": "SS"
+    },
+    {
+        "name": "Divine Gravity Weaving",
+        "desc": "Utilizes gravity properties to execute weaving techniques.",
+        "genre": "Mystic",
+        "grade": "SS"
+    },
+    {
+        "name": "Divine Gravity Aura",
+        "desc": "Utilizes gravity properties to execute aura techniques.",
+        "genre": "Mystic",
+        "grade": "SS"
+    },
+    {
+        "name": "Divine Gravity Constructs",
+        "desc": "Utilizes gravity properties to execute constructs techniques.",
+        "genre": "Mystic",
+        "grade": "SS"
+    },
+    {
+        "name": "Divine Gravity Nullification",
+        "desc": "Utilizes gravity properties to execute nullification techniques.",
+        "genre": "Mystic",
+        "grade": "SSRX"
+    },
+    {
+        "name": "Divine Gravity Pulse",
+        "desc": "Utilizes gravity properties to execute pulse techniques.",
+        "genre": "Mystic",
+        "grade": "SS"
+    },
+    {
+        "name": "Divine Gravity Resonance",
+        "desc": "Utilizes gravity properties to execute resonance techniques.",
+        "genre": "Mystic",
+        "grade": "SS"
+    },
+    {
+        "name": "Divine Gravity Mimicry",
+        "desc": "Utilizes gravity properties to execute mimicry techniques.",
+        "genre": "Mystic",
+        "grade": "SS"
+    },
+    {
+        "name": "Divine Kinetic Burst",
+        "desc": "Utilizes kinetic properties to execute burst techniques.",
+        "genre": "Mystic",
+        "grade": "R"
+    },
+    {
+        "name": "Divine Kinetic Weaving",
+        "desc": "Utilizes kinetic properties to execute weaving techniques.",
+        "genre": "Mystic",
+        "grade": "R"
+    },
+    {
+        "name": "Divine Kinetic Aura",
+        "desc": "Utilizes kinetic properties to execute aura techniques.",
+        "genre": "Mystic",
+        "grade": "R"
+    },
+    {
+        "name": "Divine Kinetic Constructs",
+        "desc": "Utilizes kinetic properties to execute constructs techniques.",
+        "genre": "Mystic",
+        "grade": "R"
+    },
+    {
+        "name": "Divine Kinetic Nullification",
+        "desc": "Utilizes kinetic properties to execute nullification techniques.",
+        "genre": "Mystic",
+        "grade": "SS"
+    },
+    {
+        "name": "Divine Kinetic Pulse",
+        "desc": "Utilizes kinetic properties to execute pulse techniques.",
+        "genre": "Mystic",
+        "grade": "R"
+    },
+    {
+        "name": "Divine Kinetic Resonance",
+        "desc": "Utilizes kinetic properties to execute resonance techniques.",
+        "genre": "Mystic",
+        "grade": "R"
+    },
+    {
+        "name": "Divine Kinetic Mimicry",
+        "desc": "Utilizes kinetic properties to execute mimicry techniques.",
+        "genre": "Mystic",
+        "grade": "R"
+    },
+    {
+        "name": "Divine Soul Burst",
+        "desc": "Utilizes soul properties to execute burst techniques.",
+        "genre": "Mystic",
+        "grade": "SS"
+    },
+    {
+        "name": "Divine Soul Weaving",
+        "desc": "Utilizes soul properties to execute weaving techniques.",
+        "genre": "Mystic",
+        "grade": "SS"
+    },
+    {
+        "name": "Divine Soul Aura",
+        "desc": "Utilizes soul properties to execute aura techniques.",
+        "genre": "Mystic",
+        "grade": "SS"
+    },
+    {
+        "name": "Divine Soul Constructs",
+        "desc": "Utilizes soul properties to execute constructs techniques.",
+        "genre": "Mystic",
+        "grade": "SS"
+    },
+    {
+        "name": "Divine Soul Nullification",
+        "desc": "Utilizes soul properties to execute nullification techniques.",
+        "genre": "Mystic",
+        "grade": "SSRX"
+    },
+    {
+        "name": "Divine Soul Pulse",
+        "desc": "Utilizes soul properties to execute pulse techniques.",
+        "genre": "Mystic",
+        "grade": "SS"
+    },
+    {
+        "name": "Divine Soul Resonance",
+        "desc": "Utilizes soul properties to execute resonance techniques.",
+        "genre": "Mystic",
+        "grade": "SS"
+    },
+    {
+        "name": "Divine Soul Mimicry",
+        "desc": "Utilizes soul properties to execute mimicry techniques.",
+        "genre": "Mystic",
+        "grade": "SS"
+    },
+    {
+        "name": "Divine Void Burst",
+        "desc": "Utilizes void properties to execute burst techniques.",
+        "genre": "Mystic",
+        "grade": "SS"
+    },
+    {
+        "name": "Divine Void Weaving",
+        "desc": "Utilizes void properties to execute weaving techniques.",
+        "genre": "Mystic",
+        "grade": "SS"
+    },
+    {
+        "name": "Divine Void Aura",
+        "desc": "Utilizes void properties to execute aura techniques.",
+        "genre": "Mystic",
+        "grade": "SS"
+    },
+    {
+        "name": "Divine Void Constructs",
+        "desc": "Utilizes void properties to execute constructs techniques.",
+        "genre": "Mystic",
+        "grade": "SS"
+    },
+    {
+        "name": "Divine Void Nullification",
+        "desc": "Utilizes void properties to execute nullification techniques.",
+        "genre": "Mystic",
+        "grade": "SSRX"
+    },
+    {
+        "name": "Divine Void Pulse",
+        "desc": "Utilizes void properties to execute pulse techniques.",
+        "genre": "Mystic",
+        "grade": "SS"
+    },
+    {
+        "name": "Divine Void Resonance",
+        "desc": "Utilizes void properties to execute resonance techniques.",
+        "genre": "Mystic",
+        "grade": "SS"
+    },
+    {
+        "name": "Divine Void Mimicry",
+        "desc": "Utilizes void properties to execute mimicry techniques.",
+        "genre": "Mystic",
+        "grade": "SS"
+    },
+    {
+        "name": "Divine Flesh Burst",
+        "desc": "Utilizes flesh properties to execute burst techniques.",
+        "genre": "Mystic",
+        "grade": "R"
+    },
+    {
+        "name": "Divine Flesh Weaving",
+        "desc": "Utilizes flesh properties to execute weaving techniques.",
+        "genre": "Mystic",
+        "grade": "R"
+    },
+    {
+        "name": "Divine Flesh Aura",
+        "desc": "Utilizes flesh properties to execute aura techniques.",
+        "genre": "Mystic",
+        "grade": "R"
+    },
+    {
+        "name": "Divine Flesh Constructs",
+        "desc": "Utilizes flesh properties to execute constructs techniques.",
+        "genre": "Mystic",
+        "grade": "R"
+    },
+    {
+        "name": "Divine Flesh Nullification",
+        "desc": "Utilizes flesh properties to execute nullification techniques.",
+        "genre": "Mystic",
+        "grade": "SS"
+    },
+    {
+        "name": "Divine Flesh Pulse",
+        "desc": "Utilizes flesh properties to execute pulse techniques.",
+        "genre": "Mystic",
+        "grade": "R"
+    },
+    {
+        "name": "Divine Flesh Resonance",
+        "desc": "Utilizes flesh properties to execute resonance techniques.",
+        "genre": "Mystic",
+        "grade": "R"
+    },
+    {
+        "name": "Divine Flesh Mimicry",
+        "desc": "Utilizes flesh properties to execute mimicry techniques.",
+        "genre": "Mystic",
+        "grade": "R"
+    },
+    {
+        "name": "Divine Steel Burst",
+        "desc": "Utilizes steel properties to execute burst techniques.",
+        "genre": "Mystic",
+        "grade": "R"
+    },
+    {
+        "name": "Divine Steel Weaving",
+        "desc": "Utilizes steel properties to execute weaving techniques.",
+        "genre": "Mystic",
+        "grade": "R"
+    },
+    {
+        "name": "Divine Steel Aura",
+        "desc": "Utilizes steel properties to execute aura techniques.",
+        "genre": "Mystic",
+        "grade": "R"
+    },
+    {
+        "name": "Divine Steel Constructs",
+        "desc": "Utilizes steel properties to execute constructs techniques.",
+        "genre": "Mystic",
+        "grade": "R"
+    },
+    {
+        "name": "Divine Steel Nullification",
+        "desc": "Utilizes steel properties to execute nullification techniques.",
+        "genre": "Mystic",
+        "grade": "SS"
+    },
+    {
+        "name": "Divine Steel Pulse",
+        "desc": "Utilizes steel properties to execute pulse techniques.",
+        "genre": "Mystic",
+        "grade": "R"
+    },
+    {
+        "name": "Divine Steel Resonance",
+        "desc": "Utilizes steel properties to execute resonance techniques.",
+        "genre": "Mystic",
+        "grade": "R"
+    },
+    {
+        "name": "Divine Steel Mimicry",
+        "desc": "Utilizes steel properties to execute mimicry techniques.",
+        "genre": "Mystic",
+        "grade": "R"
+    },
+    {
+        "name": "Divine Venom Burst",
+        "desc": "Utilizes venom properties to execute burst techniques.",
+        "genre": "Mystic",
+        "grade": "R"
+    },
+    {
+        "name": "Divine Venom Weaving",
+        "desc": "Utilizes venom properties to execute weaving techniques.",
+        "genre": "Mystic",
+        "grade": "R"
+    },
+    {
+        "name": "Divine Venom Aura",
+        "desc": "Utilizes venom properties to execute aura techniques.",
+        "genre": "Mystic",
+        "grade": "R"
+    },
+    {
+        "name": "Divine Venom Constructs",
+        "desc": "Utilizes venom properties to execute constructs techniques.",
+        "genre": "Mystic",
+        "grade": "R"
+    },
+    {
+        "name": "Divine Venom Nullification",
+        "desc": "Utilizes venom properties to execute nullification techniques.",
+        "genre": "Mystic",
+        "grade": "SS"
+    },
+    {
+        "name": "Divine Venom Pulse",
+        "desc": "Utilizes venom properties to execute pulse techniques.",
+        "genre": "Mystic",
+        "grade": "R"
+    },
+    {
+        "name": "Divine Venom Resonance",
+        "desc": "Utilizes venom properties to execute resonance techniques.",
+        "genre": "Mystic",
+        "grade": "R"
+    },
+    {
+        "name": "Divine Venom Mimicry",
+        "desc": "Utilizes venom properties to execute mimicry techniques.",
+        "genre": "Mystic",
+        "grade": "R"
+    },
+    {
+        "name": "Pseudo Flame Burst",
+        "desc": "Utilizes flame properties to execute burst techniques.",
+        "genre": "Elemental",
+        "grade": "C"
+    },
+    {
+        "name": "Pseudo Flame Weaving",
+        "desc": "Utilizes flame properties to execute weaving techniques.",
+        "genre": "Elemental",
+        "grade": "C"
+    },
+    {
+        "name": "Pseudo Flame Aura",
+        "desc": "Utilizes flame properties to execute aura techniques.",
+        "genre": "Elemental",
+        "grade": "C"
+    },
+    {
+        "name": "Pseudo Flame Constructs",
+        "desc": "Utilizes flame properties to execute constructs techniques.",
+        "genre": "Elemental",
+        "grade": "C"
+    },
+    {
+        "name": "Pseudo Flame Nullification",
+        "desc": "Utilizes flame properties to execute nullification techniques.",
+        "genre": "Elemental",
+        "grade": "A"
+    },
+    {
+        "name": "Pseudo Flame Pulse",
+        "desc": "Utilizes flame properties to execute pulse techniques.",
+        "genre": "Elemental",
+        "grade": "C"
+    },
+    {
+        "name": "Pseudo Flame Resonance",
+        "desc": "Utilizes flame properties to execute resonance techniques.",
+        "genre": "Elemental",
+        "grade": "C"
+    },
+    {
+        "name": "Pseudo Flame Mimicry",
+        "desc": "Utilizes flame properties to execute mimicry techniques.",
+        "genre": "Elemental",
+        "grade": "C"
+    },
+    {
+        "name": "Pseudo Frost Burst",
+        "desc": "Utilizes frost properties to execute burst techniques.",
+        "genre": "Elemental",
+        "grade": "C"
+    },
+    {
+        "name": "Pseudo Frost Weaving",
+        "desc": "Utilizes frost properties to execute weaving techniques.",
+        "genre": "Elemental",
+        "grade": "C"
+    },
+    {
+        "name": "Pseudo Frost Aura",
+        "desc": "Utilizes frost properties to execute aura techniques.",
+        "genre": "Elemental",
+        "grade": "C"
+    },
+    {
+        "name": "Pseudo Frost Constructs",
+        "desc": "Utilizes frost properties to execute constructs techniques.",
+        "genre": "Elemental",
+        "grade": "C"
+    },
+    {
+        "name": "Pseudo Frost Nullification",
+        "desc": "Utilizes frost properties to execute nullification techniques.",
+        "genre": "Elemental",
+        "grade": "A"
+    },
+    {
+        "name": "Pseudo Frost Pulse",
+        "desc": "Utilizes frost properties to execute pulse techniques.",
+        "genre": "Elemental",
+        "grade": "C"
+    },
+    {
+        "name": "Pseudo Frost Resonance",
+        "desc": "Utilizes frost properties to execute resonance techniques.",
+        "genre": "Elemental",
+        "grade": "C"
+    },
+    {
+        "name": "Pseudo Frost Mimicry",
+        "desc": "Utilizes frost properties to execute mimicry techniques.",
+        "genre": "Elemental",
+        "grade": "C"
+    },
+    {
+        "name": "Pseudo Lightning Burst",
+        "desc": "Utilizes lightning properties to execute burst techniques.",
+        "genre": "Elemental",
+        "grade": "C"
+    },
+    {
+        "name": "Pseudo Lightning Weaving",
+        "desc": "Utilizes lightning properties to execute weaving techniques.",
+        "genre": "Elemental",
+        "grade": "C"
+    },
+    {
+        "name": "Pseudo Lightning Aura",
+        "desc": "Utilizes lightning properties to execute aura techniques.",
+        "genre": "Elemental",
+        "grade": "C"
+    },
+    {
+        "name": "Pseudo Lightning Constructs",
+        "desc": "Utilizes lightning properties to execute constructs techniques.",
+        "genre": "Elemental",
+        "grade": "C"
+    },
+    {
+        "name": "Pseudo Lightning Nullification",
+        "desc": "Utilizes lightning properties to execute nullification techniques.",
+        "genre": "Elemental",
+        "grade": "A"
+    },
+    {
+        "name": "Pseudo Lightning Pulse",
+        "desc": "Utilizes lightning properties to execute pulse techniques.",
+        "genre": "Elemental",
+        "grade": "C"
+    },
+    {
+        "name": "Pseudo Lightning Resonance",
+        "desc": "Utilizes lightning properties to execute resonance techniques.",
+        "genre": "Elemental",
+        "grade": "C"
+    },
+    {
+        "name": "Pseudo Lightning Mimicry",
+        "desc": "Utilizes lightning properties to execute mimicry techniques.",
+        "genre": "Elemental",
+        "grade": "C"
+    },
+    {
+        "name": "Pseudo Gravity Burst",
+        "desc": "Utilizes gravity properties to execute burst techniques.",
+        "genre": "Mystic",
+        "grade": "A"
+    },
+    {
+        "name": "Pseudo Gravity Weaving",
+        "desc": "Utilizes gravity properties to execute weaving techniques.",
+        "genre": "Mystic",
+        "grade": "A"
+    },
+    {
+        "name": "Pseudo Gravity Aura",
+        "desc": "Utilizes gravity properties to execute aura techniques.",
+        "genre": "Mystic",
+        "grade": "A"
+    },
+    {
+        "name": "Pseudo Gravity Constructs",
+        "desc": "Utilizes gravity properties to execute constructs techniques.",
+        "genre": "Mystic",
+        "grade": "A"
+    },
+    {
+        "name": "Pseudo Gravity Nullification",
+        "desc": "Utilizes gravity properties to execute nullification techniques.",
+        "genre": "Mystic",
+        "grade": "R"
+    },
+    {
+        "name": "Pseudo Gravity Pulse",
+        "desc": "Utilizes gravity properties to execute pulse techniques.",
+        "genre": "Mystic",
+        "grade": "A"
+    },
+    {
+        "name": "Pseudo Gravity Resonance",
+        "desc": "Utilizes gravity properties to execute resonance techniques.",
+        "genre": "Mystic",
+        "grade": "A"
+    },
+    {
+        "name": "Pseudo Gravity Mimicry",
+        "desc": "Utilizes gravity properties to execute mimicry techniques.",
+        "genre": "Mystic",
+        "grade": "A"
+    },
+    {
+        "name": "Pseudo Kinetic Burst",
+        "desc": "Utilizes kinetic properties to execute burst techniques.",
+        "genre": "Mystic",
+        "grade": "C"
+    },
+    {
+        "name": "Pseudo Kinetic Weaving",
+        "desc": "Utilizes kinetic properties to execute weaving techniques.",
+        "genre": "Mystic",
+        "grade": "C"
+    },
+    {
+        "name": "Pseudo Kinetic Aura",
+        "desc": "Utilizes kinetic properties to execute aura techniques.",
+        "genre": "Mystic",
+        "grade": "C"
+    },
+    {
+        "name": "Pseudo Kinetic Constructs",
+        "desc": "Utilizes kinetic properties to execute constructs techniques.",
+        "genre": "Mystic",
+        "grade": "C"
+    },
+    {
+        "name": "Pseudo Kinetic Nullification",
+        "desc": "Utilizes kinetic properties to execute nullification techniques.",
+        "genre": "Mystic",
+        "grade": "A"
+    },
+    {
+        "name": "Pseudo Kinetic Pulse",
+        "desc": "Utilizes kinetic properties to execute pulse techniques.",
+        "genre": "Mystic",
+        "grade": "C"
+    },
+    {
+        "name": "Pseudo Kinetic Resonance",
+        "desc": "Utilizes kinetic properties to execute resonance techniques.",
+        "genre": "Mystic",
+        "grade": "C"
+    },
+    {
+        "name": "Pseudo Kinetic Mimicry",
+        "desc": "Utilizes kinetic properties to execute mimicry techniques.",
+        "genre": "Mystic",
+        "grade": "C"
+    },
+    {
+        "name": "Pseudo Soul Burst",
+        "desc": "Utilizes soul properties to execute burst techniques.",
+        "genre": "Mystic",
+        "grade": "A"
+    },
+    {
+        "name": "Pseudo Soul Weaving",
+        "desc": "Utilizes soul properties to execute weaving techniques.",
+        "genre": "Mystic",
+        "grade": "A"
+    },
+    {
+        "name": "Pseudo Soul Aura",
+        "desc": "Utilizes soul properties to execute aura techniques.",
+        "genre": "Mystic",
+        "grade": "A"
+    },
+    {
+        "name": "Pseudo Soul Constructs",
+        "desc": "Utilizes soul properties to execute constructs techniques.",
+        "genre": "Mystic",
+        "grade": "A"
+    },
+    {
+        "name": "Pseudo Soul Nullification",
+        "desc": "Utilizes soul properties to execute nullification techniques.",
+        "genre": "Mystic",
+        "grade": "R"
+    },
+    {
+        "name": "Pseudo Soul Pulse",
+        "desc": "Utilizes soul properties to execute pulse techniques.",
+        "genre": "Mystic",
+        "grade": "A"
+    },
+    {
+        "name": "Pseudo Soul Resonance",
+        "desc": "Utilizes soul properties to execute resonance techniques.",
+        "genre": "Mystic",
+        "grade": "A"
+    },
+    {
+        "name": "Pseudo Soul Mimicry",
+        "desc": "Utilizes soul properties to execute mimicry techniques.",
+        "genre": "Mystic",
+        "grade": "A"
+    },
+    {
+        "name": "Pseudo Void Burst",
+        "desc": "Utilizes void properties to execute burst techniques.",
+        "genre": "Mystic",
+        "grade": "A"
+    },
+    {
+        "name": "Pseudo Void Weaving",
+        "desc": "Utilizes void properties to execute weaving techniques.",
+        "genre": "Mystic",
+        "grade": "A"
+    },
+    {
+        "name": "Pseudo Void Aura",
+        "desc": "Utilizes void properties to execute aura techniques.",
+        "genre": "Mystic",
+        "grade": "A"
+    },
+    {
+        "name": "Pseudo Void Constructs",
+        "desc": "Utilizes void properties to execute constructs techniques.",
+        "genre": "Mystic",
+        "grade": "A"
+    },
+    {
+        "name": "Pseudo Void Nullification",
+        "desc": "Utilizes void properties to execute nullification techniques.",
+        "genre": "Mystic",
+        "grade": "R"
+    },
+    {
+        "name": "Pseudo Void Pulse",
+        "desc": "Utilizes void properties to execute pulse techniques.",
+        "genre": "Mystic",
+        "grade": "A"
+    },
+    {
+        "name": "Pseudo Void Resonance",
+        "desc": "Utilizes void properties to execute resonance techniques.",
+        "genre": "Mystic",
+        "grade": "A"
+    },
+    {
+        "name": "Pseudo Void Mimicry",
+        "desc": "Utilizes void properties to execute mimicry techniques.",
+        "genre": "Mystic",
+        "grade": "A"
+    },
+    {
+        "name": "Pseudo Flesh Burst",
+        "desc": "Utilizes flesh properties to execute burst techniques.",
+        "genre": "Mystic",
+        "grade": "C"
+    },
+    {
+        "name": "Pseudo Flesh Weaving",
+        "desc": "Utilizes flesh properties to execute weaving techniques.",
+        "genre": "Mystic",
+        "grade": "C"
+    },
+    {
+        "name": "Pseudo Flesh Aura",
+        "desc": "Utilizes flesh properties to execute aura techniques.",
+        "genre": "Mystic",
+        "grade": "C"
+    },
+    {
+        "name": "Pseudo Flesh Constructs",
+        "desc": "Utilizes flesh properties to execute constructs techniques.",
+        "genre": "Mystic",
+        "grade": "C"
+    },
+    {
+        "name": "Pseudo Flesh Nullification",
+        "desc": "Utilizes flesh properties to execute nullification techniques.",
+        "genre": "Mystic",
+        "grade": "A"
+    },
+    {
+        "name": "Pseudo Flesh Pulse",
+        "desc": "Utilizes flesh properties to execute pulse techniques.",
+        "genre": "Mystic",
+        "grade": "C"
+    },
+    {
+        "name": "Pseudo Flesh Resonance",
+        "desc": "Utilizes flesh properties to execute resonance techniques.",
+        "genre": "Mystic",
+        "grade": "C"
+    },
+    {
+        "name": "Pseudo Flesh Mimicry",
+        "desc": "Utilizes flesh properties to execute mimicry techniques.",
+        "genre": "Mystic",
+        "grade": "C"
+    },
+    {
+        "name": "Pseudo Steel Burst",
+        "desc": "Utilizes steel properties to execute burst techniques.",
+        "genre": "Mystic",
+        "grade": "C"
+    },
+    {
+        "name": "Pseudo Steel Weaving",
+        "desc": "Utilizes steel properties to execute weaving techniques.",
+        "genre": "Mystic",
+        "grade": "C"
+    },
+    {
+        "name": "Pseudo Steel Aura",
+        "desc": "Utilizes steel properties to execute aura techniques.",
+        "genre": "Mystic",
+        "grade": "C"
+    },
+    {
+        "name": "Pseudo Steel Constructs",
+        "desc": "Utilizes steel properties to execute constructs techniques.",
+        "genre": "Mystic",
+        "grade": "C"
+    },
+    {
+        "name": "Pseudo Steel Nullification",
+        "desc": "Utilizes steel properties to execute nullification techniques.",
+        "genre": "Mystic",
+        "grade": "A"
+    },
+    {
+        "name": "Pseudo Steel Pulse",
+        "desc": "Utilizes steel properties to execute pulse techniques.",
+        "genre": "Mystic",
+        "grade": "C"
+    },
+    {
+        "name": "Pseudo Steel Resonance",
+        "desc": "Utilizes steel properties to execute resonance techniques.",
+        "genre": "Mystic",
+        "grade": "C"
+    },
+    {
+        "name": "Pseudo Steel Mimicry",
+        "desc": "Utilizes steel properties to execute mimicry techniques.",
+        "genre": "Mystic",
+        "grade": "C"
+    },
+    {
+        "name": "Pseudo Venom Burst",
+        "desc": "Utilizes venom properties to execute burst techniques.",
+        "genre": "Mystic",
+        "grade": "C"
+    },
+    {
+        "name": "Pseudo Venom Weaving",
+        "desc": "Utilizes venom properties to execute weaving techniques.",
+        "genre": "Mystic",
+        "grade": "C"
+    },
+    {
+        "name": "Pseudo Venom Aura",
+        "desc": "Utilizes venom properties to execute aura techniques.",
+        "genre": "Mystic",
+        "grade": "C"
+    },
+    {
+        "name": "Pseudo Venom Constructs",
+        "desc": "Utilizes venom properties to execute constructs techniques.",
+        "genre": "Mystic",
+        "grade": "C"
+    },
+    {
+        "name": "Pseudo Venom Nullification",
+        "desc": "Utilizes venom properties to execute nullification techniques.",
+        "genre": "Mystic",
+        "grade": "A"
+    },
+    {
+        "name": "Pseudo Venom Pulse",
+        "desc": "Utilizes venom properties to execute pulse techniques.",
+        "genre": "Mystic",
+        "grade": "C"
+    },
+    {
+        "name": "Pseudo Venom Resonance",
+        "desc": "Utilizes venom properties to execute resonance techniques.",
+        "genre": "Mystic",
+        "grade": "C"
+    },
+    {
+        "name": "Pseudo Venom Mimicry",
+        "desc": "Utilizes venom properties to execute mimicry techniques.",
+        "genre": "Mystic",
+        "grade": "C"
+    },
+    {
+        "name": "Domain of Flame Burst",
+        "desc": "Utilizes flame properties to execute burst techniques.",
+        "genre": "Elemental",
+        "grade": "S"
+    },
+    {
+        "name": "Domain of Flame Weaving",
+        "desc": "Utilizes flame properties to execute weaving techniques.",
+        "genre": "Elemental",
+        "grade": "S"
+    },
+    {
+        "name": "Domain of Flame Aura",
+        "desc": "Utilizes flame properties to execute aura techniques.",
+        "genre": "Elemental",
+        "grade": "S"
+    },
+    {
+        "name": "Domain of Flame Constructs",
+        "desc": "Utilizes flame properties to execute constructs techniques.",
+        "genre": "Elemental",
+        "grade": "S"
+    },
+    {
+        "name": "Domain of Flame Nullification",
+        "desc": "Utilizes flame properties to execute nullification techniques.",
+        "genre": "Elemental",
+        "grade": "SR"
+    },
+    {
+        "name": "Domain of Flame Pulse",
+        "desc": "Utilizes flame properties to execute pulse techniques.",
+        "genre": "Elemental",
+        "grade": "S"
+    },
+    {
+        "name": "Domain of Flame Resonance",
+        "desc": "Utilizes flame properties to execute resonance techniques.",
+        "genre": "Elemental",
+        "grade": "S"
+    },
+    {
+        "name": "Domain of Flame Mimicry",
+        "desc": "Utilizes flame properties to execute mimicry techniques.",
+        "genre": "Elemental",
+        "grade": "S"
+    },
+    {
+        "name": "Domain of Frost Burst",
+        "desc": "Utilizes frost properties to execute burst techniques.",
+        "genre": "Elemental",
+        "grade": "S"
+    },
+    {
+        "name": "Domain of Frost Weaving",
+        "desc": "Utilizes frost properties to execute weaving techniques.",
+        "genre": "Elemental",
+        "grade": "S"
+    },
+    {
+        "name": "Domain of Frost Aura",
+        "desc": "Utilizes frost properties to execute aura techniques.",
+        "genre": "Elemental",
+        "grade": "S"
+    },
+    {
+        "name": "Domain of Frost Constructs",
+        "desc": "Utilizes frost properties to execute constructs techniques.",
+        "genre": "Elemental",
+        "grade": "S"
+    },
+    {
+        "name": "Domain of Frost Nullification",
+        "desc": "Utilizes frost properties to execute nullification techniques.",
+        "genre": "Elemental",
+        "grade": "SR"
+    },
+    {
+        "name": "Domain of Frost Pulse",
+        "desc": "Utilizes frost properties to execute pulse techniques.",
+        "genre": "Elemental",
+        "grade": "S"
+    },
+    {
+        "name": "Domain of Frost Resonance",
+        "desc": "Utilizes frost properties to execute resonance techniques.",
+        "genre": "Elemental",
+        "grade": "S"
+    },
+    {
+        "name": "Domain of Frost Mimicry",
+        "desc": "Utilizes frost properties to execute mimicry techniques.",
+        "genre": "Elemental",
+        "grade": "S"
+    },
+    {
+        "name": "Domain of Lightning Burst",
+        "desc": "Utilizes lightning properties to execute burst techniques.",
+        "genre": "Elemental",
+        "grade": "S"
+    },
+    {
+        "name": "Domain of Lightning Weaving",
+        "desc": "Utilizes lightning properties to execute weaving techniques.",
+        "genre": "Elemental",
+        "grade": "S"
+    },
+    {
+        "name": "Domain of Lightning Aura",
+        "desc": "Utilizes lightning properties to execute aura techniques.",
+        "genre": "Elemental",
+        "grade": "S"
+    },
+    {
+        "name": "Domain of Lightning Constructs",
+        "desc": "Utilizes lightning properties to execute constructs techniques.",
+        "genre": "Elemental",
+        "grade": "S"
+    },
+    {
+        "name": "Domain of Lightning Nullification",
+        "desc": "Utilizes lightning properties to execute nullification techniques.",
+        "genre": "Elemental",
+        "grade": "SR"
+    },
+    {
+        "name": "Domain of Lightning Pulse",
+        "desc": "Utilizes lightning properties to execute pulse techniques.",
+        "genre": "Elemental",
+        "grade": "S"
+    },
+    {
+        "name": "Domain of Lightning Resonance",
+        "desc": "Utilizes lightning properties to execute resonance techniques.",
+        "genre": "Elemental",
+        "grade": "S"
+    },
+    {
+        "name": "Domain of Lightning Mimicry",
+        "desc": "Utilizes lightning properties to execute mimicry techniques.",
+        "genre": "Elemental",
+        "grade": "S"
+    },
+    {
+        "name": "Domain of Gravity Burst",
+        "desc": "Utilizes gravity properties to execute burst techniques.",
+        "genre": "Mystic",
+        "grade": "SR"
+    },
+    {
+        "name": "Domain of Gravity Weaving",
+        "desc": "Utilizes gravity properties to execute weaving techniques.",
+        "genre": "Mystic",
+        "grade": "SR"
+    },
+    {
+        "name": "Domain of Gravity Aura",
+        "desc": "Utilizes gravity properties to execute aura techniques.",
+        "genre": "Mystic",
+        "grade": "SR"
+    },
+    {
+        "name": "Domain of Gravity Constructs",
+        "desc": "Utilizes gravity properties to execute constructs techniques.",
+        "genre": "Mystic",
+        "grade": "SR"
+    },
+    {
+        "name": "Domain of Gravity Nullification",
+        "desc": "Utilizes gravity properties to execute nullification techniques.",
+        "genre": "Mystic",
+        "grade": "SSR"
+    },
+    {
+        "name": "Domain of Gravity Pulse",
+        "desc": "Utilizes gravity properties to execute pulse techniques.",
+        "genre": "Mystic",
+        "grade": "SR"
+    },
+    {
+        "name": "Domain of Gravity Resonance",
+        "desc": "Utilizes gravity properties to execute resonance techniques.",
+        "genre": "Mystic",
+        "grade": "SR"
+    },
+    {
+        "name": "Domain of Gravity Mimicry",
+        "desc": "Utilizes gravity properties to execute mimicry techniques.",
+        "genre": "Mystic",
+        "grade": "SR"
+    },
+    {
+        "name": "Domain of Kinetic Burst",
+        "desc": "Utilizes kinetic properties to execute burst techniques.",
+        "genre": "Mystic",
+        "grade": "S"
+    },
+    {
+        "name": "Domain of Kinetic Weaving",
+        "desc": "Utilizes kinetic properties to execute weaving techniques.",
+        "genre": "Mystic",
+        "grade": "S"
+    },
+    {
+        "name": "Domain of Kinetic Aura",
+        "desc": "Utilizes kinetic properties to execute aura techniques.",
+        "genre": "Mystic",
+        "grade": "S"
+    },
+    {
+        "name": "Domain of Kinetic Constructs",
+        "desc": "Utilizes kinetic properties to execute constructs techniques.",
+        "genre": "Mystic",
+        "grade": "S"
+    },
+    {
+        "name": "Domain of Kinetic Nullification",
+        "desc": "Utilizes kinetic properties to execute nullification techniques.",
+        "genre": "Mystic",
+        "grade": "SR"
+    },
+    {
+        "name": "Domain of Kinetic Pulse",
+        "desc": "Utilizes kinetic properties to execute pulse techniques.",
+        "genre": "Mystic",
+        "grade": "S"
+    },
+    {
+        "name": "Domain of Kinetic Resonance",
+        "desc": "Utilizes kinetic properties to execute resonance techniques.",
+        "genre": "Mystic",
+        "grade": "S"
+    },
+    {
+        "name": "Domain of Kinetic Mimicry",
+        "desc": "Utilizes kinetic properties to execute mimicry techniques.",
+        "genre": "Mystic",
+        "grade": "S"
+    },
+    {
+        "name": "Domain of Soul Burst",
+        "desc": "Utilizes soul properties to execute burst techniques.",
+        "genre": "Mystic",
+        "grade": "SR"
+    },
+    {
+        "name": "Domain of Soul Weaving",
+        "desc": "Utilizes soul properties to execute weaving techniques.",
+        "genre": "Mystic",
+        "grade": "SR"
+    },
+    {
+        "name": "Domain of Soul Aura",
+        "desc": "Utilizes soul properties to execute aura techniques.",
+        "genre": "Mystic",
+        "grade": "SR"
+    },
+    {
+        "name": "Domain of Soul Constructs",
+        "desc": "Utilizes soul properties to execute constructs techniques.",
+        "genre": "Mystic",
+        "grade": "SR"
+    },
+    {
+        "name": "Domain of Soul Nullification",
+        "desc": "Utilizes soul properties to execute nullification techniques.",
+        "genre": "Mystic",
+        "grade": "SSR"
+    },
+    {
+        "name": "Domain of Soul Pulse",
+        "desc": "Utilizes soul properties to execute pulse techniques.",
+        "genre": "Mystic",
+        "grade": "SR"
+    },
+    {
+        "name": "Domain of Soul Resonance",
+        "desc": "Utilizes soul properties to execute resonance techniques.",
+        "genre": "Mystic",
+        "grade": "SR"
+    },
+    {
+        "name": "Domain of Soul Mimicry",
+        "desc": "Utilizes soul properties to execute mimicry techniques.",
+        "genre": "Mystic",
+        "grade": "SR"
+    },
+    {
+        "name": "Domain of Void Burst",
+        "desc": "Utilizes void properties to execute burst techniques.",
+        "genre": "Mystic",
+        "grade": "SR"
+    },
+    {
+        "name": "Domain of Void Weaving",
+        "desc": "Utilizes void properties to execute weaving techniques.",
+        "genre": "Mystic",
+        "grade": "SR"
+    },
+    {
+        "name": "Domain of Void Aura",
+        "desc": "Utilizes void properties to execute aura techniques.",
+        "genre": "Mystic",
+        "grade": "SR"
+    },
+    {
+        "name": "Domain of Void Constructs",
+        "desc": "Utilizes void properties to execute constructs techniques.",
+        "genre": "Mystic",
+        "grade": "SR"
+    },
+    {
+        "name": "Domain of Void Nullification",
+        "desc": "Utilizes void properties to execute nullification techniques.",
+        "genre": "Mystic",
+        "grade": "SSR"
+    },
+    {
+        "name": "Domain of Void Pulse",
+        "desc": "Utilizes void properties to execute pulse techniques.",
+        "genre": "Mystic",
+        "grade": "SR"
+    },
+    {
+        "name": "Domain of Void Resonance",
+        "desc": "Utilizes void properties to execute resonance techniques.",
+        "genre": "Mystic",
+        "grade": "SR"
+    },
+    {
+        "name": "Domain of Void Mimicry",
+        "desc": "Utilizes void properties to execute mimicry techniques.",
+        "genre": "Mystic",
+        "grade": "SR"
+    },
+    {
+        "name": "Domain of Flesh Burst",
+        "desc": "Utilizes flesh properties to execute burst techniques.",
+        "genre": "Mystic",
+        "grade": "S"
+    },
+    {
+        "name": "Domain of Flesh Weaving",
+        "desc": "Utilizes flesh properties to execute weaving techniques.",
+        "genre": "Mystic",
+        "grade": "S"
+    },
+    {
+        "name": "Domain of Flesh Aura",
+        "desc": "Utilizes flesh properties to execute aura techniques.",
+        "genre": "Mystic",
+        "grade": "S"
+    },
+    {
+        "name": "Domain of Flesh Constructs",
+        "desc": "Utilizes flesh properties to execute constructs techniques.",
+        "genre": "Mystic",
+        "grade": "S"
+    },
+    {
+        "name": "Domain of Flesh Nullification",
+        "desc": "Utilizes flesh properties to execute nullification techniques.",
+        "genre": "Mystic",
+        "grade": "SR"
+    },
+    {
+        "name": "Domain of Flesh Pulse",
+        "desc": "Utilizes flesh properties to execute pulse techniques.",
+        "genre": "Mystic",
+        "grade": "S"
+    },
+    {
+        "name": "Domain of Flesh Resonance",
+        "desc": "Utilizes flesh properties to execute resonance techniques.",
+        "genre": "Mystic",
+        "grade": "S"
+    },
+    {
+        "name": "Domain of Flesh Mimicry",
+        "desc": "Utilizes flesh properties to execute mimicry techniques.",
+        "genre": "Mystic",
+        "grade": "S"
+    },
+    {
+        "name": "Domain of Steel Burst",
+        "desc": "Utilizes steel properties to execute burst techniques.",
+        "genre": "Mystic",
+        "grade": "S"
+    },
+    {
+        "name": "Domain of Steel Weaving",
+        "desc": "Utilizes steel properties to execute weaving techniques.",
+        "genre": "Mystic",
+        "grade": "S"
+    },
+    {
+        "name": "Domain of Steel Aura",
+        "desc": "Utilizes steel properties to execute aura techniques.",
+        "genre": "Mystic",
+        "grade": "S"
+    },
+    {
+        "name": "Domain of Steel Constructs",
+        "desc": "Utilizes steel properties to execute constructs techniques.",
+        "genre": "Mystic",
+        "grade": "S"
+    },
+    {
+        "name": "Domain of Steel Nullification",
+        "desc": "Utilizes steel properties to execute nullification techniques.",
+        "genre": "Mystic",
+        "grade": "SR"
+    },
+    {
+        "name": "Domain of Steel Pulse",
+        "desc": "Utilizes steel properties to execute pulse techniques.",
+        "genre": "Mystic",
+        "grade": "S"
+    },
+    {
+        "name": "Domain of Steel Resonance",
+        "desc": "Utilizes steel properties to execute resonance techniques.",
+        "genre": "Mystic",
+        "grade": "S"
+    },
+    {
+        "name": "Domain of Steel Mimicry",
+        "desc": "Utilizes steel properties to execute mimicry techniques.",
+        "genre": "Mystic",
+        "grade": "S"
+    },
+    {
+        "name": "Domain of Venom Burst",
+        "desc": "Utilizes venom properties to execute burst techniques.",
+        "genre": "Mystic",
+        "grade": "S"
+    },
+    {
+        "name": "Domain of Venom Weaving",
+        "desc": "Utilizes venom properties to execute weaving techniques.",
+        "genre": "Mystic",
+        "grade": "S"
+    },
+    {
+        "name": "Domain of Venom Aura",
+        "desc": "Utilizes venom properties to execute aura techniques.",
+        "genre": "Mystic",
+        "grade": "S"
+    },
+    {
+        "name": "Domain of Venom Constructs",
+        "desc": "Utilizes venom properties to execute constructs techniques.",
+        "genre": "Mystic",
+        "grade": "S"
+    },
+    {
+        "name": "Domain of Venom Nullification",
+        "desc": "Utilizes venom properties to execute nullification techniques.",
+        "genre": "Mystic",
+        "grade": "SR"
+    },
+    {
+        "name": "Domain of Venom Pulse",
+        "desc": "Utilizes venom properties to execute pulse techniques.",
+        "genre": "Mystic",
+        "grade": "S"
+    },
+    {
+        "name": "Domain of Venom Resonance",
+        "desc": "Utilizes venom properties to execute resonance techniques.",
+        "genre": "Mystic",
+        "grade": "S"
+    },
+    {
+        "name": "Domain of Venom Mimicry",
+        "desc": "Utilizes venom properties to execute mimicry techniques.",
+        "genre": "Mystic",
+        "grade": "S"
+    },
+    {
+        "name": "Focal Flame Burst",
+        "desc": "Utilizes flame properties to execute burst techniques.",
+        "genre": "Elemental",
+        "grade": "A"
+    },
+    {
+        "name": "Focal Flame Weaving",
+        "desc": "Utilizes flame properties to execute weaving techniques.",
+        "genre": "Elemental",
+        "grade": "A"
+    },
+    {
+        "name": "Focal Flame Aura",
+        "desc": "Utilizes flame properties to execute aura techniques.",
+        "genre": "Elemental",
+        "grade": "A"
+    },
+    {
+        "name": "Focal Flame Constructs",
+        "desc": "Utilizes flame properties to execute constructs techniques.",
+        "genre": "Elemental",
+        "grade": "A"
+    },
+    {
+        "name": "Focal Flame Nullification",
+        "desc": "Utilizes flame properties to execute nullification techniques.",
+        "genre": "Elemental",
+        "grade": "R"
+    },
+    {
+        "name": "Focal Flame Pulse",
+        "desc": "Utilizes flame properties to execute pulse techniques.",
+        "genre": "Elemental",
+        "grade": "A"
+    },
+    {
+        "name": "Focal Flame Resonance",
+        "desc": "Utilizes flame properties to execute resonance techniques.",
+        "genre": "Elemental",
+        "grade": "A"
+    },
+    {
+        "name": "Focal Flame Mimicry",
+        "desc": "Utilizes flame properties to execute mimicry techniques.",
+        "genre": "Elemental",
+        "grade": "A"
+    },
+    {
+        "name": "Focal Frost Burst",
+        "desc": "Utilizes frost properties to execute burst techniques.",
+        "genre": "Elemental",
+        "grade": "A"
+    },
+    {
+        "name": "Focal Frost Weaving",
+        "desc": "Utilizes frost properties to execute weaving techniques.",
+        "genre": "Elemental",
+        "grade": "A"
+    },
+    {
+        "name": "Focal Frost Aura",
+        "desc": "Utilizes frost properties to execute aura techniques.",
+        "genre": "Elemental",
+        "grade": "A"
+    },
+    {
+        "name": "Focal Frost Constructs",
+        "desc": "Utilizes frost properties to execute constructs techniques.",
+        "genre": "Elemental",
+        "grade": "A"
+    },
+    {
+        "name": "Focal Frost Nullification",
+        "desc": "Utilizes frost properties to execute nullification techniques.",
+        "genre": "Elemental",
+        "grade": "R"
+    },
+    {
+        "name": "Focal Frost Pulse",
+        "desc": "Utilizes frost properties to execute pulse techniques.",
+        "genre": "Elemental",
+        "grade": "A"
+    },
+    {
+        "name": "Focal Frost Resonance",
+        "desc": "Utilizes frost properties to execute resonance techniques.",
+        "genre": "Elemental",
+        "grade": "A"
+    },
+    {
+        "name": "Focal Frost Mimicry",
+        "desc": "Utilizes frost properties to execute mimicry techniques.",
+        "genre": "Elemental",
+        "grade": "A"
+    },
+    {
+        "name": "Focal Lightning Burst",
+        "desc": "Utilizes lightning properties to execute burst techniques.",
+        "genre": "Elemental",
+        "grade": "A"
+    },
+    {
+        "name": "Focal Lightning Weaving",
+        "desc": "Utilizes lightning properties to execute weaving techniques.",
+        "genre": "Elemental",
+        "grade": "A"
+    },
+    {
+        "name": "Focal Lightning Aura",
+        "desc": "Utilizes lightning properties to execute aura techniques.",
+        "genre": "Elemental",
+        "grade": "A"
+    },
+    {
+        "name": "Focal Lightning Constructs",
+        "desc": "Utilizes lightning properties to execute constructs techniques.",
+        "genre": "Elemental",
+        "grade": "A"
+    },
+    {
+        "name": "Focal Lightning Nullification",
+        "desc": "Utilizes lightning properties to execute nullification techniques.",
+        "genre": "Elemental",
+        "grade": "R"
+    },
+    {
+        "name": "Focal Lightning Pulse",
+        "desc": "Utilizes lightning properties to execute pulse techniques.",
+        "genre": "Elemental",
+        "grade": "A"
+    },
+    {
+        "name": "Focal Lightning Resonance",
+        "desc": "Utilizes lightning properties to execute resonance techniques.",
+        "genre": "Elemental",
+        "grade": "A"
+    },
+    {
+        "name": "Focal Lightning Mimicry",
+        "desc": "Utilizes lightning properties to execute mimicry techniques.",
+        "genre": "Elemental",
+        "grade": "A"
+    },
+    {
+        "name": "Focal Gravity Burst",
+        "desc": "Utilizes gravity properties to execute burst techniques.",
+        "genre": "Mystic",
+        "grade": "R"
+    },
+    {
+        "name": "Focal Gravity Weaving",
+        "desc": "Utilizes gravity properties to execute weaving techniques.",
+        "genre": "Mystic",
+        "grade": "R"
+    },
+    {
+        "name": "Focal Gravity Aura",
+        "desc": "Utilizes gravity properties to execute aura techniques.",
+        "genre": "Mystic",
+        "grade": "R"
+    },
+    {
+        "name": "Focal Gravity Constructs",
+        "desc": "Utilizes gravity properties to execute constructs techniques.",
+        "genre": "Mystic",
+        "grade": "R"
+    },
+    {
+        "name": "Focal Gravity Nullification",
+        "desc": "Utilizes gravity properties to execute nullification techniques.",
+        "genre": "Mystic",
+        "grade": "SS"
+    },
+    {
+        "name": "Focal Gravity Pulse",
+        "desc": "Utilizes gravity properties to execute pulse techniques.",
+        "genre": "Mystic",
+        "grade": "R"
+    },
+    {
+        "name": "Focal Gravity Resonance",
+        "desc": "Utilizes gravity properties to execute resonance techniques.",
+        "genre": "Mystic",
+        "grade": "R"
+    },
+    {
+        "name": "Focal Gravity Mimicry",
+        "desc": "Utilizes gravity properties to execute mimicry techniques.",
+        "genre": "Mystic",
+        "grade": "R"
+    },
+    {
+        "name": "Focal Kinetic Burst",
+        "desc": "Utilizes kinetic properties to execute burst techniques.",
+        "genre": "Mystic",
+        "grade": "A"
+    },
+    {
+        "name": "Focal Kinetic Weaving",
+        "desc": "Utilizes kinetic properties to execute weaving techniques.",
+        "genre": "Mystic",
+        "grade": "A"
+    },
+    {
+        "name": "Focal Kinetic Aura",
+        "desc": "Utilizes kinetic properties to execute aura techniques.",
+        "genre": "Mystic",
+        "grade": "A"
+    },
+    {
+        "name": "Focal Kinetic Constructs",
+        "desc": "Utilizes kinetic properties to execute constructs techniques.",
+        "genre": "Mystic",
+        "grade": "A"
+    },
+    {
+        "name": "Focal Kinetic Nullification",
+        "desc": "Utilizes kinetic properties to execute nullification techniques.",
+        "genre": "Mystic",
+        "grade": "R"
+    },
+    {
+        "name": "Focal Kinetic Pulse",
+        "desc": "Utilizes kinetic properties to execute pulse techniques.",
+        "genre": "Mystic",
+        "grade": "A"
+    },
+    {
+        "name": "Focal Kinetic Resonance",
+        "desc": "Utilizes kinetic properties to execute resonance techniques.",
+        "genre": "Mystic",
+        "grade": "A"
+    },
+    {
+        "name": "Focal Kinetic Mimicry",
+        "desc": "Utilizes kinetic properties to execute mimicry techniques.",
+        "genre": "Mystic",
+        "grade": "A"
+    },
+    {
+        "name": "Focal Soul Burst",
+        "desc": "Utilizes soul properties to execute burst techniques.",
+        "genre": "Mystic",
+        "grade": "R"
+    },
+    {
+        "name": "Focal Soul Weaving",
+        "desc": "Utilizes soul properties to execute weaving techniques.",
+        "genre": "Mystic",
+        "grade": "R"
+    },
+    {
+        "name": "Focal Soul Aura",
+        "desc": "Utilizes soul properties to execute aura techniques.",
+        "genre": "Mystic",
+        "grade": "R"
+    },
+    {
+        "name": "Focal Soul Constructs",
+        "desc": "Utilizes soul properties to execute constructs techniques.",
+        "genre": "Mystic",
+        "grade": "R"
+    },
+    {
+        "name": "Focal Soul Nullification",
+        "desc": "Utilizes soul properties to execute nullification techniques.",
+        "genre": "Mystic",
+        "grade": "SS"
+    },
+    {
+        "name": "Focal Soul Pulse",
+        "desc": "Utilizes soul properties to execute pulse techniques.",
+        "genre": "Mystic",
+        "grade": "R"
+    },
+    {
+        "name": "Focal Soul Resonance",
+        "desc": "Utilizes soul properties to execute resonance techniques.",
+        "genre": "Mystic",
+        "grade": "R"
+    },
+    {
+        "name": "Focal Soul Mimicry",
+        "desc": "Utilizes soul properties to execute mimicry techniques.",
+        "genre": "Mystic",
+        "grade": "R"
+    },
+    {
+        "name": "Focal Void Burst",
+        "desc": "Utilizes void properties to execute burst techniques.",
+        "genre": "Mystic",
+        "grade": "R"
+    },
+    {
+        "name": "Focal Void Weaving",
+        "desc": "Utilizes void properties to execute weaving techniques.",
+        "genre": "Mystic",
+        "grade": "R"
+    },
+    {
+        "name": "Focal Void Aura",
+        "desc": "Utilizes void properties to execute aura techniques.",
+        "genre": "Mystic",
+        "grade": "R"
+    },
+    {
+        "name": "Focal Void Constructs",
+        "desc": "Utilizes void properties to execute constructs techniques.",
+        "genre": "Mystic",
+        "grade": "R"
+    },
+    {
+        "name": "Focal Void Nullification",
+        "desc": "Utilizes void properties to execute nullification techniques.",
+        "genre": "Mystic",
+        "grade": "SS"
+    },
+    {
+        "name": "Focal Void Pulse",
+        "desc": "Utilizes void properties to execute pulse techniques.",
+        "genre": "Mystic",
+        "grade": "R"
+    },
+    {
+        "name": "Focal Void Resonance",
+        "desc": "Utilizes void properties to execute resonance techniques.",
+        "genre": "Mystic",
+        "grade": "R"
+    },
+    {
+        "name": "Focal Void Mimicry",
+        "desc": "Utilizes void properties to execute mimicry techniques.",
+        "genre": "Mystic",
+        "grade": "R"
+    },
+    {
+        "name": "Focal Flesh Burst",
+        "desc": "Utilizes flesh properties to execute burst techniques.",
+        "genre": "Mystic",
+        "grade": "A"
+    },
+    {
+        "name": "Focal Flesh Weaving",
+        "desc": "Utilizes flesh properties to execute weaving techniques.",
+        "genre": "Mystic",
+        "grade": "A"
+    },
+    {
+        "name": "Focal Flesh Aura",
+        "desc": "Utilizes flesh properties to execute aura techniques.",
+        "genre": "Mystic",
+        "grade": "A"
+    },
+    {
+        "name": "Focal Flesh Constructs",
+        "desc": "Utilizes flesh properties to execute constructs techniques.",
+        "genre": "Mystic",
+        "grade": "A"
+    },
+    {
+        "name": "Focal Flesh Nullification",
+        "desc": "Utilizes flesh properties to execute nullification techniques.",
+        "genre": "Mystic",
+        "grade": "R"
+    },
+    {
+        "name": "Focal Flesh Pulse",
+        "desc": "Utilizes flesh properties to execute pulse techniques.",
+        "genre": "Mystic",
+        "grade": "A"
+    },
+    {
+        "name": "Focal Flesh Resonance",
+        "desc": "Utilizes flesh properties to execute resonance techniques.",
+        "genre": "Mystic",
+        "grade": "A"
+    },
+    {
+        "name": "Focal Flesh Mimicry",
+        "desc": "Utilizes flesh properties to execute mimicry techniques.",
+        "genre": "Mystic",
+        "grade": "A"
+    },
+    {
+        "name": "Focal Steel Burst",
+        "desc": "Utilizes steel properties to execute burst techniques.",
+        "genre": "Mystic",
+        "grade": "A"
+    },
+    {
+        "name": "Focal Steel Weaving",
+        "desc": "Utilizes steel properties to execute weaving techniques.",
+        "genre": "Mystic",
+        "grade": "A"
+    },
+    {
+        "name": "Focal Steel Aura",
+        "desc": "Utilizes steel properties to execute aura techniques.",
+        "genre": "Mystic",
+        "grade": "A"
+    },
+    {
+        "name": "Focal Steel Constructs",
+        "desc": "Utilizes steel properties to execute constructs techniques.",
+        "genre": "Mystic",
+        "grade": "A"
+    },
+    {
+        "name": "Focal Steel Nullification",
+        "desc": "Utilizes steel properties to execute nullification techniques.",
+        "genre": "Mystic",
+        "grade": "R"
+    },
+    {
+        "name": "Focal Steel Pulse",
+        "desc": "Utilizes steel properties to execute pulse techniques.",
+        "genre": "Mystic",
+        "grade": "A"
+    },
+    {
+        "name": "Focal Steel Resonance",
+        "desc": "Utilizes steel properties to execute resonance techniques.",
+        "genre": "Mystic",
+        "grade": "A"
+    },
+    {
+        "name": "Focal Steel Mimicry",
+        "desc": "Utilizes steel properties to execute mimicry techniques.",
+        "genre": "Mystic",
+        "grade": "A"
+    },
+    {
+        "name": "Focal Venom Burst",
+        "desc": "Utilizes venom properties to execute burst techniques.",
+        "genre": "Mystic",
+        "grade": "A"
+    },
+    {
+        "name": "Focal Venom Weaving",
+        "desc": "Utilizes venom properties to execute weaving techniques.",
+        "genre": "Mystic",
+        "grade": "A"
+    },
+    {
+        "name": "Focal Venom Aura",
+        "desc": "Utilizes venom properties to execute aura techniques.",
+        "genre": "Mystic",
+        "grade": "A"
+    },
+    {
+        "name": "Focal Venom Constructs",
+        "desc": "Utilizes venom properties to execute constructs techniques.",
+        "genre": "Mystic",
+        "grade": "A"
+    },
+    {
+        "name": "Focal Venom Nullification",
+        "desc": "Utilizes venom properties to execute nullification techniques.",
+        "genre": "Mystic",
+        "grade": "R"
+    },
+    {
+        "name": "Focal Venom Pulse",
+        "desc": "Utilizes venom properties to execute pulse techniques.",
+        "genre": "Mystic",
+        "grade": "A"
+    },
+    {
+        "name": "Focal Venom Resonance",
+        "desc": "Utilizes venom properties to execute resonance techniques.",
+        "genre": "Mystic",
+        "grade": "A"
+    },
+    {
+        "name": "Focal Venom Mimicry",
+        "desc": "Utilizes venom properties to execute mimicry techniques.",
+        "genre": "Mystic",
+        "grade": "A"
+    },
+    {
+        "name": "Residual Flame Burst",
+        "desc": "Utilizes flame properties to execute burst techniques.",
+        "genre": "Elemental",
+        "grade": "D"
+    },
+    {
+        "name": "Residual Flame Weaving",
+        "desc": "Utilizes flame properties to execute weaving techniques.",
+        "genre": "Elemental",
+        "grade": "D"
+    },
+    {
+        "name": "Residual Flame Aura",
+        "desc": "Utilizes flame properties to execute aura techniques.",
+        "genre": "Elemental",
+        "grade": "D"
+    },
+    {
+        "name": "Residual Flame Constructs",
+        "desc": "Utilizes flame properties to execute constructs techniques.",
+        "genre": "Elemental",
+        "grade": "D"
+    },
+    {
+        "name": "Residual Flame Nullification",
+        "desc": "Utilizes flame properties to execute nullification techniques.",
+        "genre": "Elemental",
+        "grade": "B"
+    },
+    {
+        "name": "Residual Flame Pulse",
+        "desc": "Utilizes flame properties to execute pulse techniques.",
+        "genre": "Elemental",
+        "grade": "D"
+    },
+    {
+        "name": "Residual Flame Resonance",
+        "desc": "Utilizes flame properties to execute resonance techniques.",
+        "genre": "Elemental",
+        "grade": "D"
+    },
+    {
+        "name": "Residual Flame Mimicry",
+        "desc": "Utilizes flame properties to execute mimicry techniques.",
+        "genre": "Elemental",
+        "grade": "D"
+    },
+    {
+        "name": "Residual Frost Burst",
+        "desc": "Utilizes frost properties to execute burst techniques.",
+        "genre": "Elemental",
+        "grade": "D"
+    },
+    {
+        "name": "Residual Frost Weaving",
+        "desc": "Utilizes frost properties to execute weaving techniques.",
+        "genre": "Elemental",
+        "grade": "D"
+    },
+    {
+        "name": "Residual Frost Aura",
+        "desc": "Utilizes frost properties to execute aura techniques.",
+        "genre": "Elemental",
+        "grade": "D"
+    },
+    {
+        "name": "Residual Frost Constructs",
+        "desc": "Utilizes frost properties to execute constructs techniques.",
+        "genre": "Elemental",
+        "grade": "D"
+    },
+    {
+        "name": "Residual Frost Nullification",
+        "desc": "Utilizes frost properties to execute nullification techniques.",
+        "genre": "Elemental",
+        "grade": "B"
+    },
+    {
+        "name": "Residual Frost Pulse",
+        "desc": "Utilizes frost properties to execute pulse techniques.",
+        "genre": "Elemental",
+        "grade": "D"
+    },
+    {
+        "name": "Residual Frost Resonance",
+        "desc": "Utilizes frost properties to execute resonance techniques.",
+        "genre": "Elemental",
+        "grade": "D"
+    },
+    {
+        "name": "Residual Frost Mimicry",
+        "desc": "Utilizes frost properties to execute mimicry techniques.",
+        "genre": "Elemental",
+        "grade": "D"
+    },
+    {
+        "name": "Residual Lightning Burst",
+        "desc": "Utilizes lightning properties to execute burst techniques.",
+        "genre": "Elemental",
+        "grade": "D"
+    },
+    {
+        "name": "Residual Lightning Weaving",
+        "desc": "Utilizes lightning properties to execute weaving techniques.",
+        "genre": "Elemental",
+        "grade": "D"
+    },
+    {
+        "name": "Residual Lightning Aura",
+        "desc": "Utilizes lightning properties to execute aura techniques.",
+        "genre": "Elemental",
+        "grade": "D"
+    },
+    {
+        "name": "Residual Lightning Constructs",
+        "desc": "Utilizes lightning properties to execute constructs techniques.",
+        "genre": "Elemental",
+        "grade": "D"
+    },
+    {
+        "name": "Residual Lightning Nullification",
+        "desc": "Utilizes lightning properties to execute nullification techniques.",
+        "genre": "Elemental",
+        "grade": "B"
+    },
+    {
+        "name": "Residual Lightning Pulse",
+        "desc": "Utilizes lightning properties to execute pulse techniques.",
+        "genre": "Elemental",
+        "grade": "D"
+    },
+    {
+        "name": "Residual Lightning Resonance",
+        "desc": "Utilizes lightning properties to execute resonance techniques.",
+        "genre": "Elemental",
+        "grade": "D"
+    },
+    {
+        "name": "Residual Lightning Mimicry",
+        "desc": "Utilizes lightning properties to execute mimicry techniques.",
+        "genre": "Elemental",
+        "grade": "D"
+    },
+    {
+        "name": "Residual Gravity Burst",
+        "desc": "Utilizes gravity properties to execute burst techniques.",
+        "genre": "Mystic",
+        "grade": "B"
+    },
+    {
+        "name": "Residual Gravity Weaving",
+        "desc": "Utilizes gravity properties to execute weaving techniques.",
+        "genre": "Mystic",
+        "grade": "B"
+    },
+    {
+        "name": "Residual Gravity Aura",
+        "desc": "Utilizes gravity properties to execute aura techniques.",
+        "genre": "Mystic",
+        "grade": "B"
+    },
+    {
+        "name": "Residual Gravity Constructs",
+        "desc": "Utilizes gravity properties to execute constructs techniques.",
+        "genre": "Mystic",
+        "grade": "B"
+    },
+    {
+        "name": "Residual Gravity Nullification",
+        "desc": "Utilizes gravity properties to execute nullification techniques.",
+        "genre": "Mystic",
+        "grade": "S"
+    },
+    {
+        "name": "Residual Gravity Pulse",
+        "desc": "Utilizes gravity properties to execute pulse techniques.",
+        "genre": "Mystic",
+        "grade": "B"
+    },
+    {
+        "name": "Residual Gravity Resonance",
+        "desc": "Utilizes gravity properties to execute resonance techniques.",
+        "genre": "Mystic",
+        "grade": "B"
+    },
+    {
+        "name": "Residual Gravity Mimicry",
+        "desc": "Utilizes gravity properties to execute mimicry techniques.",
+        "genre": "Mystic",
+        "grade": "B"
+    },
+    {
+        "name": "Residual Kinetic Burst",
+        "desc": "Utilizes kinetic properties to execute burst techniques.",
+        "genre": "Mystic",
+        "grade": "D"
+    },
+    {
+        "name": "Residual Kinetic Weaving",
+        "desc": "Utilizes kinetic properties to execute weaving techniques.",
+        "genre": "Mystic",
+        "grade": "D"
+    },
+    {
+        "name": "Residual Kinetic Aura",
+        "desc": "Utilizes kinetic properties to execute aura techniques.",
+        "genre": "Mystic",
+        "grade": "D"
+    },
+    {
+        "name": "Residual Kinetic Constructs",
+        "desc": "Utilizes kinetic properties to execute constructs techniques.",
+        "genre": "Mystic",
+        "grade": "D"
+    },
+    {
+        "name": "Residual Kinetic Nullification",
+        "desc": "Utilizes kinetic properties to execute nullification techniques.",
+        "genre": "Mystic",
+        "grade": "B"
+    },
+    {
+        "name": "Residual Kinetic Pulse",
+        "desc": "Utilizes kinetic properties to execute pulse techniques.",
+        "genre": "Mystic",
+        "grade": "D"
+    },
+    {
+        "name": "Residual Kinetic Resonance",
+        "desc": "Utilizes kinetic properties to execute resonance techniques.",
+        "genre": "Mystic",
+        "grade": "D"
+    },
+    {
+        "name": "Residual Kinetic Mimicry",
+        "desc": "Utilizes kinetic properties to execute mimicry techniques.",
+        "genre": "Mystic",
+        "grade": "D"
+    },
+    {
+        "name": "Residual Soul Burst",
+        "desc": "Utilizes soul properties to execute burst techniques.",
+        "genre": "Mystic",
+        "grade": "B"
+    },
+    {
+        "name": "Residual Soul Weaving",
+        "desc": "Utilizes soul properties to execute weaving techniques.",
+        "genre": "Mystic",
+        "grade": "B"
+    },
+    {
+        "name": "Residual Soul Aura",
+        "desc": "Utilizes soul properties to execute aura techniques.",
+        "genre": "Mystic",
+        "grade": "B"
+    },
+    {
+        "name": "Residual Soul Constructs",
+        "desc": "Utilizes soul properties to execute constructs techniques.",
+        "genre": "Mystic",
+        "grade": "B"
+    },
+    {
+        "name": "Residual Soul Nullification",
+        "desc": "Utilizes soul properties to execute nullification techniques.",
+        "genre": "Mystic",
+        "grade": "S"
+    },
+    {
+        "name": "Residual Soul Pulse",
+        "desc": "Utilizes soul properties to execute pulse techniques.",
+        "genre": "Mystic",
+        "grade": "B"
+    },
+    {
+        "name": "Residual Soul Resonance",
+        "desc": "Utilizes soul properties to execute resonance techniques.",
+        "genre": "Mystic",
+        "grade": "B"
+    },
+    {
+        "name": "Residual Soul Mimicry",
+        "desc": "Utilizes soul properties to execute mimicry techniques.",
+        "genre": "Mystic",
+        "grade": "B"
+    },
+    {
+        "name": "Residual Void Burst",
+        "desc": "Utilizes void properties to execute burst techniques.",
+        "genre": "Mystic",
+        "grade": "B"
+    },
+    {
+        "name": "Residual Void Weaving",
+        "desc": "Utilizes void properties to execute weaving techniques.",
+        "genre": "Mystic",
+        "grade": "B"
+    },
+    {
+        "name": "Residual Void Aura",
+        "desc": "Utilizes void properties to execute aura techniques.",
+        "genre": "Mystic",
+        "grade": "B"
+    },
+    {
+        "name": "Residual Void Constructs",
+        "desc": "Utilizes void properties to execute constructs techniques.",
+        "genre": "Mystic",
+        "grade": "B"
+    },
+    {
+        "name": "Residual Void Nullification",
+        "desc": "Utilizes void properties to execute nullification techniques.",
+        "genre": "Mystic",
+        "grade": "S"
+    },
+    {
+        "name": "Residual Void Pulse",
+        "desc": "Utilizes void properties to execute pulse techniques.",
+        "genre": "Mystic",
+        "grade": "B"
+    },
+    {
+        "name": "Residual Void Resonance",
+        "desc": "Utilizes void properties to execute resonance techniques.",
+        "genre": "Mystic",
+        "grade": "B"
+    },
+    {
+        "name": "Residual Void Mimicry",
+        "desc": "Utilizes void properties to execute mimicry techniques.",
+        "genre": "Mystic",
+        "grade": "B"
+    },
+    {
+        "name": "Residual Flesh Burst",
+        "desc": "Utilizes flesh properties to execute burst techniques.",
+        "genre": "Mystic",
+        "grade": "D"
+    },
+    {
+        "name": "Residual Flesh Weaving",
+        "desc": "Utilizes flesh properties to execute weaving techniques.",
+        "genre": "Mystic",
+        "grade": "D"
+    },
+    {
+        "name": "Residual Flesh Aura",
+        "desc": "Utilizes flesh properties to execute aura techniques.",
+        "genre": "Mystic",
+        "grade": "D"
+    },
+    {
+        "name": "Residual Flesh Constructs",
+        "desc": "Utilizes flesh properties to execute constructs techniques.",
+        "genre": "Mystic",
+        "grade": "D"
+    },
+    {
+        "name": "Residual Flesh Nullification",
+        "desc": "Utilizes flesh properties to execute nullification techniques.",
+        "genre": "Mystic",
+        "grade": "B"
+    },
+    {
+        "name": "Residual Flesh Pulse",
+        "desc": "Utilizes flesh properties to execute pulse techniques.",
+        "genre": "Mystic",
+        "grade": "D"
+    },
+    {
+        "name": "Residual Flesh Resonance",
+        "desc": "Utilizes flesh properties to execute resonance techniques.",
+        "genre": "Mystic",
+        "grade": "D"
+    },
+    {
+        "name": "Residual Flesh Mimicry",
+        "desc": "Utilizes flesh properties to execute mimicry techniques.",
+        "genre": "Mystic",
+        "grade": "D"
+    },
+    {
+        "name": "Residual Steel Burst",
+        "desc": "Utilizes steel properties to execute burst techniques.",
+        "genre": "Mystic",
+        "grade": "D"
+    },
+    {
+        "name": "Residual Steel Weaving",
+        "desc": "Utilizes steel properties to execute weaving techniques.",
+        "genre": "Mystic",
+        "grade": "D"
+    },
+    {
+        "name": "Residual Steel Aura",
+        "desc": "Utilizes steel properties to execute aura techniques.",
+        "genre": "Mystic",
+        "grade": "D"
+    },
+    {
+        "name": "Residual Steel Constructs",
+        "desc": "Utilizes steel properties to execute constructs techniques.",
+        "genre": "Mystic",
+        "grade": "D"
+    },
+    {
+        "name": "Residual Steel Nullification",
+        "desc": "Utilizes steel properties to execute nullification techniques.",
+        "genre": "Mystic",
+        "grade": "B"
+    },
+    {
+        "name": "Residual Steel Pulse",
+        "desc": "Utilizes steel properties to execute pulse techniques.",
+        "genre": "Mystic",
+        "grade": "D"
+    },
+    {
+        "name": "Residual Steel Resonance",
+        "desc": "Utilizes steel properties to execute resonance techniques.",
+        "genre": "Mystic",
+        "grade": "D"
+    },
+    {
+        "name": "Residual Steel Mimicry",
+        "desc": "Utilizes steel properties to execute mimicry techniques.",
+        "genre": "Mystic",
+        "grade": "D"
+    },
+    {
+        "name": "Residual Venom Burst",
+        "desc": "Utilizes venom properties to execute burst techniques.",
+        "genre": "Mystic",
+        "grade": "D"
+    },
+    {
+        "name": "Residual Venom Weaving",
+        "desc": "Utilizes venom properties to execute weaving techniques.",
+        "genre": "Mystic",
+        "grade": "D"
+    },
+    {
+        "name": "Residual Venom Aura",
+        "desc": "Utilizes venom properties to execute aura techniques.",
+        "genre": "Mystic",
+        "grade": "D"
+    },
+    {
+        "name": "Residual Venom Constructs",
+        "desc": "Utilizes venom properties to execute constructs techniques.",
+        "genre": "Mystic",
+        "grade": "D"
+    },
+    {
+        "name": "Residual Venom Nullification",
+        "desc": "Utilizes venom properties to execute nullification techniques.",
+        "genre": "Mystic",
+        "grade": "B"
+    },
+    {
+        "name": "Residual Venom Pulse",
+        "desc": "Utilizes venom properties to execute pulse techniques.",
+        "genre": "Mystic",
+        "grade": "D"
+    },
+    {
+        "name": "Residual Venom Resonance",
+        "desc": "Utilizes venom properties to execute resonance techniques.",
+        "genre": "Mystic",
+        "grade": "D"
+    },
+    {
+        "name": "Residual Venom Mimicry",
+        "desc": "Utilizes venom properties to execute mimicry techniques.",
+        "genre": "Mystic",
+        "grade": "D"
+    }
+]
